@@ -1,0 +1,25 @@
+{
+  "project": "Semi-E3-MLIP",
+  "repository": "https://github.com/ryanlai666/Semi-E3-MLIP",
+  "visibility_verified": "private",
+  "resumption_date": "2026-09-21",
+  "code_commit": "82087dffa0f2005bea4ac4131c20f2e84b13addf",
+  "dataset_manifest_sha256": "23fb9ce9ad106998711333ce80e4c418f4ca5a680ff5b9effe4736889ce6b4d2",
+  "torch_version": "2.14.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "resumed_from": {
+    "run": "screen_cu_tensor",
+    "completed_epochs": 48,
+    "planned_epochs": 60
+  },
+  "pipeline": [
+    "architecture screening",
+    "300/900-frame confirmation across seeds 42/43/44",
+    "freeze checkpoint hashes",
+    "protected cold/warm/molten evaluation",
+    "100 fs NVE at 0.5/0.25 fs"
+  ],
+  "log": "runs/focused_continue.log",
+  "error_log": "runs/focused_continue.err.log",
+  "note": "Resumption metadata, not a completion claim. Consult screen.json, confirm.json, frozen.json and summary.json for results."
+}
