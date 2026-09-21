@@ -1,6 +1,7 @@
 """Describe label distributions; never changes splits, fitting, or model selection."""
 from collections import Counter
 import hashlib
+import inspect
 import json
 from pathlib import Path
 import numpy as np
@@ -81,9 +82,11 @@ def main():
         for system in systems:
             rows=[r for r in records['train'] if r['chemsys']==system]
             values.append(np.array([r['energy']/len(r['z']) for r in rows]) if key=='energy_eV_atom' else np.concatenate([np.linalg.norm(r['forces'],axis=1) for r in rows]))
-        box=ax.boxplot(values,orientation='horizontal',tick_labels=systems,patch_artist=True,
+        direction={'orientation':'horizontal'} if 'orientation' in inspect.signature(ax.boxplot).parameters else {'vert':False}
+        box=ax.boxplot(values,**direction,patch_artist=True,
                        flierprops={'markersize':1.5,'alpha':.3},widths=.65)
         for patch in box['boxes']:patch.set(facecolor='#b8d5df',edgecolor='#38748c')
+        ax.set_yticks(np.arange(1,len(systems)+1),systems)
         ax.invert_yaxis();ax.set_title(title);ax.grid(axis='x',alpha=.15)
         if key=='force_magnitude_eV_A':
             ax.set_xscale('symlog',linthresh=.01);ax.set_xlim(left=0)

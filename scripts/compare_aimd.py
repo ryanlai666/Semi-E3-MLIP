@@ -1,6 +1,7 @@
 """External AIMD transfer diagnostic; never used for selecting hyperparameters."""
 import argparse
 import hashlib
+import itertools
 import json
 from pathlib import Path
 import numpy as np
@@ -8,32 +9,57 @@ from semi_mlip.data import read_jsonl, write_json
 from semi_mlip.simulate import Calculator, md
 from semi_mlip.visualize import plotting, draw_structure
 
+def minimum_image(delta, cell, pbc=(True,True,True)):
+    """Closest periodic image using reciprocal-plane bounds, including skew cells."""
+    cell=np.asarray(cell,float);delta=np.asarray(delta,float);periodic=np.asarray(pbc,bool)
+    if cell.shape!=(3,3) or abs(np.linalg.det(cell))<1e-10:
+        raise ValueError('Nonsingular 3x3 cell required')
+    if not np.isfinite(cell).all() or not np.isfinite(delta).all():
+        raise ValueError('Nonfinite trajectory geometry')
+    inverse=np.linalg.inv(cell);fractional=delta@inverse
+    fractional[...,periodic]-=np.round(fractional[...,periodic])
+    reduced=fractional@cell;best=reduced.copy();best2=np.sum(best*best,axis=-1)
+    if best2.size==0:return best
+    gram=cell@cell.T
+    if np.allclose(gram,np.diag(np.diag(gram)),rtol=0,atol=1e-10):return best
+    # A winning vector has norm <= the current largest candidate radius.
+    # Its fractional component is bounded by radius * reciprocal-plane norm.
+    # Periodic components of the reduced vector lie in [-1/2, 1/2].
+    radius=float(np.sqrt(best2.max()))
+    bounds=np.floor(.5+radius*np.linalg.norm(inverse,axis=0)+1e-12).astype(int)
+    ranges=[range(-n,n+1) if flag else (0,) for n,flag in zip(bounds,periodic)]
+    for shift in itertools.product(*ranges):
+        if shift==(0,0,0):continue
+        candidate=reduced+np.asarray(shift)@cell
+        squared=np.sum(candidate*candidate,axis=-1);replace=squared<best2
+        best=np.where(replace[...,None],candidate,best);best2=np.minimum(best2,squared)
+    return best
+
+
 def displacement(rows):
-    # Source cells are orthogonal and constant. Minimum-image incremental
-    # unwrapping is appropriate only when each sampled displacement < L/2.
+    # Incremental nearest-image unwrapping assumes sufficiently frequent samples;
+    # long displacements between saved frames remain fundamentally ambiguous.
     cells=np.array([r['cell'] for r in rows])
-    if not np.allclose(cells,cells[0]) or not np.allclose(cells[0],np.diag(np.diag(cells[0])),atol=1e-6):
-        raise ValueError('This diagnostic requires a fixed orthogonal cell')
-    x=np.array([r['positions'] for r in rows]); delta=np.diff(x,axis=0)
-    lengths=np.diag(cells[0]); delta-=np.round(delta/lengths)*lengths
+    if not np.allclose(cells,cells[0]):raise ValueError('A fixed cell is required')
+    pbc=rows[0].get('pbc',[True]*3)
+    if any(r.get('pbc',[True]*3)!=pbc for r in rows):raise ValueError('PBC changed within trajectory')
+    x=np.array([r['positions'] for r in rows]);delta=minimum_image(np.diff(x,axis=0),cells[0],pbc)
     unwrapped=np.concatenate([x[:1],x[:1]+np.cumsum(delta,axis=0)])
-    d=unwrapped-unwrapped[:1]
-    d-=d.mean(axis=1,keepdims=True)
+    d=unwrapped-unwrapped[:1];d-=d.mean(axis=1,keepdims=True)
     # Initial-time displacement, not time-origin-averaged transport MSD.
     return np.mean(np.sum(d*d,axis=2),axis=1)
+
 
 def pair_histogram(rows,bins):
     total=np.zeros(len(bins)-1)
     for row in rows:
-        x=np.array(row['positions']); cell=np.array(row['cell'])
-        if not np.allclose(cell,np.diag(np.diag(cell)),atol=1e-6):
-            raise ValueError('Orthogonal cell required')
-        d=x[:,None,:]-x[None,:,:]; length=np.diag(cell)
-        d-=np.round(d/length)*length
-        distances=np.linalg.norm(d,axis=-1)[np.triu_indices(len(x),1)]
-        total+=np.histogram(distances,bins)[0]*2/len(x)
+        x=np.array(row['positions']);cell=np.array(row['cell'])
+        i,j=np.triu_indices(len(x),1)
+        d=minimum_image(x[j]-x[i],cell,row.get('pbc',[True]*3))
+        total+=np.histogram(np.linalg.norm(d,axis=-1),bins)[0]*2/len(x)
     # Slabs contain vacuum: bulk-density normalization would distort RDF.
     return total/len(rows)/np.diff(bins)
+
 
 def render(reference,predicted,path,title):
     from matplotlib.animation import FuncAnimation,PillowWriter
@@ -104,11 +130,11 @@ def main():
         displacements=np.array([displacement(t) for t in traces])
         plt=plotting();fig,axes=plt.subplots(1,2,figsize=(11,4.5))
         axes[0].plot(centers,refhist,label='PBE AIMD');axes[0].plot(centers,hists.mean(0),label='Our GNN mean')
-        axes[0].fill_between(centers,hists.min(0),hists.max(0),alpha=.2,label=f'{len(traces)} completed seed range')
+        axes[0].fill_between(centers,hists.min(0),hists.max(0),color='#ff7f0e',alpha=.18,label=f'{len(traces)} completed seed range')
         axes[0].set(xlabel='Pair distance (Å)',ylabel='Neighbors / atom / Å',title='Slab pair-distance density (100–500 fs)')
         times=np.array([r['time_fs'] for r in ref]);axes[1].plot(times,displacement(ref),label='PBE AIMD')
         axes[1].plot(times,displacements.mean(0),label='Our GNN mean')
-        axes[1].fill_between(times,displacements.min(0),displacements.max(0),alpha=.2,label=f'{len(traces)} completed seed range')
+        axes[1].fill_between(times,displacements.min(0),displacements.max(0),color='#ff7f0e',alpha=.18,label=f'{len(traces)} completed seed range')
         axes[1].set(xlabel='Time (fs)',ylabel='Displacement from initial frame (Å²)',title='COM-corrected; not a diffusion estimate')
         for ax in axes:ax.legend(fontsize=8)
         fig.suptitle(name+' | 300 K | PBE → r2SCAN transfer');fig.tight_layout();fig.savefig(out/(name+'_metrics.png'),dpi=170);plt.close(fig)
