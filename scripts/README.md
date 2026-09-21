@@ -36,3 +36,7 @@ rerun `finish_focused.py --md` for evaluation; do not restart its tuning stage.
 The `audit_*`, `import_*`, and `download_*` scripts preserve source/fidelity
 boundaries. See the data audit before combining source archives. The `tune_*`
 scripts include historical planned variants; not every variant was started.
+
+## Independent material continuation
+
+`material_studies.py --prepare-only` freezes the 18-study protocol; `continue_material_studies.ps1` resumes all 54 fits, protected evaluations, and figures. `finish_material_studies.ps1 -TrainingProcess PID` waits for that process and runs `publish_material_studies.py`. Publication is authorized by the owner and is gated on complete results, input/checkpoint hashes, finite metrics, report links, and passing tests. It pushes the completed experiment and `main`, then changes the repository from private to public. Any failed prerequisite leaves publication unfinished for investigation.
