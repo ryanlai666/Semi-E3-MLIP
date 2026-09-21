@@ -1,0 +1,76 @@
+{
+  "silicon": {
+    "ids": [
+      "mp-999200",
+      "matpes-20240214_999200_3",
+      "matpes-20240214_999200_4",
+      "matpes-20240214_999200_0",
+      "matpes-20240214_999200_1",
+      "matpes-20240214_999200_2"
+    ],
+    "mean_force_mae_eV_A": 0.24228328420578912,
+    "force_scale_A_per_eV_A": 0.7570873918358852,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  },
+  "copper": {
+    "ids": [
+      "matpes-20240214_1120774_0",
+      "mp-1120774"
+    ],
+    "mean_force_mae_eV_A": 0.05157622297110945,
+    "force_scale_A_per_eV_A": 6.9310249952146785,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  },
+  "silica": {
+    "ids": [
+      "matpes-20240214_7905_0",
+      "mp-7905",
+      "matpes-20240214_7905_2",
+      "matpes-20240214_7905_3",
+      "matpes-20240214_7905_4",
+      "matpes-20240214_7905_5",
+      "matpes-20240214_7905_6"
+    ],
+    "mean_force_mae_eV_A": 0.04742455978165002,
+    "force_scale_A_per_eV_A": 0.5078911149030906,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  },
+  "alumina": {
+    "ids": [
+      "mp-1182923",
+      "mp-1938",
+      "mp-2637304",
+      "mp-642363",
+      "mp-754624",
+      "mp-754812"
+    ],
+    "mean_force_mae_eV_A": 0.31894479439457046,
+    "force_scale_A_per_eV_A": 0.21545106759207683,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  },
+  "hafnia": {
+    "ids": [
+      "mp-1018721",
+      "matpes-20240214_1018721_0",
+      "matpes-20240214_1018721_1"
+    ],
+    "mean_force_mae_eV_A": 0.4427464271965517,
+    "force_scale_A_per_eV_A": 0.4055219037356824,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  },
+  "titania": {
+    "ids": [
+      "mp-766454",
+      "matpes-20240214_766454_0"
+    ],
+    "mean_force_mae_eV_A": 0.2509160087823924,
+    "force_scale_A_per_eV_A": 0.6790896441125864,
+    "source": "MatPES splits: test",
+    "continuous_AIMD": false
+  }
+}

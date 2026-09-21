@@ -1,0 +1,260 @@
+{
+  "silicon": {
+    "initial_id": "mp-999200",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.022120794281363487,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 181.98804815402113,
+      "energy_change_eV_atom": 4.38873351527036e-06,
+      "energy_range_eV_atom": 8.627391430593434e-06,
+      "energy_slope_eV_atom_ps": -1.513672902380044e-06,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 181.9903430411512,
+      "energy_change_eV_atom": 1.7501883959880615e-06,
+      "energy_range_eV_atom": 3.168903189632033e-06,
+      "energy_slope_eV_atom_ps": -1.0374944254910528e-06,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 367.30728936875386,
+      "energy_change_eV_atom": 0.01688392737827371,
+      "energy_range_eV_atom": 0.025843791682314432,
+      "energy_slope_eV_atom_ps": 0.16930189502902382,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": true,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  },
+  "copper": {
+    "initial_id": "matpes-20240214_1120774_0",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.028670024126768112,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 140.16599474919167,
+      "energy_change_eV_atom": 1.7793079412816344e-06,
+      "energy_range_eV_atom": 2.73332707223517e-06,
+      "energy_slope_eV_atom_ps": 2.639562181353242e-06,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 140.16719991722218,
+      "energy_change_eV_atom": 6.375588673298201e-07,
+      "energy_range_eV_atom": 2.991868958209428e-06,
+      "energy_slope_eV_atom_ps": 1.3049728952081563e-06,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 196.75310514077958,
+      "energy_change_eV_atom": 0.009071346466699973,
+      "energy_range_eV_atom": 0.029236482153301324,
+      "energy_slope_eV_atom_ps": 0.04535586348246442,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": false,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  },
+  "silica": {
+    "initial_id": "matpes-20240214_7905_0",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.019672373309731483,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 86.37245836088952,
+      "energy_change_eV_atom": 2.6856842858080654e-05,
+      "energy_range_eV_atom": 3.573479458770142e-05,
+      "energy_slope_eV_atom_ps": -1.9773691011428587e-05,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 87.03805392455443,
+      "energy_change_eV_atom": 6.364060478603051e-06,
+      "energy_range_eV_atom": 9.919472695685272e-06,
+      "energy_slope_eV_atom_ps": -6.499740876092931e-06,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 275.1974681758229,
+      "energy_change_eV_atom": 0.022432115884731967,
+      "energy_range_eV_atom": 0.0274498910011521,
+      "energy_slope_eV_atom_ps": 0.09745702025565071,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": true,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  },
+  "alumina": {
+    "initial_id": "mp-1182923",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.021851539611816406,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 63.35082374501783,
+      "energy_change_eV_atom": 1.0129533301039828e-05,
+      "energy_range_eV_atom": 1.1865780284381344e-05,
+      "energy_slope_eV_atom_ps": 4.5796397662435734e-06,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 63.327032875604885,
+      "energy_change_eV_atom": 2.7842096031349685e-06,
+      "energy_range_eV_atom": 5.328319952013772e-06,
+      "energy_slope_eV_atom_ps": 3.5415181555496407e-07,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 266.4188275579018,
+      "energy_change_eV_atom": 0.0318018722788679,
+      "energy_range_eV_atom": 0.04406733604773479,
+      "energy_slope_eV_atom_ps": 0.4128313451471385,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": true,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  },
+  "hafnia": {
+    "initial_id": "mp-1018721",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.0042558759450912476,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 203.61683232112313,
+      "energy_change_eV_atom": 1.7782446424992788e-06,
+      "energy_range_eV_atom": 1.0501925061134898e-05,
+      "energy_slope_eV_atom_ps": -2.626225623635236e-06,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 203.60488576112715,
+      "energy_change_eV_atom": 4.914010294972589e-07,
+      "energy_range_eV_atom": 6.4421356569255295e-06,
+      "energy_slope_eV_atom_ps": 5.030111235161258e-06,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 252.7648921312732,
+      "energy_change_eV_atom": 0.018504868441894473,
+      "energy_range_eV_atom": 0.028381329655260856,
+      "energy_slope_eV_atom_ps": 0.14402491170737994,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": true,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  },
+  "titania": {
+    "initial_id": "mp-766454",
+    "relaxation_converged": true,
+    "relaxation_final_force": 0.024266516789793968,
+    "nve_05": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 107.52151952014529,
+      "energy_change_eV_atom": 2.0915697310404844e-06,
+      "energy_range_eV_atom": 6.178722173899587e-06,
+      "energy_slope_eV_atom_ps": -2.0176731333527405e-06,
+      "drift_is_conservation_check": true
+    },
+    "nve_025": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 107.54339455457041,
+      "energy_change_eV_atom": -4.813004655564631e-07,
+      "energy_range_eV_atom": 3.862185899884531e-06,
+      "energy_slope_eV_atom_ps": -2.8457381382197527e-06,
+      "drift_is_conservation_check": true
+    },
+    "nvt": {
+      "ensemble": "nvt",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 42,
+      "temperature_target_K": 300.0,
+      "final_temperature_K": 232.0645399749903,
+      "energy_change_eV_atom": 0.025091294501665275,
+      "energy_range_eV_atom": 0.03194859334288304,
+      "energy_slope_eV_atom_ps": 0.26469019082573675,
+      "drift_is_conservation_check": false
+    },
+    "smaller_dt_reduces_energy_range": true,
+    "validation_limit": "100 fs numerical diagnostic, not long-time DFT agreement"
+  }
+}

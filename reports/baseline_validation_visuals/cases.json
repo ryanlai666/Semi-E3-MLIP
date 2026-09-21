@@ -1,0 +1,78 @@
+{
+  "silicon": {
+    "ids": [
+      "mp-2351841",
+      "matpes-20240214_2351841_2",
+      "matpes-20240214_2351841_0",
+      "matpes-20240214_2351841_3",
+      "matpes-20240214_2351841_4",
+      "matpes-20240214_2351841_5"
+    ],
+    "mean_force_mae_eV_A": 0.36121372809943675,
+    "force_scale_A_per_eV_A": 0.6431148257531493,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  },
+  "copper": {
+    "ids": [
+      "matpes-20240214_989782_0",
+      "matpes-20240214_989782_3",
+      "matpes-20240214_989782_1",
+      "matpes-20240214_989782_2"
+    ],
+    "mean_force_mae_eV_A": 0.07690040851201825,
+    "force_scale_A_per_eV_A": 2.8580209882324064,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  },
+  "silica": {
+    "ids": [
+      "mp-546546",
+      "matpes-20240214_546546_0",
+      "matpes-20240214_546546_1",
+      "matpes-20240214_546546_2",
+      "matpes-20240214_546546_3",
+      "matpes-20240214_546546_4",
+      "matpes-20240214_546546_5"
+    ],
+    "mean_force_mae_eV_A": 0.584680074930847,
+    "force_scale_A_per_eV_A": 0.34825430077274105,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  },
+  "alumina": {
+    "ids": [
+      "matpes-20240214_1228448_0",
+      "mp-1228448",
+      "matpes-20240214_1228448_1"
+    ],
+    "mean_force_mae_eV_A": 0.32791490693060293,
+    "force_scale_A_per_eV_A": 0.574412236419647,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  },
+  "hafnia": {
+    "ids": [
+      "mp-776532",
+      "matpes-20240214_776532_0",
+      "matpes-20240214_776532_1"
+    ],
+    "mean_force_mae_eV_A": 0.3563532832416632,
+    "force_scale_A_per_eV_A": 0.4048399096845623,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  },
+  "titania": {
+    "ids": [
+      "mp-1102591",
+      "mp-2420244",
+      "mp-2657",
+      "mp-553432",
+      "mp-775938"
+    ],
+    "mean_force_mae_eV_A": 0.10184675944791051,
+    "force_scale_A_per_eV_A": 1.900743716686148,
+    "source": "held-out MatPES test split",
+    "continuous_AIMD": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "trials": [
+    {
+      "name": "screen_cu_gated",
+      "epochs_recorded": 60,
+      "parameters": 119137,
+      "epoch_seconds_sum": 167.50795930007007,
+      "history_sha256": "53a1cc02ea1bbceadbf4043896ff9a99ae893115862ee56e0135221117490e0e"
+    },
+    {
+      "name": "screen_ti_gated",
+      "epochs_recorded": 60,
+      "parameters": 119137,
+      "epoch_seconds_sum": 137.51029540027957,
+      "history_sha256": "d20445862f1af829340e968d77200c8eb73d1c0d4e44f3945540d3663a3ae849"
+    },
+    {
+      "name": "screen_cu_attention",
+      "epochs_recorded": 60,
+      "parameters": 133261,
+      "epoch_seconds_sum": 114.36120280006435,
+      "history_sha256": "d17f8518462d367586808aaf2ca4e97e77804a75edfcd7f69aef96d93758c144"
+    },
+    {
+      "name": "screen_ti_attention",
+      "epochs_recorded": 60,
+      "parameters": 133261,
+      "epoch_seconds_sum": 116.2800154996221,
+      "history_sha256": "376ca03e7f5c07b36ffaf42050f2a8076c76c0f7db748cb4de36b9acaa41cb66"
+    },
+    {
+      "name": "screen_cu_tensor",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 130.04595180007163,
+      "history_sha256": "4cbcfda89cbb5eb0e3072ccb1f41113312bec8743cfaecf27cd4385bf4ce30a5"
+    },
+    {
+      "name": "screen_ti_tensor",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 161.04924939974444,
+      "history_sha256": "bdd84497707281cee5d82627b4bd8c35f3e90c52a56a5aba9209c3cff59d4463"
+    },
+    {
+      "name": "confirm_cu_tensor_n300_s43",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 150.53880130022299,
+      "history_sha256": "3b69c1a043d26fd96a685bb474f5b54e78b6e21d4ec8422d9c854a2387da2abc"
+    },
+    {
+      "name": "confirm_ti_tensor_n300_s43",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 188.152545100078,
+      "history_sha256": "c3936a936bb72b379fa8407e2d24ed449dfc7d126b79c30c2b5d37a1dcca68f8"
+    },
+    {
+      "name": "confirm_cu_tensor_n300_s44",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 283.8285654996289,
+      "history_sha256": "f63741cdfd4f084ea8df673e3164b54887e81fd2bfcf15d76b4fc68ae6a69d79"
+    },
+    {
+      "name": "confirm_ti_tensor_n300_s44",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 235.79749009991065,
+      "history_sha256": "e3ac687f7aeb5d6c6c4c4dabfe74817a11d60f34fb81c2887ff527f397ab74c4"
+    },
+    {
+      "name": "confirm_cu_tensor_n900_s42",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 578.3393096001237,
+      "history_sha256": "a540f2998c62320aeacc3803a513ea62d8af4bb27accc5136d358152a7132888"
+    },
+    {
+      "name": "confirm_ti_tensor_n900_s42",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 631.8713769995957,
+      "history_sha256": "f1fb7128e0332c3309a3c415856d979634e7962402c2299cd2f4515e3049bf2f"
+    },
+    {
+      "name": "confirm_cu_tensor_n900_s43",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 775.8824369999347,
+      "history_sha256": "cd1979fb4f6143c3b066374b9a923537bfb4d7054bc5eb52e81e69a53b283f55"
+    },
+    {
+      "name": "confirm_ti_tensor_n900_s43",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 455.2238426002441,
+      "history_sha256": "8d7441518fa817af648f0abc6bd22723b1849635cf8e386e8c8d65589e7e2a85"
+    },
+    {
+      "name": "confirm_cu_tensor_n900_s44",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 396.1108877999941,
+      "history_sha256": "cb06bacbbee56101819d1d101f70ce1b5fe734a8f7fe3cb5dcd535091683ab54"
+    },
+    {
+      "name": "confirm_ti_tensor_n900_s44",
+      "epochs_recorded": 60,
+      "parameters": 146785,
+      "epoch_seconds_sum": 428.5558571003494,
+      "history_sha256": "162971523e5b04d06c6987d343f1ed692846a9ddc336e07800b00e18cbb3a938"
+    }
+  ],
+  "limitation": "Measured epoch wall times exclude graph preparation and include concurrent workload effects. Not a controlled architecture speed comparison."
+}

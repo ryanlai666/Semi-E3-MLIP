@@ -18,7 +18,9 @@ def read(path,default=None):
 
 
 def number(value,scale=1):
-    return f'{value*scale:.3f}' if value is not None else '--'
+    if value is None:return '--'
+    v=value*scale
+    return f'{v:.3e}' if abs(v)>=1e4 or 0<abs(v)<1e-3 else f'{v:.3f}'
 
 
 def table(headers,rows):
@@ -43,7 +45,7 @@ def focused_table(study,tests,key="force_mae_eV_A",scale=1):
             values=[]
             for split in ('train','validation','cold','warm','melt'):
                 scores=[scale*tests[t['name']][split]['overall'][key] for t in trials]
-                values.append(f'{np.mean(scores):.3f} +/- {np.std(scores,ddof=1):.3f}')
+                values.append(f'{number(np.mean(scores))} +/- {number(np.std(scores,ddof=1))}')
             rows.append([metal.title(),count,*values])
     return table(['Material','Train frames','Train','Validation','Cold test','Warm test','Molten test'],rows)
 
@@ -203,6 +205,8 @@ unlabelled frames are excluded and counted in the numerical report.
 
 ## Cu/Ti controlled temperature transfer
 
+**Severe extrapolation failures:** several frozen fits produce enormous molten-test errors, reaching a three-seed mean of about 3.68e27 eV/A for Ti trained on 900 cold frames. Cold accuracy and short 300 K checks do not establish molten-phase validity. Every seed remains in the tables and logarithmic plot.
+
 {screening}
 
 Architecture screening uses 300 cold frames, 90 warm validation frames, seed 42,
@@ -257,14 +261,14 @@ small energy drift do not establish long-time stability.
 
 {perf}
 
-![Measured CPU and CUDA inference latency](assets/inference_benchmark.png)
+{'![Measured CPU and CUDA inference latency](assets/inference_benchmark.png)' if (ASSETS/'inference_benchmark.png').exists() else 'Inference timing figure pending.'}
 
 Batch size one; five warmups and 30 timed calls per structure. Timings include
 neighbor enumeration, transfers, energy, forces, and stress. CPU and CUDA use the
 same checkpoint. The examples include primitive test cells and a 216-atom Si
 surface. This is a local benchmark, not a comparison against
 MACE, NequIP, or other packages. Hardware and software are recorded in
-[`inference.json`](../reports/benchmark/inference.json).
+{'[`inference.json`](../reports/benchmark/inference.json)' if (ROOT/'reports/benchmark/inference.json').exists() else 'the timing report when complete' }.
 
 ## External AIMD comparison
 
@@ -369,6 +373,8 @@ performance must not be interpreted as uniform accuracy across materials.
 ![Per-material accuracy and data coverage](docs/assets/material_benchmark.png)
 
 ### Controlled Cu/Ti study
+
+**Molten-phase transfer fails severely for several fits.** All seed results, including extreme finite predictions, are retained. These models are not suitable for molten MD on the evidence shown here.
 
 {focused}
 

@@ -51,20 +51,23 @@ def figures(screen, trials, results, output):
     for ax,metal in zip(axes,('cu','ti')):
         summaries[metal]={}
         for count,shift,color in [(300,-.15,'#3b6c96'),(900,.15,'#d98a2b')]:
-            means=[];stds=[]
+            means=[];stds=[];individual=[]
             for regime in ('cold','warm','melt'):
                 scores=[results[t['name']][regime]['overall']['force_mae_eV_A'] for t in trials
                         if t['metal']==metal and t['train_frames']==count]
                 energies=[results[t['name']][regime]['overall']['energy_mae_eV_atom'] for t in trials
                         if t['metal']==metal and t['train_frames']==count]
-                means.append(np.mean(scores));stds.append(np.std(scores,ddof=1))
+                means.append(np.mean(scores));stds.append(np.std(scores,ddof=1));individual.append(scores)
                 summaries[metal][f'n{count}_{regime}']={'force_mae_mean':float(np.mean(scores)),
                     'force_mae_seed_std':float(np.std(scores,ddof=1)), 'energy_mae_mean':float(np.mean(energies)),
                     'energy_mae_seed_std':float(np.std(energies,ddof=1)), 'seeds':len(scores)}
-            ax.errorbar(np.arange(3)+shift,means,yerr=stds,fmt='o-',color=color,capsize=4,label=f'{count} train frames')
+            ax.plot(np.arange(3)+shift,means,'o-',color=color,label=f'{count} frames: mean')
+            for j,scores in enumerate(individual):
+                ax.scatter(j+shift+np.linspace(-.04,.04,len(scores)),scores,marker='x',color=color,s=35,zorder=4)
+            ax.set_yscale('log')
         ax.set(xticks=np.arange(3),xticklabels=['Cold','Warm','Molten'],ylabel='Force MAE (eV/Å)',title=metal.title())
         ax.grid(axis='y',alpha=.15);ax.legend(frameon=False)
-    fig.suptitle('Protected test regimes • mean ± SD across 3 initialization seeds')
+    fig.suptitle('Protected tests | means (lines), three seeds (crosses) | logarithmic scale')
     for ext in ('png','svg','pdf'):fig.savefig(output/f'temperature_transfer.{ext}',dpi=180)
     plt.close(fig)
     write_json(output/'summary.json',summaries)

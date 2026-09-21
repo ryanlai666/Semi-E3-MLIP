@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "dataset_sha256": "dfa3c5fbea16b1d8bf7d6ea29f5c57db35a9bf560f6a76085a9ed9cb7b4751e3",
+  "device": "cpu",
+  "cases": [
+    "silicon",
+    "copper",
+    "silica",
+    "alumina",
+    "hafnia",
+    "titania"
+  ]
+}

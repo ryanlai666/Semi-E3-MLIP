@@ -18,7 +18,7 @@ rank-two tensor features; gated or smooth-attention message passing; and
 conservative forces and stress from a learned total energy. It uses PyTorch
 without ASE, e3nn, PyG, or pretrained MLIP weights.
 
-**Status:** Results are being completed; finished benchmarks below are measured, and pending stages are labeled. The repository remains private.
+**Status:** Results are being completed; finished benchmarks below are measured, and pending stages are labeled. Repository visibility: private.
 The broad model is a research baseline, not a validated production MD potential.
 
 ## Materials at a glance
@@ -63,19 +63,28 @@ performance must not be interpreted as uniform accuracy across materials.
 
 ### Controlled Cu/Ti study
 
-Confirmation training in progress: 7/12 trial records. Final test results are not yet available.
+**Molten-phase transfer fails severely for several fits.** All seed results, including extreme finite predictions, are retained. These models are not suitable for molten MD on the evidence shown here.
+
+| Material | Train frames | Train | Validation | Cold test | Warm test | Molten test |
+| --- | --- | --- | --- | --- | --- | --- |
+| Cu | 300 | 0.020 +/- 0.012 | 0.046 +/- 0.018 | 0.020 +/- 0.012 | 0.048 +/- 0.019 | 0.146 +/- 0.064 |
+| Cu | 900 | 0.006 +/- 0.002 | 0.027 +/- 0.007 | 0.006 +/- 0.002 | 0.094 +/- 0.106 | 3.350e+04 +/- 5.802e+04 |
+| Ti | 300 | 0.053 +/- 0.001 | 0.153 +/- 0.008 | 0.054 +/- 0.001 | 0.152 +/- 0.008 | 1220.576 +/- 2086.569 |
+| Ti | 900 | 0.043 +/- 0.003 | 0.140 +/- 0.005 | 0.044 +/- 0.003 | 0.141 +/- 0.007 | 3.676e+27 +/- 6.367e+27 |
 
 Force MAE in eV/A; mean +/- SD across three initialization seeds when complete.
 Architecture selection uses warm validation only. See the [fixed experimental
 protocol](docs/focused_experiments.md) for temperature definitions and correlated-frame limitations.
 
-
+![Controlled temperature transfer](docs/assets/temperature_transfer.png)
 
 ### AIMD versus model inference
 
 | Reference case | Force frames | Force MAE (eV/A) | Force RMSE (eV/A) | Completed seeds | Failed seeds |
 | --- | --- | --- | --- | --- | --- |
 | Si 110 elong0.500 | 21 | 0.193 | 0.269 | 3 | 0 |
+| Si 111 elong0.500 | 21 | 0.208 | 0.276 | 3 | 0 |
+| Si 110 elong1.500 | 21 | 0.212 | 0.300 | 3 | 0 |
 
 ![AIMD reference and independent model dynamics](docs/assets/aimd_Si_110_elong0.500.gif)
 
@@ -91,7 +100,7 @@ structural statistics](docs/results.md#external-aimd-comparison).
 
 Each pair uses the same held-out geometry, camera, and force-arrow scale.
 Examples are selected by ID rather than error. These are static DFT comparisons;
-they are not presented as continuous AIMD. [Force parity and complete metrics](docs/results.md).
+they are not presented as continuous AIMD. [Force parity and complete metrics](docs/results.md) ? [Animated metal/oxide gallery](docs/gallery.md).
 
 ## Quick start
 

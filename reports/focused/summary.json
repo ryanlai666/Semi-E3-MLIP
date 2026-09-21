@@ -1,0 +1,90 @@
+{
+  "cu": {
+    "n300_cold": {
+      "force_mae_mean": 0.01952029680824242,
+      "force_mae_seed_std": 0.011747479826274542,
+      "energy_mae_mean": 0.006031307888767969,
+      "energy_mae_seed_std": 0.008755288899261103,
+      "seeds": 3
+    },
+    "n300_warm": {
+      "force_mae_mean": 0.047620429530675155,
+      "force_mae_seed_std": 0.01947462489513802,
+      "energy_mae_mean": 0.007080164102565807,
+      "energy_mae_seed_std": 0.009155818173330858,
+      "seeds": 3
+    },
+    "n300_melt": {
+      "force_mae_mean": 0.14628423920274627,
+      "force_mae_seed_std": 0.06443313097369871,
+      "energy_mae_mean": 0.01586346978473254,
+      "energy_mae_seed_std": 0.014959105942407446,
+      "seeds": 3
+    },
+    "n900_cold": {
+      "force_mae_mean": 0.005637042528882595,
+      "force_mae_seed_std": 0.0019814559856797605,
+      "energy_mae_mean": 0.00020766280548438468,
+      "energy_mae_seed_std": 0.0002729068700315422,
+      "seeds": 3
+    },
+    "n900_warm": {
+      "force_mae_mean": 0.09428820500008132,
+      "force_mae_seed_std": 0.10557826129879141,
+      "energy_mae_mean": 0.0013840624369625704,
+      "energy_mae_seed_std": 0.000769463891973807,
+      "seeds": 3
+    },
+    "n900_melt": {
+      "force_mae_mean": 33499.54466772204,
+      "force_mae_seed_std": 58022.415826256496,
+      "energy_mae_mean": 209.02517785406312,
+      "energy_mae_seed_std": 362.026292061873,
+      "seeds": 3
+    }
+  },
+  "ti": {
+    "n300_cold": {
+      "force_mae_mean": 0.05393754774497538,
+      "force_mae_seed_std": 0.0012512604356049043,
+      "energy_mae_mean": 0.0007194671609992535,
+      "energy_mae_seed_std": 7.867989682803314e-05,
+      "seeds": 3
+    },
+    "n300_warm": {
+      "force_mae_mean": 0.15247699646328133,
+      "force_mae_seed_std": 0.007994944759294607,
+      "energy_mae_mean": 0.005065170300743678,
+      "energy_mae_seed_std": 0.000984326322760475,
+      "seeds": 3
+    },
+    "n300_melt": {
+      "force_mae_mean": 1220.575630708731,
+      "force_mae_seed_std": 2086.56888786786,
+      "energy_mae_mean": 5.343928935745965,
+      "energy_mae_seed_std": 8.892423724890891,
+      "seeds": 3
+    },
+    "n900_cold": {
+      "force_mae_mean": 0.04402842649021177,
+      "force_mae_seed_std": 0.0026962261628803966,
+      "energy_mae_mean": 0.001614725745845741,
+      "energy_mae_seed_std": 0.0009376727549639266,
+      "seeds": 3
+    },
+    "n900_warm": {
+      "force_mae_mean": 0.14119543310279267,
+      "force_mae_seed_std": 0.0069130209126990185,
+      "energy_mae_mean": 0.0033972854596534797,
+      "energy_mae_seed_std": 0.0002289377933813733,
+      "seeds": 3
+    },
+    "n900_melt": {
+      "force_mae_mean": 3.6759272241931034e+27,
+      "force_mae_seed_std": 6.366892717228086e+27,
+      "energy_mae_mean": 7.487825125647709e+24,
+      "energy_mae_seed_std": 1.2969293555812644e+25,
+      "seeds": 3
+    }
+  }
+}

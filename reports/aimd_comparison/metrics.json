@@ -3,8 +3,8 @@
   "used_for_selection": false,
   "cases": {
     "Si_110_elong0.500": {
-      "force_mae_eV_A": 0.1928167710971753,
-      "force_rmse_eV_A": 0.2688022037235901,
+      "force_mae_eV_A": 0.19281676842592788,
+      "force_rmse_eV_A": 0.2688022011986811,
       "force_frames": 21,
       "model_simulations": [
         {
@@ -54,6 +54,116 @@
         "duration_fs": 500.0,
         "ensemble": "NVT Nose-Hoover",
         "circumstance": "Si (110) surface, source elongation parameter 0.500",
+        "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+      }
+    },
+    "Si_111_elong0.500": {
+      "force_mae_eV_A": 0.20823393756725836,
+      "force_rmse_eV_A": 0.2761191096889064,
+      "force_frames": 21,
+      "model_simulations": [
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 42,
+          "temperature_target_K": 300,
+          "final_temperature_K": 334.1754702779827,
+          "energy_change_eV_atom": -0.00859605131311296,
+          "energy_range_eV_atom": 0.020225146295095548,
+          "energy_slope_eV_atom_ps": -0.023108025769887058,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 43,
+          "temperature_target_K": 300,
+          "final_temperature_K": 289.3250400906169,
+          "energy_change_eV_atom": -0.008827057754110178,
+          "energy_range_eV_atom": 0.01458527806699471,
+          "energy_slope_eV_atom_ps": -0.026216959049117503,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 44,
+          "temperature_target_K": 300,
+          "final_temperature_K": 297.1690059000685,
+          "energy_change_eV_atom": -0.010677370545390953,
+          "energy_range_eV_atom": 0.018503896921374604,
+          "energy_slope_eV_atom_ps": -0.034417807817922724,
+          "drift_is_conservation_check": false
+        }
+      ],
+      "failed_runs": [],
+      "reference": {
+        "path": "data\\aimd\\Si_111_elong0.500.jsonl",
+        "frames": 101,
+        "dt_fs": 5.0,
+        "temperature_K": 300.0,
+        "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-0.500/",
+        "duration_fs": 500.0,
+        "ensemble": "NVT Nose-Hoover",
+        "circumstance": "Si (111) surface, source elongation parameter 0.500",
+        "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+      }
+    },
+    "Si_110_elong1.500": {
+      "force_mae_eV_A": 0.21180877362815068,
+      "force_rmse_eV_A": 0.2996785343485639,
+      "force_frames": 21,
+      "model_simulations": [
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 42,
+          "temperature_target_K": 300,
+          "final_temperature_K": 251.38715963597198,
+          "energy_change_eV_atom": 0.017640114401172222,
+          "energy_range_eV_atom": 0.019934176604761187,
+          "energy_slope_eV_atom_ps": 0.03319080680291336,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 43,
+          "temperature_target_K": 300,
+          "final_temperature_K": 297.5709823461085,
+          "energy_change_eV_atom": 0.024688757343043294,
+          "energy_range_eV_atom": 0.02781351701385983,
+          "energy_slope_eV_atom_ps": 0.050363127159075434,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 44,
+          "temperature_target_K": 300,
+          "final_temperature_K": 255.77206641858973,
+          "energy_change_eV_atom": 0.014129151659496395,
+          "energy_range_eV_atom": 0.020723294819474717,
+          "energy_slope_eV_atom_ps": 0.022758050802484137,
+          "drift_is_conservation_check": false
+        }
+      ],
+      "failed_runs": [],
+      "reference": {
+        "path": "data\\aimd\\Si_110_elong1.500.jsonl",
+        "frames": 101,
+        "dt_fs": 5.0,
+        "temperature_K": 300.0,
+        "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-1.500/",
+        "duration_fs": 500.0,
+        "ensemble": "NVT Nose-Hoover",
+        "circumstance": "Si (110) surface, source elongation parameter 1.500",
         "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
       }
     }

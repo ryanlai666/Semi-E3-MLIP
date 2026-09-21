@@ -1,0 +1,53 @@
+{
+  "cases": {
+    "cu_dt0.5": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 43,
+      "temperature_target_K": 300,
+      "final_temperature_K": 843.8043916639526,
+      "energy_change_eV_atom": -4.514205661795951e-06,
+      "energy_range_eV_atom": 6.441905963878475e-06,
+      "energy_slope_eV_atom_ps": -2.106450848205303e-05,
+      "drift_is_conservation_check": true
+    },
+    "cu_dt0.25": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 43,
+      "temperature_target_K": 300,
+      "final_temperature_K": 843.8341644001206,
+      "energy_change_eV_atom": -1.5796350568744459e-06,
+      "energy_range_eV_atom": 3.616691508757637e-06,
+      "energy_slope_eV_atom_ps": -4.3125543506137065e-06,
+      "drift_is_conservation_check": true
+    },
+    "ti_dt0.5": {
+      "ensemble": "nve",
+      "steps": 200,
+      "dt_fs": 0.5,
+      "seed": 43,
+      "temperature_target_K": 300,
+      "final_temperature_K": 862.9534911095858,
+      "energy_change_eV_atom": -4.594668386914691e-06,
+      "energy_range_eV_atom": 1.0681119670152839e-05,
+      "energy_slope_eV_atom_ps": -9.671359802350058e-07,
+      "drift_is_conservation_check": true
+    },
+    "ti_dt0.25": {
+      "ensemble": "nve",
+      "steps": 400,
+      "dt_fs": 0.25,
+      "seed": 43,
+      "temperature_target_K": 300,
+      "final_temperature_K": 862.985009482182,
+      "energy_change_eV_atom": 1.914100636213334e-07,
+      "energy_range_eV_atom": 6.792600591154496e-06,
+      "energy_slope_eV_atom_ps": 2.505442541596094e-06,
+      "drift_is_conservation_check": true
+    }
+  },
+  "interpretation": "100 fs model-only NVE check at 300 K initial velocities; not an AIMD trajectory comparison"
+}
