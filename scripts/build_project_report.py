@@ -382,6 +382,8 @@ are versioned separately from the source archives.
   the reports. Short model-only MD checks and external AIMD comparisons are separate.
 '''
     (ROOT/'README.md').write_text(readme,encoding='utf-8')
+    for svg in ASSETS.glob('*.svg'):
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
     manifest={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'complete':not missing,
               'pending_artifacts':missing,'checkpoint_sha256':selection['checkpoint_sha256'],
               'materials':len(coverage),'aimd_completed_cases':len(aimd['cases'])}
