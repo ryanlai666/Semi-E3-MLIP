@@ -559,7 +559,7 @@
         }
       },
       "best_epoch": 149,
-      "epochs_recorded": 199,
+      "epochs_recorded": 200,
       "status": "completed_or_early_stopped",
       "parameters": 306649,
       "train_frames": 3156,
@@ -1689,8 +1689,8 @@
         }
       },
       "best_epoch": 106,
-      "epochs_recorded": 115,
-      "status": "in_progress_or_interrupted",
+      "epochs_recorded": 156,
+      "status": "completed_or_early_stopped",
       "parameters": 354545,
       "train_frames": 3156,
       "valid_frames": 145

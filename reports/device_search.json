@@ -14,7 +14,8 @@
         "chemical_descriptors": false,
         "auxiliary_heads": false,
         "attention": true,
-        "attention_heads": 4
+        "attention_heads": 4,
+        "tensor_channels": 0
       },
       "config": {
         "epochs": 250,
@@ -294,8 +295,8 @@
         }
       },
       "best_epoch": 91,
-      "epochs_recorded": 128,
-      "status": "in_progress_or_interrupted",
+      "epochs_recorded": 151,
+      "status": "completed_or_early_stopped",
       "parameters": 306649,
       "train_frames": 939,
       "valid_frames": 145
@@ -314,7 +315,8 @@
         "chemical_descriptors": false,
         "auxiliary_heads": false,
         "attention": true,
-        "attention_heads": 4
+        "attention_heads": 4,
+        "tensor_channels": 0
       },
       "config": {
         "epochs": 250,
@@ -594,7 +596,7 @@
         }
       },
       "best_epoch": 81,
-      "epochs_recorded": 141,
+      "epochs_recorded": 142,
       "status": "completed_or_early_stopped",
       "parameters": 306649,
       "train_frames": 939,
@@ -614,7 +616,8 @@
         "chemical_descriptors": false,
         "auxiliary_heads": false,
         "attention": true,
-        "attention_heads": 4
+        "attention_heads": 4,
+        "tensor_channels": 0
       },
       "config": {
         "epochs": 250,
@@ -894,7 +897,7 @@
         }
       },
       "best_epoch": 113,
-      "epochs_recorded": 173,
+      "epochs_recorded": 174,
       "status": "completed_or_early_stopped",
       "parameters": 306649,
       "train_frames": 939,

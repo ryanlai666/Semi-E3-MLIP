@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "frames": 900,
+    "atoms": 47700,
+    "energy_mae_eV_atom": 0.0028068040267796987,
+    "energy_rmse_eV_atom": 0.0037273290963447093,
+    "force_mae_eV_A": 0.1299472001769558,
+    "force_rmse_eV_A": 0.16624369611690756,
+    "stress_mae_eV_A3": null,
+    "offset_baseline_mae_eV_atom": 0.010743379796257547,
+    "zero_force_baseline_mae_eV_A": 0.7175156994758909,
+    "high_force_mae_eV_A": 0.13281279417802108
+  },
+  "Ru": {
+    "frames": 900,
+    "atoms": 47700,
+    "energy_mae_eV_atom": 0.0028068040267796987,
+    "energy_rmse_eV_atom": 0.0037273290963447093,
+    "force_mae_eV_A": 0.1299472001769558,
+    "force_rmse_eV_A": 0.16624369611690756,
+    "stress_mae_eV_A3": null,
+    "offset_baseline_mae_eV_atom": 0.010743379796257547,
+    "zero_force_baseline_mae_eV_A": 0.7175156994758909,
+    "high_force_mae_eV_A": 0.13281279417802108
+  },
+  "formula:Ru": {
+    "frames": 900,
+    "atoms": 47700,
+    "energy_mae_eV_atom": 0.0028068040267796987,
+    "energy_rmse_eV_atom": 0.0037273290963447093,
+    "force_mae_eV_A": 0.1299472001769558,
+    "force_rmse_eV_A": 0.16624369611690756,
+    "stress_mae_eV_A3": null,
+    "offset_baseline_mae_eV_atom": 0.010743379796257547,
+    "zero_force_baseline_mae_eV_A": 0.7175156994758909,
+    "high_force_mae_eV_A": 0.13281279417802108
+  },
+  "excluded": []
+}

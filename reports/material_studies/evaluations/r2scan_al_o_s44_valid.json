@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "frames": 22,
+    "atoms": 180,
+    "energy_mae_eV_atom": 0.8998901522295042,
+    "energy_rmse_eV_atom": 1.0099472702395396,
+    "force_mae_eV_A": 0.5280200090280047,
+    "force_rmse_eV_A": 1.8408306360876676,
+    "stress_mae_eV_A3": 0.047780788397902556,
+    "offset_baseline_mae_eV_atom": 1.1804575908759025,
+    "zero_force_baseline_mae_eV_A": 0.5283458906296297,
+    "high_force_mae_eV_A": 1.840386696646874
+  },
+  "Al-O": {
+    "frames": 22,
+    "atoms": 180,
+    "energy_mae_eV_atom": 0.8998901522295042,
+    "energy_rmse_eV_atom": 1.0099472702395396,
+    "force_mae_eV_A": 0.5280200090280047,
+    "force_rmse_eV_A": 1.8408306360876676,
+    "stress_mae_eV_A3": 0.047780788397902556,
+    "offset_baseline_mae_eV_atom": 1.1804575908759025,
+    "zero_force_baseline_mae_eV_A": 0.5283458906296297,
+    "high_force_mae_eV_A": 1.840386696646874
+  },
+  "formula:Al2O3": {
+    "frames": 22,
+    "atoms": 180,
+    "energy_mae_eV_atom": 0.8998901522295042,
+    "energy_rmse_eV_atom": 1.0099472702395396,
+    "force_mae_eV_A": 0.5280200090280047,
+    "force_rmse_eV_A": 1.8408306360876676,
+    "stress_mae_eV_A3": 0.047780788397902556,
+    "offset_baseline_mae_eV_atom": 1.1804575908759025,
+    "zero_force_baseline_mae_eV_A": 0.5283458906296297,
+    "high_force_mae_eV_A": 1.840386696646874
+  },
+  "excluded": []
+}

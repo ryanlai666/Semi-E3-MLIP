@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "frames": 12,
+    "atoms": 120,
+    "energy_mae_eV_atom": 0.572388124341766,
+    "energy_rmse_eV_atom": 0.9486090294785648,
+    "force_mae_eV_A": 0.2805302139361098,
+    "force_rmse_eV_A": 0.5628507607433791,
+    "stress_mae_eV_A3": 0.03376182144225209,
+    "offset_baseline_mae_eV_atom": 1.1175792444613533,
+    "zero_force_baseline_mae_eV_A": 0.08343099772222223,
+    "high_force_mae_eV_A": 0.8183291400787505
+  },
+  "O-Ti": {
+    "frames": 12,
+    "atoms": 120,
+    "energy_mae_eV_atom": 0.572388124341766,
+    "energy_rmse_eV_atom": 0.9486090294785648,
+    "force_mae_eV_A": 0.2805302139361098,
+    "force_rmse_eV_A": 0.5628507607433791,
+    "stress_mae_eV_A3": 0.03376182144225209,
+    "offset_baseline_mae_eV_atom": 1.1175792444613533,
+    "zero_force_baseline_mae_eV_A": 0.08343099772222223,
+    "high_force_mae_eV_A": 0.8183291400787505
+  },
+  "formula:TiO2": {
+    "frames": 12,
+    "atoms": 120,
+    "energy_mae_eV_atom": 0.572388124341766,
+    "energy_rmse_eV_atom": 0.9486090294785648,
+    "force_mae_eV_A": 0.2805302139361098,
+    "force_rmse_eV_A": 0.5628507607433791,
+    "stress_mae_eV_A3": 0.03376182144225209,
+    "offset_baseline_mae_eV_atom": 1.1175792444613533,
+    "zero_force_baseline_mae_eV_A": 0.08343099772222223,
+    "high_force_mae_eV_A": 0.8183291400787505
+  },
+  "excluded": []
+}

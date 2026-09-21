@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "trials": [
+    {
+      "name": "attention_geglu",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\attention_geglu\\best.pt"
+    },
+    {
+      "name": "attention_lr1e3",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\attention_lr1e3\\best.pt"
+    },
+    {
+      "name": "attention_lr3e4",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\attention_lr3e4\\best.pt"
+    },
+    {
+      "name": "expanded_attention",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\expanded_attention\\best.pt"
+    },
+    {
+      "name": "expanded_tensor",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\expanded_tensor\\best.pt"
+    },
+    {
+      "name": "expanded_tensor_seed43",
+      "resumed_from_epoch": 115,
+      "checkpoint": "runs\\device\\expanded_tensor_seed43\\best.pt"
+    },
+    {
+      "name": "gated_lr1e3",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\gated_lr1e3\\best.pt"
+    },
+    {
+      "name": "tensor16",
+      "resumed_from_epoch": null,
+      "checkpoint": "runs\\device\\tensor16\\best.pt"
+    },
+    {
+      "name": "tensor16_seed43",
+      "resumed_from_epoch": 52,
+      "checkpoint": "runs\\device\\tensor16_seed43\\best.pt"
+    }
+  ],
+  "test_used": false,
+  "scope": "Existing pilots only; unstarted search variants are future work."
+}

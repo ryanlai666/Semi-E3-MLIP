@@ -1,0 +1,51 @@
+{
+  "overall": {
+    "frames": 326,
+    "atoms": 1575,
+    "energy_mae_eV_atom": 0.1528395619986156,
+    "energy_rmse_eV_atom": 0.20801932321930805,
+    "force_mae_eV_A": 0.20452847701803098,
+    "force_rmse_eV_A": 0.3931827028730376,
+    "stress_mae_eV_A3": 0.027158704583042745,
+    "offset_baseline_mae_eV_atom": 0.4099484498991737,
+    "zero_force_baseline_mae_eV_A": 0.5085125619851847,
+    "high_force_mae_eV_A": 0.28125657788120456
+  },
+  "Cu-O": {
+    "frames": 326,
+    "atoms": 1575,
+    "energy_mae_eV_atom": 0.1528395619986156,
+    "energy_rmse_eV_atom": 0.20801932321930805,
+    "force_mae_eV_A": 0.20452847701803098,
+    "force_rmse_eV_A": 0.3931827028730376,
+    "stress_mae_eV_A3": 0.027158704583042745,
+    "offset_baseline_mae_eV_atom": 0.4099484498991737,
+    "zero_force_baseline_mae_eV_A": 0.5085125619851847,
+    "high_force_mae_eV_A": 0.28125657788120456
+  },
+  "formula:CuO": {
+    "frames": 266,
+    "atoms": 1278,
+    "energy_mae_eV_atom": 0.14563442275796393,
+    "energy_rmse_eV_atom": 0.20507326922678568,
+    "force_mae_eV_A": 0.21173026766421338,
+    "force_rmse_eV_A": 0.40665584559921686,
+    "stress_mae_eV_A3": 0.027619080286072902,
+    "offset_baseline_mae_eV_atom": 0.4430473805155835,
+    "zero_force_baseline_mae_eV_A": 0.5195826203938446,
+    "high_force_mae_eV_A": 0.2875728553189699
+  },
+  "formula:Cu2O": {
+    "frames": 60,
+    "atoms": 297,
+    "energy_mae_eV_atom": 0.18478234596550464,
+    "energy_rmse_eV_atom": 0.2206068331357684,
+    "force_mae_eV_A": 0.17353895363142824,
+    "force_rmse_eV_A": 0.32897070523642685,
+    "stress_mae_eV_A3": 0.025117705632942293,
+    "offset_baseline_mae_eV_atom": 0.2632098574997557,
+    "zero_force_baseline_mae_eV_A": 0.46087776519640855,
+    "high_force_mae_eV_A": 0.2475096098565738
+  },
+  "excluded": []
+}

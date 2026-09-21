@@ -18,7 +18,7 @@ rank-two tensor features; gated or smooth-attention message passing; and
 conservative forces and stress from a learned total energy. It uses PyTorch
 without ASE, e3nn, PyG, or pretrained MLIP weights.
 
-**Status:** Results are being completed; finished benchmarks below are measured, and pending stages are labeled. Repository visibility: private.
+**Status:** Training and evaluation complete for the recorded study. Repository visibility: public.
 The broad model is a research baseline, not a validated production MD potential.
 
 ## Materials at a glance
@@ -163,3 +163,11 @@ are versioned separately from the source archives.
   familiar elements do not make a new geometry in distribution.
 - DFT functional, trajectory, temperature, and source differences are preserved in
   the reports. Short model-only MD checks and external AIMD comparisons are separate.
+
+## Independent material studies
+
+Separate models for six additional TM23 metals, elemental Al/Si, and ten oxide chemical systems: 18 studies and 54 fits. Each uses three initialization seeds and validation-only checkpoint selection.
+
+[Full train/test results, distributions and learning curves](docs/material_studies.md). Al remains exploratory because its MatPES test contains only one frame. Known Cu/Ti molten-transfer failures remain documented above.
+
+![Independent-model test results](docs/assets/material_studies/test_forces.png)

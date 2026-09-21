@@ -18,7 +18,7 @@ uses our own reader with the optional LMDB storage dependency (`.[data]`).
 ## Project and repository
 
 Repository: [ryanlai666/Semi-E3-MLIP](https://github.com/ryanlai666/Semi-E3-MLIP)
-(private). The Python import remains `semi_mlip`; both `semi-e3-mlip` and the
+(public). The Python import remains `semi_mlip`; both `semi-e3-mlip` and the
 existing `semi-mlip` command are supported. Datasets and checkpoints remain local.
 
 ## Resume the focused Cu/Ti study

@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "frames": 277,
+    "atoms": 1581,
+    "energy_mae_eV_atom": 0.21805229128579212,
+    "energy_rmse_eV_atom": 0.3312505586271401,
+    "force_mae_eV_A": 0.3979327347219146,
+    "force_rmse_eV_A": 1.5643284037291971,
+    "stress_mae_eV_A3": 0.041092496183114696,
+    "offset_baseline_mae_eV_atom": 1.1626302038607736,
+    "zero_force_baseline_mae_eV_A": 0.8757412971768929,
+    "high_force_mae_eV_A": 0.5232665064233981
+  },
+  "O-Si": {
+    "frames": 277,
+    "atoms": 1581,
+    "energy_mae_eV_atom": 0.21805229128579212,
+    "energy_rmse_eV_atom": 0.3312505586271401,
+    "force_mae_eV_A": 0.3979327347219146,
+    "force_rmse_eV_A": 1.5643284037291971,
+    "stress_mae_eV_A3": 0.041092496183114696,
+    "offset_baseline_mae_eV_atom": 1.1626302038607736,
+    "zero_force_baseline_mae_eV_A": 0.8757412971768929,
+    "high_force_mae_eV_A": 0.5232665064233981
+  },
+  "formula:SiO2": {
+    "frames": 277,
+    "atoms": 1581,
+    "energy_mae_eV_atom": 0.21805229128579212,
+    "energy_rmse_eV_atom": 0.3312505586271401,
+    "force_mae_eV_A": 0.3979327347219146,
+    "force_rmse_eV_A": 1.5643284037291971,
+    "stress_mae_eV_A3": 0.041092496183114696,
+    "offset_baseline_mae_eV_atom": 1.1626302038607736,
+    "zero_force_baseline_mae_eV_A": 0.8757412971768929,
+    "high_force_mae_eV_A": 0.5232665064233981
+  },
+  "excluded": []
+}

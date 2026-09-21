@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "frames": 5,
+    "atoms": 45,
+    "energy_mae_eV_atom": 0.14160037748515605,
+    "energy_rmse_eV_atom": 0.15993609360070124,
+    "force_mae_eV_A": 0.22835616365481137,
+    "force_rmse_eV_A": 0.4429730319829824,
+    "stress_mae_eV_A3": 0.01044048523959836,
+    "offset_baseline_mae_eV_atom": 1.2962370129152556,
+    "zero_force_baseline_mae_eV_A": 0.07943560451851853,
+    "high_force_mae_eV_A": 0.583929821645796
+  },
+  "O-Zr": {
+    "frames": 5,
+    "atoms": 45,
+    "energy_mae_eV_atom": 0.14160037748515605,
+    "energy_rmse_eV_atom": 0.15993609360070124,
+    "force_mae_eV_A": 0.22835616365481137,
+    "force_rmse_eV_A": 0.4429730319829824,
+    "stress_mae_eV_A3": 0.01044048523959836,
+    "offset_baseline_mae_eV_atom": 1.2962370129152556,
+    "zero_force_baseline_mae_eV_A": 0.07943560451851853,
+    "high_force_mae_eV_A": 0.583929821645796
+  },
+  "formula:ZrO2": {
+    "frames": 5,
+    "atoms": 45,
+    "energy_mae_eV_atom": 0.14160037748515605,
+    "energy_rmse_eV_atom": 0.15993609360070124,
+    "force_mae_eV_A": 0.22835616365481137,
+    "force_rmse_eV_A": 0.4429730319829824,
+    "stress_mae_eV_A3": 0.01044048523959836,
+    "offset_baseline_mae_eV_atom": 1.2962370129152556,
+    "zero_force_baseline_mae_eV_A": 0.07943560451851853,
+    "high_force_mae_eV_A": 0.583929821645796
+  },
+  "excluded": []
+}

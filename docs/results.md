@@ -182,16 +182,35 @@ small energy drift do not establish long-time stability.
 
 ## Inference timing
 
-Inference timing is queued after training and AIMD finish to avoid competing workloads.
+| Device | System | Atoms | Median (ms) | p10 / p90 (ms) |
+| --- | --- | --- | --- | --- |
+| cpu | Si | 8 | 16.451 | 15.36 / 18.40 |
+| cpu | Cu | 6 | 24.182 | 19.72 / 31.76 |
+| cpu | Ti | 6 | 28.874 | 19.35 / 35.51 |
+| cpu | W | 8 | 33.677 | 28.76 / 39.33 |
+| cpu | O-Si | 9 | 36.144 | 28.17 / 41.94 |
+| cpu | Al-O | 10 | 49.526 | 40.56 / 57.85 |
+| cpu | Hf-O | 6 | 18.994 | 16.02 / 29.91 |
+| cpu | O-Ti | 6 | 19.868 | 16.24 / 27.88 |
+| cpu | Si | 216 | 237.129 | 209.98 / 256.86 |
+| cuda | Si | 8 | 32.875 | 31.05 / 35.53 |
+| cuda | Cu | 6 | 36.586 | 33.15 / 45.45 |
+| cuda | Ti | 6 | 32.771 | 29.92 / 37.13 |
+| cuda | W | 8 | 32.444 | 30.29 / 35.12 |
+| cuda | O-Si | 9 | 32.539 | 30.46 / 38.16 |
+| cuda | Al-O | 10 | 34.132 | 32.01 / 36.92 |
+| cuda | Hf-O | 6 | 31.961 | 28.61 / 36.13 |
+| cuda | O-Ti | 6 | 32.281 | 29.01 / 35.85 |
+| cuda | Si | 216 | 79.664 | 75.23 / 104.57 |
 
-Inference timing figure pending.
+![Measured CPU and CUDA inference latency](assets/inference_benchmark.png)
 
 Batch size one; five warmups and 30 timed calls per structure. Timings include
 neighbor enumeration, transfers, energy, forces, and stress. CPU and CUDA use the
 same checkpoint. The examples include primitive test cells and a 216-atom Si
 surface. This is a local benchmark, not a comparison against
 MACE, NequIP, or other packages. Hardware and software are recorded in
-the timing report when complete.
+[`inference.json`](../reports/benchmark/inference.json).
 
 ## External AIMD comparison
 

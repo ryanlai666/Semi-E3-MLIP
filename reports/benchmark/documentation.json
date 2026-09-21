@@ -1,5 +1,5 @@
 {
-  "code_commit_at_generation": "692c160bc463b154b6614b37c5a658169444347b",
+  "code_commit_at_generation": "549d5d93fb7d9a9d882fbbf083a8118c37ce41bf",
   "source_sha256": {
     "semi_mlip/architecture.py": "7d3c3309a7a11a013ebf5b55d25435db4f1805423f24c17e088914220338d11d",
     "semi_mlip/chemistry.py": "ec25eebb7ff56f2ea6ec6f22c914bf1c7edb6bc3cc926553e033a68de183cc7a",
@@ -35,13 +35,14 @@
     "scripts/import_omat.py": "ec889197725d08e617e556786894c86816f0679955ea4dffc297dae60874b195",
     "scripts/import_silica_reference.py": "0ae5a5f566c6d19916f033defefe38bf0d1460965aed42b95135515f58537d39",
     "scripts/import_tm23.py": "003d2cc80945a56564724d1a95acc65917458b9cc5cfb1c2de90703ac009ba90",
-    "scripts/material_studies.py": "4bf45a7547f53f20146c73974be76353c6954ef74650d69b4f7fc56959f7ef2f",
+    "scripts/material_studies.py": "83ae190a5c1fb19ed5d7de81e5a4b2455b438f4fa61226b7a420464e9c092f8b",
     "scripts/overfit.py": "c38232e23c08d308af500fb49850594f38918a1502620c6c72b22279f31aa898",
     "scripts/paper_figures.py": "507a0de55b791e693b957cb0d3d2a2ed54cce5f4e3efef84ca737748fca3d91d",
     "scripts/plot_aimd_results.py": "7fe633f954ecba4472a5d5bd9952ac77d5d5b107ddade4600e7e446289f3b755",
     "scripts/plot_material_dynamics.py": "fc607d5e1a8c2617fc226a324591a44b76a52e397686609b2fd462b9bce4b0a8",
     "scripts/prepare_focused.py": "2ebeaceb74bd358c5b23228d5d0a1b8ccf59847d54bed7b08474b5e92b37ae14",
     "scripts/prepare_mpaloe.py": "307a5267b3dd3a5601dac93a99fbba80708318837b3219da12a740feadc25f62",
+    "scripts/publish_material_studies.py": "582a5538a4735d6134350765f258b2bbb5c09494962a6d5ac4c1265d1c18df0f",
     "scripts/reproduce_baseline.py": "f61db22261c8925f8b6b10cd160812f87d7145bda2747c630c528a04f3f0423f",
     "scripts/resume_pilots.py": "85059796cfc981104f11d75c56629a06e6edb5a97b8116ad8772846d64b59223",
     "scripts/run_experiments.py": "a6b684581651cb6c7af0202f99bc857a25b6356328204acbc0c05ec6dc6648b2",
@@ -51,12 +52,9 @@
     "scripts/tune_tensor.py": "77658421c177458fbdd49d47fd0d89d8b9f633a669d9c176ba1dc7ecfbb796f7",
     "scripts/validate_and_render.py": "9b59a7aa488b341faa50411f569ff08e9961ce8ac9f2876c465a4755df009575"
   },
-  "generated_at_utc": "2026-09-21T07:29:33.500478+00:00",
-  "complete": false,
-  "pending_artifacts": [
-    "reports/benchmark/inference.json",
-    "existing pilot completion incomplete"
-  ],
+  "generated_at_utc": "2026-09-21T09:09:18.566255+00:00",
+  "complete": true,
+  "pending_artifacts": [],
   "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
   "materials": 20,
   "aimd_completed_cases": 3

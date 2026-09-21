@@ -1,0 +1,193 @@
+{
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "torch": "2.14.0+cu126",
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "cpu_threads": 4,
+  "warmups": 5,
+  "repeats": 30,
+  "cases": [
+    {
+      "device": "cpu",
+      "system": "Si",
+      "id": "matpes-20240214_1120447_0",
+      "atoms": 8,
+      "median_ms": 16.45085000200197,
+      "p10_ms": 15.364700014470145,
+      "p90_ms": 18.403560045408085,
+      "atoms_per_second": 486.2970605790246
+    },
+    {
+      "device": "cpu",
+      "system": "Cu",
+      "id": "matpes-20240214_1120774_0",
+      "atoms": 6,
+      "median_ms": 24.182449997169897,
+      "p10_ms": 19.719219964463264,
+      "p90_ms": 31.756400008453056,
+      "atoms_per_second": 248.11381810785042
+    },
+    {
+      "device": "cpu",
+      "system": "Ti",
+      "id": "mp-1238818",
+      "atoms": 6,
+      "median_ms": 28.87405001092702,
+      "p10_ms": 19.351110025309026,
+      "p90_ms": 35.51327001187019,
+      "atoms_per_second": 207.79904439208823
+    },
+    {
+      "device": "cpu",
+      "system": "W",
+      "id": "matpes-20240214_11334_0",
+      "atoms": 8,
+      "median_ms": 33.67669999715872,
+      "p10_ms": 28.75659001292661,
+      "p90_ms": 39.33047002647072,
+      "atoms_per_second": 237.552966908128
+    },
+    {
+      "device": "cpu",
+      "system": "O-Si",
+      "id": "matpes-20240214_10851_0",
+      "atoms": 9,
+      "median_ms": 36.143650009762496,
+      "p10_ms": 28.17119998508133,
+      "p90_ms": 41.93856996716932,
+      "atoms_per_second": 249.0063952469957
+    },
+    {
+      "device": "cpu",
+      "system": "Al-O",
+      "id": "mp-1182923",
+      "atoms": 10,
+      "median_ms": 49.526400049217045,
+      "p10_ms": 40.55836004554294,
+      "p90_ms": 57.85423999768682,
+      "atoms_per_second": 201.91251514469985
+    },
+    {
+      "device": "cpu",
+      "system": "Hf-O",
+      "id": "matpes-20240214_1018721_0",
+      "atoms": 6,
+      "median_ms": 18.994150013895705,
+      "p10_ms": 16.015529999276623,
+      "p90_ms": 29.905879992293194,
+      "atoms_per_second": 315.886733315812
+    },
+    {
+      "device": "cpu",
+      "system": "O-Ti",
+      "id": "matpes-20240214_1445035_0",
+      "atoms": 6,
+      "median_ms": 19.86809997470118,
+      "p10_ms": 16.23614000272937,
+      "p90_ms": 27.881679986603558,
+      "atoms_per_second": 301.99163521625275
+    },
+    {
+      "device": "cpu",
+      "system": "Si",
+      "id": "Si_110_elong0.500-0",
+      "atoms": 216,
+      "median_ms": 237.12894998607226,
+      "p10_ms": 209.98335999902338,
+      "p90_ms": 256.85837001074106,
+      "atoms_per_second": 910.8967927057693
+    },
+    {
+      "device": "cuda",
+      "system": "Si",
+      "id": "matpes-20240214_1120447_0",
+      "atoms": 8,
+      "median_ms": 32.87495000404306,
+      "p10_ms": 31.051119993207976,
+      "p90_ms": 35.53053999203257,
+      "atoms_per_second": 243.34637768319456
+    },
+    {
+      "device": "cuda",
+      "system": "Cu",
+      "id": "matpes-20240214_1120774_0",
+      "atoms": 6,
+      "median_ms": 36.58569997060113,
+      "p10_ms": 33.149870025226846,
+      "p90_ms": 45.44782001175918,
+      "atoms_per_second": 163.99850227879668
+    },
+    {
+      "device": "cuda",
+      "system": "Ti",
+      "id": "mp-1238818",
+      "atoms": 6,
+      "median_ms": 32.77119997073896,
+      "p10_ms": 29.920910007786006,
+      "p90_ms": 37.13057995191775,
+      "atoms_per_second": 183.08758926610355
+    },
+    {
+      "device": "cuda",
+      "system": "W",
+      "id": "matpes-20240214_11334_0",
+      "atoms": 8,
+      "median_ms": 32.44400001130998,
+      "p10_ms": 30.29316004831344,
+      "p90_ms": 35.122090025106445,
+      "atoms_per_second": 246.5787201704845
+    },
+    {
+      "device": "cuda",
+      "system": "O-Si",
+      "id": "matpes-20240214_10851_0",
+      "atoms": 9,
+      "median_ms": 32.53875000518747,
+      "p10_ms": 30.45585001236759,
+      "p90_ms": 38.15998004283756,
+      "atoms_per_second": 276.59329256855847
+    },
+    {
+      "device": "cuda",
+      "system": "Al-O",
+      "id": "mp-1182923",
+      "atoms": 10,
+      "median_ms": 34.13190002902411,
+      "p10_ms": 32.01469002524391,
+      "p90_ms": 36.92180999205448,
+      "atoms_per_second": 292.98105266617114
+    },
+    {
+      "device": "cuda",
+      "system": "Hf-O",
+      "id": "matpes-20240214_1018721_0",
+      "atoms": 6,
+      "median_ms": 31.96120000211522,
+      "p10_ms": 28.61410998739302,
+      "p90_ms": 36.133879976114265,
+      "atoms_per_second": 187.7276197265095
+    },
+    {
+      "device": "cuda",
+      "system": "O-Ti",
+      "id": "matpes-20240214_1445035_0",
+      "atoms": 6,
+      "median_ms": 32.28129999479279,
+      "p10_ms": 29.013510001823306,
+      "p90_ms": 35.84588004159741,
+      "atoms_per_second": 185.8661206632894
+    },
+    {
+      "device": "cuda",
+      "system": "Si",
+      "id": "Si_110_elong0.500-0",
+      "atoms": 216,
+      "median_ms": 79.66364998719655,
+      "p10_ms": 75.23106000735424,
+      "p90_ms": 104.56919000134803,
+      "atoms_per_second": 2711.3997417230476
+    }
+  ],
+  "scope": "Batch size one; includes neighbor enumeration, tensor transfer, energy, force and stress gradients. Primitive test cells plus one 216-atom Si surface. No cross-model speed claim."
+}
