@@ -10,6 +10,7 @@
 | Expanded metal/oxide/AIMD sources and limitations | [Data audit](aimd_expansion.md) |
 | MP-ALOE version, import counts, and unused chemistry | [MP-ALOE](mpaloe.md) |
 | Fixed Cu/Ti split, selection, and evaluation protocol | [Focused study](focused_experiments.md) |
+| Independent material studies: predeclared next round | [Study protocol](next_material_studies.md) |
 | Loss normalization and chemical descriptors | [Loss and chemistry](loss_and_chemistry.md) |
 | Static DFT, continuous AIMD, and stability checks | [Simulation validation](simulation_validation.md) |
 | Branches, artifacts, and private remote | [Versioning](versioning.md) |

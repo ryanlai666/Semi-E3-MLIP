@@ -1,0 +1,614 @@
+{
+  "studies": {
+    "tm23_w": {
+      "chemistry": "W",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_w/train.jsonl",
+          "sha256": "1a6c13ed86eddc816e298ce3c0fe81d210b16ffc9a393d01eee2850df0e73620",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_w/valid.jsonl",
+          "sha256": "7d89cfd26ad14dab780ca629e20bf720dcb38afa8c606f44acb4144baafd5a7e",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_w/test_cold.jsonl",
+          "sha256": "2c480f865dd7cade6c0ea95bbb455d3556a1d2ca8d085de4ff8c90f2b0fa23de",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_w/test_warm.jsonl",
+          "sha256": "4d77f8183805109905f4d0e2dce54573397d7b68071897a69e56f88f5ffa228a",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_w/test_melt.jsonl",
+          "sha256": "6238d9e2cce8534c3c6b97e5b7c3d46be8295f9ee643dee1899f58e3746c4069",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "tm23_ta": {
+      "chemistry": "Ta",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_ta/train.jsonl",
+          "sha256": "7dd8831e431601ab5a9fb2dc27623d71bcdc2d3e09a1ae06beaf7a4decc937f7",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_ta/valid.jsonl",
+          "sha256": "3a0019fad7430c998172ee42b33843d3c3cc1403a4d5f5e6eeb91e54edc7c019",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_ta/test_cold.jsonl",
+          "sha256": "beb122a13174571e950ac0a521107fbecda71cc06eaaa6099676c958ef9411bf",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_ta/test_warm.jsonl",
+          "sha256": "dbde20a47f0031124f66ecac64fb30381f51f81609d18342786800d5fab36f7e",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_ta/test_melt.jsonl",
+          "sha256": "07dabb6f3775ffc11b794cc334a99e0c69133a005a0e2cf1918f0f443fff70cd",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "tm23_co": {
+      "chemistry": "Co",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_co/train.jsonl",
+          "sha256": "e81f629b5a30bf4882083ed4b06fbe55b772fbfefa61e4cec05cd380ab7aab50",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_co/valid.jsonl",
+          "sha256": "4ee2ee73f9e7f7fa9e418a6ad365f3dda55cd95f5cdd0b2d5352e0080e9e64f0",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_co/test_cold.jsonl",
+          "sha256": "bbcfc40ba6b1bc709190b69505804cc410e102c46a2af4ff7715fe9d0983a150",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_co/test_warm.jsonl",
+          "sha256": "9db6ef571f078fc9ad812924b996394478fc6a711d97837675dc6b9f4a465a50",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_co/test_melt.jsonl",
+          "sha256": "66baf977d8eb99547d257d014ba612397727395d7479be15809d93fa2eae4ef5",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "tm23_ru": {
+      "chemistry": "Ru",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_ru/train.jsonl",
+          "sha256": "d65397e80a7f4205a5694f218125da7de3df128ee8402050debe078e5eb2b1a1",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_ru/valid.jsonl",
+          "sha256": "8d837d7929e3282e060c74a3b94a65f67c48a09afef9b315630e59302160c39c",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_ru/test_cold.jsonl",
+          "sha256": "848326217c848ea670eae41cab30c75206740e27e77e6f5f2748bfa68b0ad1a1",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_ru/test_warm.jsonl",
+          "sha256": "c4ab035f2a66ad6085dbb822b013bc73b55cc8267cdefc9623ff57dc86236f82",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_ru/test_melt.jsonl",
+          "sha256": "596a2b1fd3b8fce088351117c168d5cf8c1826c02cc4b90add38226b10711535",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "tm23_hf": {
+      "chemistry": "Hf",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_hf/train.jsonl",
+          "sha256": "7e94038336bc209a43c650d4eb6d9dadaa6499e3565e6e5961a9525f57c6d125",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_hf/valid.jsonl",
+          "sha256": "5e33a8ece3cab3636a3cc44443fc231d19c6f540e3292189e6bcfc6e54a93541",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_hf/test_cold.jsonl",
+          "sha256": "27143716b535165b787a123f6265560fe2abe06e4713f42422d78c3df8de3fe9",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_hf/test_warm.jsonl",
+          "sha256": "dae1604c24710918d2f51e97c703612be8bf4401265461e1ca6275c21780cc93",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_hf/test_melt.jsonl",
+          "sha256": "a3b7fd029444118dd258db2c6fadae5ba4a9c3b0f96d831c7981e2abbc3491d3",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "tm23_zr": {
+      "chemistry": "Zr",
+      "label_family": "TM23 PBE",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/tm23_zr/train.jsonl",
+          "sha256": "40f69ba56cbcc3472ff71431daace973579105d8b24de486d4444283a53529ab",
+          "frames": 900,
+          "groups": 1
+        },
+        "valid": {
+          "path": "data/material_studies/tm23_zr/valid.jsonl",
+          "sha256": "f48b7f2d890c73f459e25be9844ba2c69bc7f6dda6d4a48e13109b979a905cc4",
+          "frames": 90,
+          "groups": 1
+        },
+        "test_cold": {
+          "path": "data/material_studies/tm23_zr/test_cold.jsonl",
+          "sha256": "92fc433cbfb4938cb2a03721781ed8a1ec1f1a486c72771b7fa1250be0b33085",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_warm": {
+          "path": "data/material_studies/tm23_zr/test_warm.jsonl",
+          "sha256": "c56bfac6aa07ba7a86bec8b6aab0aaf95b5d596e37a88bea29d21a27ca173ec9",
+          "frames": 100,
+          "groups": 1
+        },
+        "test_melt": {
+          "path": "data/material_studies/tm23_zr/test_melt.jsonl",
+          "sha256": "10d96ba92fe87a33deea5b9c762fd89cd0306c8bf69045a63e72633f2bb790c6",
+          "frames": 100,
+          "groups": 1
+        }
+      }
+    },
+    "r2scan_al": {
+      "chemistry": "Al",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_al/train.jsonl",
+          "sha256": "00fd5b1f14df38bddbf1c2ec59fff4ca4bd7766fdac46c3dadd93d23679f19b2",
+          "frames": 11,
+          "groups": 3
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_al/valid.jsonl",
+          "sha256": "6e567bde6bb6ff6f2567303ecee7532520ea835f343bed9bae1a1b291167c383",
+          "frames": 1,
+          "groups": 1
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_al/test.jsonl",
+          "sha256": "bc431ebc1f91c9c3f4b69fe1d6c056e3b1e4be96291f5462fb24807dcc2d9972",
+          "frames": 1,
+          "groups": 1
+        }
+      }
+    },
+    "r2scan_si": {
+      "chemistry": "Si",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_si/train.jsonl",
+          "sha256": "0b558502e48632d801220306d392b73821d2c7037c7d7ef424a542d6ab604582",
+          "frames": 124,
+          "groups": 10
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_si/valid.jsonl",
+          "sha256": "51626bbac170ea488d0344cfa26cdb29152e7e714b88cfb372b32f0da6c6f6e1",
+          "frames": 16,
+          "groups": 8
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_si/test.jsonl",
+          "sha256": "bb7946729c31716f5390b873cea7b656538d1a923ab71f1828b59c874a8bcbaa",
+          "frames": 15,
+          "groups": 9
+        }
+      }
+    },
+    "r2scan_al_o": {
+      "chemistry": "Al-O",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_al_o/train.jsonl",
+          "sha256": "d8730374636eed0f860145467de0e01a9988f48e852895c47fd61d7c5ccb1ac9",
+          "frames": 109,
+          "groups": 26
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_al_o/valid.jsonl",
+          "sha256": "fc930275eb0be8acd17afec9ca3a6b180b2b42f98a5307104ed58a90a74ba7c5",
+          "frames": 22,
+          "groups": 12
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_al_o/test.jsonl",
+          "sha256": "5dd4217ddd17fcb50f33d966fd1f286c0d205ce8c7109c1abdbf54fe504bbbc0",
+          "frames": 6,
+          "groups": 6
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_al_o/aloe_test.jsonl",
+          "sha256": "e693cc9383d297d3b8963ad6e4ed0512ca0fc5af6afa2280f6e89f74e2222248",
+          "frames": 12,
+          "groups": 4
+        }
+      }
+    },
+    "r2scan_co_o": {
+      "chemistry": "Co-O",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_co_o/train.jsonl",
+          "sha256": "7294b8ee759015a307fd10b6fc53f988e76695ab0a726a4011fe34c6d357eee7",
+          "frames": 384,
+          "groups": 73
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_co_o/valid.jsonl",
+          "sha256": "4efaada2cde5d12bf5b4185b1e639fc09cc3fcd55066e0212afd3663a2d0b2b2",
+          "frames": 60,
+          "groups": 17
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_co_o/test.jsonl",
+          "sha256": "204f68c22dae92849d8122e75f8b871212cbe40dd427360d4f8924e581aa1e5d",
+          "frames": 4,
+          "groups": 2
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_co_o/aloe_test.jsonl",
+          "sha256": "c42f362b926f96ac9b6704c27e71503617db465141068c6b2e15d7673888eb71",
+          "frames": 42,
+          "groups": 14
+        }
+      }
+    },
+    "r2scan_cu_o": {
+      "chemistry": "Cu-O",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_cu_o/train.jsonl",
+          "sha256": "a2a4bf3cd978fd8e4630393e1e3e390161854e73cd39528ee51ad933d657638e",
+          "frames": 326,
+          "groups": 81
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_cu_o/valid.jsonl",
+          "sha256": "95f70d7dc7f2d32e0e07d97f0a033a91350fc47e6cbccf6d8fdef3ed7e8d4ffa",
+          "frames": 35,
+          "groups": 13
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_cu_o/test.jsonl",
+          "sha256": "8900d06b8547e44cac3aea320d8be122460c7310c3ac4e859bd1b1f92d10ff7d",
+          "frames": 4,
+          "groups": 3
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_cu_o/aloe_test.jsonl",
+          "sha256": "1894f54435cb999d5887527a539bc24c1b1d72acccddc312d1bc6664e01c131e",
+          "frames": 33,
+          "groups": 11
+        }
+      }
+    },
+    "r2scan_hf_o": {
+      "chemistry": "Hf-O",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_hf_o/train.jsonl",
+          "sha256": "4188a8bcc9ffc924e1aa6d44433325fb729a5c5bee9382908df9ad55b6f52aca",
+          "frames": 403,
+          "groups": 77
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_hf_o/valid.jsonl",
+          "sha256": "44d8051bee6a5e83e24384457679ba42532b2f6c10b707e18256d9cc79f0a87d",
+          "frames": 50,
+          "groups": 18
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_hf_o/test.jsonl",
+          "sha256": "29b876762a704890cb5daf074d512ac5a3aaeb71c78c843e25019e3887d9f20d",
+          "frames": 5,
+          "groups": 3
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_hf_o/aloe_test.jsonl",
+          "sha256": "77601ccf151e0cac42ed86b86b0c7979a2fd5f573a6eb491ba0b763fec54c7f8",
+          "frames": 45,
+          "groups": 15
+        }
+      }
+    },
+    "r2scan_o_ru": {
+      "chemistry": "O-Ru",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_ru/train.jsonl",
+          "sha256": "11d4d479a64b68408c627c909753a7ab8e3fb50dfb9fecba426899b170c1f325",
+          "frames": 219,
+          "groups": 43
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_ru/valid.jsonl",
+          "sha256": "34ad7540b10c51d2fc8a96b20a7ce9fd6f36be0bdc6afca03209ffc7774c3e5c",
+          "frames": 23,
+          "groups": 9
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_ru/aloe_test.jsonl",
+          "sha256": "02aa06ef8d4e79246c529d1f21c54298319b97fb633118fe6519845118d60d38",
+          "frames": 21,
+          "groups": 7
+        }
+      }
+    },
+    "r2scan_o_si": {
+      "chemistry": "O-Si",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_si/train.jsonl",
+          "sha256": "ff9afae8bc4a1101d09ae1446958c8dd5fcc43666d85a53035d0c11293b1344c",
+          "frames": 277,
+          "groups": 75
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_si/valid.jsonl",
+          "sha256": "3e4ded4009821eea4cc7d6a927c1843c25b5d943eacbcb0135d1dabf5b53eeb3",
+          "frames": 56,
+          "groups": 29
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_o_si/test.jsonl",
+          "sha256": "62f336b0131d990342ebb9f9ff612b9b56b338566978f2e6491ed83f775a9b57",
+          "frames": 34,
+          "groups": 24
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_si/aloe_test.jsonl",
+          "sha256": "c4cbbc8e33455418b8682d1510b4638c5f669274c81130f5f12c1131827eb1f1",
+          "frames": 24,
+          "groups": 8
+        }
+      }
+    },
+    "r2scan_o_ta": {
+      "chemistry": "O-Ta",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_ta/train.jsonl",
+          "sha256": "f37756db14ec61180562f016695264b593d4dbc6f5da73d3e5db225c6e6f6045",
+          "frames": 29,
+          "groups": 9
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_ta/valid.jsonl",
+          "sha256": "4a0d0f9e91ce0e2b7b4fb1d72707737d945a8d3e286afa49d6f22461b0213e6d",
+          "frames": 10,
+          "groups": 8
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_o_ta/test.jsonl",
+          "sha256": "05b311b9dfcb6394041e8291b5f9280b4f4de3bba87430ed3f60f901a261ee60",
+          "frames": 7,
+          "groups": 6
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_ta/aloe_test.jsonl",
+          "sha256": "fdb58737a6be01f6b36d1a1193aefaab14674db8f002ed126c18333bdbd9f19c",
+          "frames": 3,
+          "groups": 1
+        }
+      }
+    },
+    "r2scan_o_ti": {
+      "chemistry": "O-Ti",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_ti/train.jsonl",
+          "sha256": "c93657fcb2ad800f9ee2c24ba58c5d81cb0433c3ef528d3d9a05e283f5f381c0",
+          "frames": 444,
+          "groups": 80
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_ti/valid.jsonl",
+          "sha256": "0ceeb36dce4d0f95f3c55b47617258d87159b48e2fba09b466f28e12f47e652c",
+          "frames": 44,
+          "groups": 18
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_o_ti/test.jsonl",
+          "sha256": "3a75cee4cb90e00664f7560235c38c04a1565d71331596a0a85bbdf0330d073c",
+          "frames": 12,
+          "groups": 10
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_ti/aloe_test.jsonl",
+          "sha256": "5afecafaaa86986adadfeca0f94efd6112626e09a003c8c6b42d672fb3ab3638",
+          "frames": 39,
+          "groups": 13
+        }
+      }
+    },
+    "r2scan_o_w": {
+      "chemistry": "O-W",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_w/train.jsonl",
+          "sha256": "adb1d338823e0815d41896d8c728e9b9a397d1a50e646ecf0659ec96d6012afd",
+          "frames": 192,
+          "groups": 37
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_w/valid.jsonl",
+          "sha256": "072a96074e93ccc0cca6529e0c26d94692e724960f0c741ea639a3cf0cf81ca7",
+          "frames": 32,
+          "groups": 16
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_o_w/test.jsonl",
+          "sha256": "38b8c43dd39643b13c5edb68fa616bf5ad1cac6fad3b3666ca1fa70a9cbb5db3",
+          "frames": 5,
+          "groups": 4
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_w/aloe_test.jsonl",
+          "sha256": "5f1bbbde02da5c3a4bedf0031e1337b74f4d8ae2c2d0491b6884867e8e23dd01",
+          "frames": 18,
+          "groups": 6
+        }
+      }
+    },
+    "r2scan_o_zr": {
+      "chemistry": "O-Zr",
+      "label_family": "MatPES / MP-ALOE r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data/material_studies/r2scan_o_zr/train.jsonl",
+          "sha256": "da89974e183720aa23930924c04325d52b1007da701e8266765557973a5cb787",
+          "frames": 363,
+          "groups": 75
+        },
+        "valid": {
+          "path": "data/material_studies/r2scan_o_zr/valid.jsonl",
+          "sha256": "93fbbe2c94cb2326a7249181cebe224eed681ec9fbc28f340086e51a16214f45",
+          "frames": 45,
+          "groups": 17
+        },
+        "test": {
+          "path": "data/material_studies/r2scan_o_zr/test.jsonl",
+          "sha256": "e6a77ed0cb39a80503fe254ec5652cf31314d4eb70ac57d7a8ad2aea25d13d40",
+          "frames": 5,
+          "groups": 4
+        },
+        "aloe_test": {
+          "path": "data/material_studies/r2scan_o_zr/aloe_test.jsonl",
+          "sha256": "aeb1bf0d15f92e42f70fb3ed3b35d26f34df5910132a1e9674599c10a78820d4",
+          "frames": 42,
+          "groups": 14
+        }
+      }
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_config": {
+    "epochs": 60,
+    "max_train": 0,
+    "max_valid": 0,
+    "atom_budget": 1024,
+    "edge_budget": 64000,
+    "accumulation": 1,
+    "seed": 42,
+    "lr": 0.001,
+    "min_lr": 3e-06,
+    "warmup_fraction": 0.05,
+    "weight_decay": 1e-05,
+    "energy_weight": 1.0,
+    "force_weight": 10.0,
+    "stress_weight": 0,
+    "device": "auto",
+    "loss": "pseudo_huber",
+    "huber_delta": 1.0,
+    "auxiliary_weight": 0.0,
+    "patience": 0,
+    "minimum_epochs": 50,
+    "monitor_train_every": 10
+  },
+  "model_config": {
+    "scalar_channels": 48,
+    "vector_channels": 24,
+    "blocks": 3,
+    "radial_basis": 24,
+    "cutoff": 5.0,
+    "activation": "swiglu",
+    "average_neighbors": 16.0,
+    "chemical_descriptors": false,
+    "auxiliary_heads": false,
+    "attention": true,
+    "attention_heads": 4,
+    "tensor_channels": 8
+  },
+  "selection": "Fixed tensor architecture; per-seed checkpoint selected by validation force MAE using existing trainer.",
+  "test_policy": "Train all specified runs and freeze checkpoint hashes before final test evaluation. No test-driven tuning.",
+  "limitations": [
+    "TM23 cold/warm tests share source trajectories with development data; molten is temperature transfer.",
+    "r2SCAN test labels were previously reported for the broad baseline; these are fixed follow-up comparisons, not a fresh blind benchmark.",
+    "Al has only 11 training frames and one MatPES test frame; exploratory only.",
+    "Exact geometry and parent checks do not prove structural independence.",
+    "Three initialization seeds measure fit variability, not independent dataset replicates.",
+    "DFT families are trained separately; oxide chemical systems may include multiple stoichiometries."
+  ]
+}

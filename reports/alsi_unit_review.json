@@ -1,0 +1,9 @@
+{
+  "source": "https://doi.org/10.24435/materialscloud:3h-sc",
+  "metadata_file": "nnp-data.AlSi/input.nn",
+  "metadata_archive_md5": "f6bab79c3925c5f0b15d8f15c16523c5",
+  "input_sha256": "8f49d35a2a6214303570e9c7509c705d31450e01eb9f1f7f23569ffc277bb492",
+  "pretrained_weights_used": false,
+  "explicit_unit_statement_found": false,
+  "decision": "Do not infer units solely from plausible lattice constants, energy magnitudes or n2p2 format. Larger Al/Si source stays excluded pending explicit unit verification."
+}
