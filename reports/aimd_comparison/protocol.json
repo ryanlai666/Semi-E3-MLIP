@@ -1,0 +1,21 @@
+{
+  "checkpoint": "runs\\device\\expanded_tensor\\best.pt",
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "reference_manifest_sha256": "84c33523794fcf63fd99af7006173c3c8aa341b1aade091dba658665f4bfb0f3",
+  "reference_sha256": {
+    "Si_110_elong0.500": "a94a3a435502c1a0c826ed4385ac1dde2acd2ccfc7fda11b9900707697cc47c0",
+    "Si_111_elong0.500": "367e125f0b35b5d0ae0f095d2d1be82dada889fbea44f5f9d4fc382fb5c51219",
+    "Si_110_elong1.500": "89fa3a5319feabf8b6f5e1ee542f60bc00f550427d5f1b9cf9fa228869cb43b8"
+  },
+  "steps": 1000,
+  "dt_fs": 0.5,
+  "temperature_K": 300,
+  "gamma_fs_inverse": 0.005,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "device": "cuda",
+  "used_for_selection": false
+}

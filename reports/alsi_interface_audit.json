@@ -1,0 +1,103 @@
+{
+  "frames": 52608,
+  "systems": {
+    "Al-Si-Interface\\Al192Si216": {
+      "atoms": 408,
+      "composition": {
+        "Al": 192,
+        "Si": 216
+      },
+      "frames": 18000,
+      "unique_exact_geometries": 17995,
+      "sets": {
+        "set.000": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 3
+        },
+        "set.001": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 2
+        },
+        "set.002": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.003": {
+          "frames": 3000,
+          "exact_duplicates_previously_seen": 0
+        }
+      },
+      "maximum_absolute_force_component": 5.114974732515433,
+      "per_frame_temperature_available": false,
+      "chronology_verified": false
+    },
+    "Bulk_Al\\Al320": {
+      "atoms": 320,
+      "composition": {
+        "Al": 320
+      },
+      "frames": 15804,
+      "unique_exact_geometries": 15803,
+      "sets": {
+        "set.000": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.001": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 1
+        },
+        "set.002": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.003": {
+          "frames": 804,
+          "exact_duplicates_previously_seen": 0
+        }
+      },
+      "maximum_absolute_force_component": 2.607424303721723,
+      "per_frame_temperature_available": false,
+      "chronology_verified": false
+    },
+    "Bulk_Si\\Si128": {
+      "atoms": 128,
+      "composition": {
+        "Si": 128
+      },
+      "frames": 18804,
+      "unique_exact_geometries": 18804,
+      "sets": {
+        "set.000": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.001": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.002": {
+          "frames": 5000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.003": {
+          "frames": 3000,
+          "exact_duplicates_previously_seen": 0
+        },
+        "set.004": {
+          "frames": 804,
+          "exact_duplicates_previously_seen": 0
+        }
+      },
+      "maximum_absolute_force_component": 3.870621971517749,
+      "per_frame_temperature_available": false,
+      "chronology_verified": false
+    }
+  },
+  "source": "https://github.com/krutarth24/Al-Si-DeePMD-NNP",
+  "paper": "https://doi.org/10.1063/5.0243641",
+  "classification": "AIMD-derived Al, Si, Al/Si interface DFT labels",
+  "training_enabled": false,
+  "split_policy": "set.NNN is a storage shard, not a verified independent trajectory; do not random-split correlated frames.",
+  "notes": "Use audited array counts, not paper table totals. Temperature range in paper is not a per-frame temperature annotation."
+}

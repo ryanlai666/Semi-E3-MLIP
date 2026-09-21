@@ -1,0 +1,130 @@
+[
+  {
+    "name": "HfO2_bec_data.xyz",
+    "path": "HfO2_bec_data.xyz",
+    "sha": "bf90cd31adf7e60ab7f02479b689922193e13d51",
+    "size": 100652,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_bec_data.xyz?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_bec_data.xyz",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/bf90cd31adf7e60ab7f02479b689922193e13d51",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/HfO2_bec_data.xyz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_bec_data.xyz?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/bf90cd31adf7e60ab7f02479b689922193e13d51",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_bec_data.xyz"
+    }
+  },
+  {
+    "name": "HfO2_finetuned_MACE.model",
+    "path": "HfO2_finetuned_MACE.model",
+    "sha": "e6aca2a052c21cf2d018b45377869190f9083a62",
+    "size": 22097426,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_finetuned_MACE.model?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_finetuned_MACE.model",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/e6aca2a052c21cf2d018b45377869190f9083a62",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/HfO2_finetuned_MACE.model",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_finetuned_MACE.model?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/e6aca2a052c21cf2d018b45377869190f9083a62",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_finetuned_MACE.model"
+    }
+  },
+  {
+    "name": "HfO2_structure_data.xyz",
+    "path": "HfO2_structure_data.xyz",
+    "sha": "c85dcd216f4bebc89e17d133773088c27e4fc1df",
+    "size": 25632878,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_structure_data.xyz?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_structure_data.xyz",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/c85dcd216f4bebc89e17d133773088c27e4fc1df",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/HfO2_structure_data.xyz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/HfO2_structure_data.xyz?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/c85dcd216f4bebc89e17d133773088c27e4fc1df",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/HfO2_structure_data.xyz"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "3b857727c64c639cde46176816f251f5e9aac483",
+    "size": 1066,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/LICENSE?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/LICENSE",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/3b857727c64c639cde46176816f251f5e9aac483",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/LICENSE?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/3b857727c64c639cde46176816f251f5e9aac483",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/LICENSE"
+    }
+  },
+  {
+    "name": "P21c_to_Pca21.zip",
+    "path": "P21c_to_Pca21.zip",
+    "sha": "3cc09ae8731bdfe64ce1efb294f3dc2aa67de827",
+    "size": 14428,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/P21c_to_Pca21.zip?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/P21c_to_Pca21.zip",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/3cc09ae8731bdfe64ce1efb294f3dc2aa67de827",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/P21c_to_Pca21.zip",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/P21c_to_Pca21.zip?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/3cc09ae8731bdfe64ce1efb294f3dc2aa67de827",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/P21c_to_Pca21.zip"
+    }
+  },
+  {
+    "name": "Pca21_to_Pbca.zip",
+    "path": "Pca21_to_Pbca.zip",
+    "sha": "fd75c47588faf9a157d77ea03ac2978bc9820908",
+    "size": 17814,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/Pca21_to_Pbca.zip?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/Pca21_to_Pbca.zip",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/fd75c47588faf9a157d77ea03ac2978bc9820908",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/Pca21_to_Pbca.zip",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/Pca21_to_Pbca.zip?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/fd75c47588faf9a157d77ea03ac2978bc9820908",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/Pca21_to_Pbca.zip"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "c4dc8bbacc5991d2a4ab317faf8b5e7ede0d5fdf",
+    "size": 79,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/README.md?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/c4dc8bbacc5991d2a4ab317faf8b5e7ede0d5fdf",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/c4dc8bbacc5991d2a4ab317faf8b5e7ede0d5fdf",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/README.md"
+    }
+  },
+  {
+    "name": "hysteresis_loop_traj.xyz",
+    "path": "hysteresis_loop_traj.xyz",
+    "sha": "fae41d753d351a40ff7efa3ef47881f215d24012",
+    "size": 5253169,
+    "url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/hysteresis_loop_traj.xyz?ref=main",
+    "html_url": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/hysteresis_loop_traj.xyz",
+    "git_url": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/fae41d753d351a40ff7efa3ef47881f215d24012",
+    "download_url": "https://raw.githubusercontent.com/nmdl-mizo/HfO2_data_and_model/main/hysteresis_loop_traj.xyz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/contents/hysteresis_loop_traj.xyz?ref=main",
+      "git": "https://api.github.com/repos/nmdl-mizo/HfO2_data_and_model/git/blobs/fae41d753d351a40ff7efa3ef47881f215d24012",
+      "html": "https://github.com/nmdl-mizo/HfO2_data_and_model/blob/main/hysteresis_loop_traj.xyz"
+    }
+  }
+]

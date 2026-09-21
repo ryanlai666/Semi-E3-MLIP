@@ -1,0 +1,730 @@
+{
+  "source": "data/raw/MatPES-R2SCAN-2025.2.jsonl",
+  "seed": 42,
+  "scanned": 386544,
+  "retained": 4245,
+  "duplicates_removed": 3,
+  "rejected": {
+    "outside_elements": 378692,
+    "oxygen_free_alloy": 3604
+  },
+  "coverage": {
+    "O-Ta": {
+      "frames": 336,
+      "parents": 33,
+      "split": {
+        "valid": 34,
+        "train": 269,
+        "test": 33
+      },
+      "min_atoms": 2,
+      "max_atoms": 26,
+      "status": "available_unvalidated"
+    },
+    "Si": {
+      "frames": 155,
+      "parents": 27,
+      "split": {
+        "train": 124,
+        "test": 15,
+        "valid": 16
+      },
+      "min_atoms": 1,
+      "max_atoms": 24,
+      "status": "available_unvalidated"
+    },
+    "O-Si": {
+      "frames": 402,
+      "parents": 83,
+      "split": {
+        "train": 322,
+        "valid": 40,
+        "test": 40
+      },
+      "min_atoms": 3,
+      "max_atoms": 36,
+      "status": "available_unvalidated"
+    },
+    "O-Ti": {
+      "frames": 343,
+      "parents": 65,
+      "split": {
+        "train": 275,
+        "valid": 34,
+        "test": 34
+      },
+      "min_atoms": 2,
+      "max_atoms": 36,
+      "status": "available_unvalidated"
+    },
+    "O-Ru": {
+      "frames": 63,
+      "parents": 4,
+      "split": {
+        "train": 60,
+        "test": 1,
+        "valid": 2
+      },
+      "min_atoms": 3,
+      "max_atoms": 12,
+      "status": "sparse"
+    },
+    "Hf": {
+      "frames": 35,
+      "parents": 4,
+      "split": {
+        "train": 33,
+        "test": 1,
+        "valid": 1
+      },
+      "min_atoms": 1,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "O-Zr": {
+      "frames": 105,
+      "parents": 21,
+      "split": {
+        "valid": 11,
+        "train": 84,
+        "test": 10
+      },
+      "min_atoms": 2,
+      "max_atoms": 36,
+      "status": "available_unvalidated"
+    },
+    "Hf-O": {
+      "frames": 53,
+      "parents": 7,
+      "split": {
+        "test": 5,
+        "train": 43,
+        "valid": 5
+      },
+      "min_atoms": 3,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "Cu-O": {
+      "frames": 362,
+      "parents": 33,
+      "split": {
+        "train": 290,
+        "test": 36,
+        "valid": 36
+      },
+      "min_atoms": 2,
+      "max_atoms": 28,
+      "status": "available_unvalidated"
+    },
+    "O": {
+      "frames": 91,
+      "parents": 22,
+      "split": {
+        "train": 73,
+        "test": 9,
+        "valid": 9
+      },
+      "min_atoms": 1,
+      "max_atoms": 30,
+      "status": "available_unvalidated"
+    },
+    "O-W": {
+      "frames": 267,
+      "parents": 51,
+      "split": {
+        "train": 213,
+        "test": 27,
+        "valid": 27
+      },
+      "min_atoms": 3,
+      "max_atoms": 40,
+      "status": "available_unvalidated"
+    },
+    "Co-O": {
+      "frames": 330,
+      "parents": 37,
+      "split": {
+        "test": 33,
+        "train": 264,
+        "valid": 33
+      },
+      "min_atoms": 3,
+      "max_atoms": 40,
+      "status": "available_unvalidated"
+    },
+    "Al-Cu-O": {
+      "frames": 132,
+      "parents": 17,
+      "split": {
+        "test": 13,
+        "valid": 13,
+        "train": 106
+      },
+      "min_atoms": 4,
+      "max_atoms": 22,
+      "status": "available_unvalidated"
+    },
+    "Al-O-W": {
+      "frames": 117,
+      "parents": 11,
+      "split": {
+        "valid": 10,
+        "train": 97,
+        "test": 10
+      },
+      "min_atoms": 5,
+      "max_atoms": 22,
+      "status": "available_unvalidated"
+    },
+    "Cu": {
+      "frames": 52,
+      "parents": 8,
+      "split": {
+        "train": 42,
+        "test": 5,
+        "valid": 5
+      },
+      "min_atoms": 1,
+      "max_atoms": 6,
+      "status": "sparse"
+    },
+    "W": {
+      "frames": 70,
+      "parents": 7,
+      "split": {
+        "valid": 6,
+        "test": 6,
+        "train": 58
+      },
+      "min_atoms": 1,
+      "max_atoms": 20,
+      "status": "sparse"
+    },
+    "Ta": {
+      "frames": 49,
+      "parents": 9,
+      "split": {
+        "train": 39,
+        "valid": 5,
+        "test": 5
+      },
+      "min_atoms": 1,
+      "max_atoms": 30,
+      "status": "sparse"
+    },
+    "Zr": {
+      "frames": 39,
+      "parents": 6,
+      "split": {
+        "valid": 6,
+        "train": 30,
+        "test": 3
+      },
+      "min_atoms": 1,
+      "max_atoms": 27,
+      "status": "sparse"
+    },
+    "Al-O": {
+      "frames": 285,
+      "parents": 33,
+      "split": {
+        "valid": 29,
+        "train": 228,
+        "test": 28
+      },
+      "min_atoms": 2,
+      "max_atoms": 20,
+      "status": "available_unvalidated"
+    },
+    "Co-O-Ti": {
+      "frames": 34,
+      "parents": 7,
+      "split": {
+        "test": 2,
+        "valid": 3,
+        "train": 29
+      },
+      "min_atoms": 9,
+      "max_atoms": 112,
+      "status": "sparse"
+    },
+    "Cu-O-W": {
+      "frames": 10,
+      "parents": 7,
+      "split": {
+        "train": 8,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 28,
+      "status": "sparse"
+    },
+    "Al-O-Si": {
+      "frames": 88,
+      "parents": 19,
+      "split": {
+        "valid": 9,
+        "train": 70,
+        "test": 9
+      },
+      "min_atoms": 5,
+      "max_atoms": 36,
+      "status": "available_unvalidated"
+    },
+    "O-Si-W": {
+      "frames": 3,
+      "parents": 1,
+      "split": {
+        "train": 3
+      },
+      "min_atoms": 18,
+      "max_atoms": 18,
+      "status": "sparse"
+    },
+    "Cu-O-Si": {
+      "frames": 28,
+      "parents": 4,
+      "split": {
+        "train": 25,
+        "test": 1,
+        "valid": 2
+      },
+      "min_atoms": 7,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "Cu-O-Ta": {
+      "frames": 13,
+      "parents": 7,
+      "split": {
+        "train": 11,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 9,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "Cu-O-Ti": {
+      "frames": 74,
+      "parents": 10,
+      "split": {
+        "train": 59,
+        "valid": 8,
+        "test": 7
+      },
+      "min_atoms": 5,
+      "max_atoms": 28,
+      "status": "available_unvalidated"
+    },
+    "O-Ta-Ti": {
+      "frames": 6,
+      "parents": 4,
+      "split": {
+        "train": 4,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 6,
+      "max_atoms": 18,
+      "status": "sparse"
+    },
+    "Al-O-Ta": {
+      "frames": 17,
+      "parents": 5,
+      "split": {
+        "train": 14,
+        "valid": 2,
+        "test": 1
+      },
+      "min_atoms": 6,
+      "max_atoms": 21,
+      "status": "sparse"
+    },
+    "Al-Co-O": {
+      "frames": 64,
+      "parents": 15,
+      "split": {
+        "train": 51,
+        "valid": 7,
+        "test": 6
+      },
+      "min_atoms": 5,
+      "max_atoms": 38,
+      "status": "available_unvalidated"
+    },
+    "O-Si-Ti": {
+      "frames": 38,
+      "parents": 6,
+      "split": {
+        "valid": 4,
+        "train": 31,
+        "test": 3
+      },
+      "min_atoms": 9,
+      "max_atoms": 31,
+      "status": "sparse"
+    },
+    "O-Si-Zr": {
+      "frames": 80,
+      "parents": 9,
+      "split": {
+        "valid": 8,
+        "train": 64,
+        "test": 8
+      },
+      "min_atoms": 5,
+      "max_atoms": 20,
+      "status": "sparse"
+    },
+    "O-Ti-Zr": {
+      "frames": 78,
+      "parents": 8,
+      "split": {
+        "train": 64,
+        "test": 7,
+        "valid": 7
+      },
+      "min_atoms": 4,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "O-W-Zr": {
+      "frames": 3,
+      "parents": 1,
+      "split": {
+        "train": 3
+      },
+      "min_atoms": 32,
+      "max_atoms": 32,
+      "status": "sparse"
+    },
+    "Hf-O-W": {
+      "frames": 3,
+      "parents": 1,
+      "split": {
+        "train": 3
+      },
+      "min_atoms": 32,
+      "max_atoms": 32,
+      "status": "sparse"
+    },
+    "Hf-O-Si": {
+      "frames": 19,
+      "parents": 2,
+      "split": {
+        "train": 10,
+        "valid": 9
+      },
+      "min_atoms": 12,
+      "max_atoms": 20,
+      "status": "sparse"
+    },
+    "Co-O-Zr": {
+      "frames": 9,
+      "parents": 4,
+      "split": {
+        "train": 6,
+        "valid": 2,
+        "test": 1
+      },
+      "min_atoms": 9,
+      "max_atoms": 28,
+      "status": "sparse"
+    },
+    "Al-O-Zr": {
+      "frames": 61,
+      "parents": 2,
+      "split": {
+        "valid": 7,
+        "train": 54
+      },
+      "min_atoms": 5,
+      "max_atoms": 17,
+      "status": "sparse"
+    },
+    "O-Ta-W": {
+      "frames": 15,
+      "parents": 3,
+      "split": {
+        "train": 13,
+        "test": 1,
+        "valid": 1
+      },
+      "min_atoms": 18,
+      "max_atoms": 22,
+      "status": "sparse"
+    },
+    "Co-Cu-O": {
+      "frames": 118,
+      "parents": 12,
+      "split": {
+        "test": 10,
+        "train": 98,
+        "valid": 10
+      },
+      "min_atoms": 4,
+      "max_atoms": 19,
+      "status": "available_unvalidated"
+    },
+    "Al-O-Ti": {
+      "frames": 48,
+      "parents": 9,
+      "split": {
+        "test": 5,
+        "valid": 5,
+        "train": 38
+      },
+      "min_atoms": 5,
+      "max_atoms": 22,
+      "status": "sparse"
+    },
+    "Co-O-Si": {
+      "frames": 4,
+      "parents": 3,
+      "split": {
+        "train": 2,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 14,
+      "max_atoms": 18,
+      "status": "sparse"
+    },
+    "Co-O-W": {
+      "frames": 21,
+      "parents": 3,
+      "split": {
+        "train": 19,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 11,
+      "max_atoms": 22,
+      "status": "sparse"
+    },
+    "Al": {
+      "frames": 13,
+      "parents": 5,
+      "split": {
+        "train": 11,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 1,
+      "max_atoms": 4,
+      "status": "sparse"
+    },
+    "Ru": {
+      "frames": 27,
+      "parents": 2,
+      "split": {
+        "train": 26,
+        "valid": 1
+      },
+      "min_atoms": 1,
+      "max_atoms": 2,
+      "status": "sparse"
+    },
+    "Co-O-Ru": {
+      "frames": 2,
+      "parents": 2,
+      "split": {
+        "train": 1,
+        "valid": 1
+      },
+      "min_atoms": 14,
+      "max_atoms": 14,
+      "status": "sparse"
+    },
+    "Ti": {
+      "frames": 27,
+      "parents": 5,
+      "split": {
+        "train": 22,
+        "valid": 3,
+        "test": 2
+      },
+      "min_atoms": 1,
+      "max_atoms": 6,
+      "status": "sparse"
+    },
+    "Co": {
+      "frames": 30,
+      "parents": 6,
+      "split": {
+        "train": 25,
+        "valid": 3,
+        "test": 2
+      },
+      "min_atoms": 1,
+      "max_atoms": 6,
+      "status": "sparse"
+    },
+    "Hf-O-Zr": {
+      "frames": 5,
+      "parents": 4,
+      "split": {
+        "train": 3,
+        "valid": 1,
+        "test": 1
+      },
+      "min_atoms": 6,
+      "max_atoms": 24,
+      "status": "sparse"
+    },
+    "O-Ti-W": {
+      "frames": 3,
+      "parents": 3,
+      "split": {
+        "valid": 1,
+        "train": 1,
+        "test": 1
+      },
+      "min_atoms": 11,
+      "max_atoms": 22,
+      "status": "sparse"
+    },
+    "Al-Co-O-W": {
+      "frames": 3,
+      "parents": 3,
+      "split": {
+        "valid": 1,
+        "train": 1,
+        "test": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 24,
+      "status": "sparse"
+    },
+    "Al-O-Ta-W": {
+      "frames": 2,
+      "parents": 2,
+      "split": {
+        "valid": 1,
+        "train": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 24,
+      "status": "sparse"
+    },
+    "Al-Cu-O-Ti": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 20,
+      "max_atoms": 20,
+      "status": "sparse"
+    },
+    "Al-Co-Cu-O": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 20,
+      "max_atoms": 20,
+      "status": "sparse"
+    },
+    "Al-Cu-O-W": {
+      "frames": 3,
+      "parents": 3,
+      "split": {
+        "test": 1,
+        "valid": 1,
+        "train": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 24,
+      "status": "sparse"
+    },
+    "Al-O-Ti-W": {
+      "frames": 2,
+      "parents": 2,
+      "split": {
+        "train": 1,
+        "valid": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 24,
+      "status": "sparse"
+    },
+    "Al-O-Ta-Ti": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 18,
+      "max_atoms": 18,
+      "status": "sparse"
+    },
+    "Cu-O-Ta-Ti": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 19,
+      "max_atoms": 19,
+      "status": "sparse"
+    },
+    "Hf-O-Ti": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 12,
+      "max_atoms": 12,
+      "status": "sparse"
+    },
+    "Al-Hf-O": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 16,
+      "max_atoms": 16,
+      "status": "sparse"
+    },
+    "Co-O-Ta": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 36,
+      "max_atoms": 36,
+      "status": "sparse"
+    },
+    "Co-Hf-O": {
+      "frames": 1,
+      "parents": 1,
+      "split": {
+        "train": 1
+      },
+      "min_atoms": 20,
+      "max_atoms": 20,
+      "status": "sparse"
+    }
+  },
+  "split_counts": {
+    "valid": 426,
+    "train": 3430,
+    "test": 389
+  },
+  "split_method": "Chemical-system stratified, indivisible parent/duplicate groups; target frame fractions 80/10/10. One group: train only; two: train/valid; three or more: all splits.",
+  "units": {
+    "energy": "eV total",
+    "forces": "eV/A",
+    "stress": "eV/A^3 tensile-positive"
+  },
+  "stress_conversion": "MatPES Voigt xx yy zz yz xz xy; multiply by -0.1/160.21766208",
+  "dedup_limit": "Same lattice basis only; equivalent-basis/supercell duplicates not guaranteed"
+}

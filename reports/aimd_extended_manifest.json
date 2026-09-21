@@ -1,0 +1,139 @@
+{
+  "archive_sha256": "55a97cab4a3a61c251bf61cefcce0e3990badc67089b1e6a33609560f8660994",
+  "source": "https://doi.org/10.6084/m9.figshare.29422061.v1",
+  "cases": {
+    "Si_110_elong0.500": {
+      "path": "data\\aimd\\Si_110_elong0.500.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-0.500/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 0.500",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_110_elong1.000": {
+      "path": "data\\aimd\\Si_110_elong1.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-1.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 1.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_110_elong1.500": {
+      "path": "data\\aimd\\Si_110_elong1.500.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-1.500/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 1.500",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_110_elong2.000": {
+      "path": "data\\aimd\\Si_110_elong2.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-2.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 2.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_110_elong4.000": {
+      "path": "data\\aimd\\Si_110_elong4.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-4.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 4.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_110_elong6.000": {
+      "path": "data\\aimd\\Si_110_elong6.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-6.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (110) surface, source elongation parameter 6.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong0.500": {
+      "path": "data\\aimd\\Si_111_elong0.500.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-0.500/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 0.500",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong1.000": {
+      "path": "data\\aimd\\Si_111_elong1.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-1.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 1.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong1.500": {
+      "path": "data\\aimd\\Si_111_elong1.500.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-1.500/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 1.500",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong2.000": {
+      "path": "data\\aimd\\Si_111_elong2.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-2.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 2.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong4.000": {
+      "path": "data\\aimd\\Si_111_elong4.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-4.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 4.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    },
+    "Si_111_elong6.000": {
+      "path": "data\\aimd\\Si_111_elong6.000.jsonl",
+      "frames": 101,
+      "dt_fs": 5.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-111/elong-6.000/",
+      "duration_fs": 500.0,
+      "ensemble": "NVT Nose-Hoover",
+      "circumstance": "Si (111) surface, source elongation parameter 6.000",
+      "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+    }
+  },
+  "training_use": false
+}

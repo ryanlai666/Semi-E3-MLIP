@@ -1,0 +1,44 @@
+[
+  {
+    "type": "directory",
+    "oid": "101c225f110726e0ca91620b4ff3e7f6354ac751",
+    "size": 0,
+    "path": "references"
+  },
+  {
+    "type": "file",
+    "oid": "55cab133643a2a73e083373d2106533678d0edd5",
+    "size": 2419,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "fd3d4300035da427628922558cb83220668dc6f2",
+    "size": 10424,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "c180bc232383735ba541bc8b69682ab8101b197d",
+    "size": 580,
+    "path": "references/README.md"
+  },
+  {
+    "type": "file",
+    "oid": "d984e9d11a5f2fa811571dc5f976bc9da4f46c3d",
+    "size": 4617,
+    "path": "references/element-references.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "35b2f96756917a2c2abf2edee679e6dd80596ef5",
+    "size": 15388,
+    "lfs": {
+      "oid": "7e45419464544f0af886dcfbb411e5ee4c98b6996c78ec2747571e351b15ff3e",
+      "size": 15388,
+      "pointerSize": 130
+    },
+    "xetHash": "71f5e6e6fb9e4d37b8ddb89f76467cc68e9191c0d3782bb98968fe0b786b574c",
+    "path": "references/omat-elemental-reference-compounds.json.gz"
+  }
+]

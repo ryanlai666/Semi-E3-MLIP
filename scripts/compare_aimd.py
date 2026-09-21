@@ -1,5 +1,6 @@
 """External AIMD transfer diagnostic; never used for selecting hyperparameters."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -56,6 +57,17 @@ def main():
     a=p.parse_args(); calculate=Calculator(a.checkpoint,a.device)
     manifest=json.loads(Path('reports/aimd_manifest.json').read_text())
     out=Path('reports/aimd_comparison');out.mkdir(exist_ok=True)
+    protocol={'checkpoint':str(Path(a.checkpoint)),
+              'checkpoint_sha256':hashlib.sha256(Path(a.checkpoint).read_bytes()).hexdigest(),
+              'reference_manifest_sha256':hashlib.sha256(Path('reports/aimd_manifest.json').read_bytes()).hexdigest(),
+              'reference_sha256':{name:hashlib.sha256(Path(meta['path']).read_bytes()).hexdigest()
+                                  for name,meta in manifest['cases'].items()},
+              'steps':1000,'dt_fs':.5,'temperature_K':300,'gamma_fs_inverse':.005,
+              'seeds':[42,43,44],'device':a.device,'used_for_selection':False}
+    lock=out/'protocol.json'
+    if lock.exists() and json.loads(lock.read_text())!=protocol:
+        raise ValueError('AIMD comparison protocol changed; use a separate study output')
+    write_json(lock,protocol)
     summary={'checkpoint':a.checkpoint,'used_for_selection':False,'cases':{},
              'limitations':'500 fs; surface transfer; PBE versus r2SCAN; different thermostat and initial velocities; no diffusion claim'}
     for name,meta in manifest['cases'].items():
@@ -66,13 +78,24 @@ def main():
         for seed in (42,43,44):
             path=Path('runs/aimd_comparison')/name/f'seed{seed}.jsonl'
             try:
-                reports.append(md(ref[0],calculate,path,steps=1000,dt=.5,temperature=300,ensemble='nvt',gamma=.005,seed=seed))
+                cached=Path(str(path)+'.summary.json')
+                if cached.exists() and path.exists():
+                    saved=list(read_jsonl(path))
+                    if len(saved)!=1001 or saved[-1]['time_fs']!=500:
+                        raise ValueError('Incomplete cached trajectory')
+                    reports.append(json.loads(cached.read_text()))
+                else:
+                    reports.append(md(ref[0],calculate,path,steps=1000,dt=.5,temperature=300,ensemble='nvt',gamma=.005,seed=seed))
+                print(f'{name}: completed seed {seed}',flush=True)
             except (ValueError,RuntimeError,FloatingPointError) as exc:
                 failures.append({'seed':seed,'error':str(exc)})
                 continue
             traces.append(list(read_jsonl(path))[::10])
         if not traces:
-            summary['cases'][name]={'failed_runs':failures,'reference':meta}
+            summary['cases'][name]={'failed_runs':failures,'reference':meta,
+                'force_mae_eV_A':float(np.abs(errors).mean()),
+                'force_rmse_eV_A':float(np.sqrt(np.mean(np.square(errors)))),
+                'force_frames':len(ref[::5])}
             write_json(out/'metrics.json',summary)
             continue
         bins=np.linspace(0,5,101);centers=(bins[1:]+bins[:-1])/2

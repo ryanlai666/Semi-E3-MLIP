@@ -6,8 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "Semi-E3-MLIP"
 version = "0.1.0"
 description = "From-scratch conservative scalar-vector E(3) interatomic potential"
+readme = "README.md"
+keywords = ["machine-learning", "interatomic-potential", "equivariant", "materials", "pytorch"]
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26", "torch>=2.6"]
+
+[project.urls]
+Repository = "https://github.com/ryanlai666/Semi-E3-MLIP"
 
 [project.optional-dependencies]
 test = ["pytest>=8"]

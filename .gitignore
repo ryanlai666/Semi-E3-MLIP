@@ -15,3 +15,5 @@ reports/**/*.svg
 reports/**/*.pdf
 .env
 .env.*
+reports/**/*.gif
+reports/**/*.html

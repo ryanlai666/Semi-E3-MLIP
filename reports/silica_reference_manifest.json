@@ -1,0 +1,141 @@
+{
+  "cases": {
+    "SiO2_000_elong-7.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/000/elong-7.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_000_elong-7.000.jsonl"
+    },
+    "SiO2_000_elong-8.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/000/elong-8.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_000_elong-8.000.jsonl"
+    },
+    "SiO2_000_elong-9.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/000/elong-9.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_000_elong-9.000.jsonl"
+    },
+    "SiO2_001_elong-7.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/001/elong-7.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_001_elong-7.000.jsonl"
+    },
+    "SiO2_001_elong-8.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/001/elong-8.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_001_elong-8.000.jsonl"
+    },
+    "SiO2_001_elong-9.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/001/elong-9.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_001_elong-9.000.jsonl"
+    },
+    "SiO2_002_elong-7.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/002/elong-7.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_002_elong-7.000.jsonl"
+    },
+    "SiO2_002_elong-8.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/002/elong-8.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_002_elong-8.000.jsonl"
+    },
+    "SiO2_002_elong-9.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/002/elong-9.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_002_elong-9.000.jsonl"
+    },
+    "SiO2_003_elong-8.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/003/elong-8.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_003_elong-8.000.jsonl"
+    },
+    "SiO2_003_elong-9.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/003/elong-9.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_003_elong-9.000.jsonl"
+    },
+    "SiO2_004_elong-7.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/004/elong-7.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_004_elong-7.000.jsonl"
+    },
+    "SiO2_004_elong-8.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/004/elong-8.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_004_elong-8.000.jsonl"
+    },
+    "SiO2_004_elong-9.000": {
+      "frames": 101,
+      "force_labelled_frames": 6,
+      "dt_fs": 5.0,
+      "duration_fs": 500.0,
+      "temperature_K": 300.0,
+      "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/004/elong-9.000/",
+      "path": "data\\aimd_silica_reference\\SiO2_004_elong-9.000.jsonl"
+    }
+  },
+  "rejected": {
+    "Si_SiO2/s4-dpgen/input/data.init/SiO2/surf/003/elong-7.000/": {
+      "reason": "position/energy/step count mismatch",
+      "positions": 2,
+      "energies": 101,
+      "steps": 100
+    }
+  },
+  "source": "https://doi.org/10.6084/m9.figshare.29422061.v1",
+  "training_use": false,
+  "limitation": "5 fs integration, 500 fs per trajectory, no velocities, sparse force labels; no transport-coefficient claim"
+}

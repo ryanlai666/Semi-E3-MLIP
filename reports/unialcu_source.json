@@ -1,0 +1,161 @@
+{
+  "created": "2025-07-11T18:44:48.747269+00:00",
+  "modified": "2025-07-11T18:44:48.974477+00:00",
+  "id": 15865800,
+  "conceptrecid": "15865799",
+  "doi": "10.5281/zenodo.15865800",
+  "conceptdoi": "10.5281/zenodo.15865799",
+  "doi_url": "https://doi.org/10.5281/zenodo.15865800",
+  "metadata": {
+    "title": "Research data for \"Dynamic Metal-Support Interaction Dictates Cu Nanoparticle Sintering on Al2O3 Surfaces\"",
+    "doi": "10.5281/zenodo.15865800",
+    "publication_date": "2025-07-11",
+    "description": "<p>This dataset supports the paper \"Dynamic Metal-Support Interaction Dictates Cu Nanoparticle Sintering on Al2O3 Surfaces\".</p>\n<p>The following files are provided:</p>\n<ul>\n<li>The training and validation structures.</li>\n<li>The training input file.</li>\n<li>The VASP input files for single-point calculation and ab initio molecular dynamics.</li>\n<li>The global minimum configurations of Cu nanoparticles on three Al2O3 surfaces.</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Xu, Jiayan",
+        "affiliation": "Princeton University",
+        "orcid": "0000-0001-9897-5778"
+      },
+      {
+        "name": "Das, Shreeja",
+        "affiliation": "Shell India Markets Pvt. Ltd."
+      },
+      {
+        "name": "Pathak, Amar-Deep",
+        "affiliation": "Shell India Markets Pvt. Ltd."
+      },
+      {
+        "name": "Patra, Abhirup",
+        "affiliation": "Shell International Exploration & Production Inc."
+      },
+      {
+        "name": "Shetty, Sharan",
+        "affiliation": "Shell India Markets Pvt. Ltd."
+      },
+      {
+        "name": "Hohl, Detlef",
+        "affiliation": "Shell International Exploration & Production Inc."
+      },
+      {
+        "name": "Car, Roberto",
+        "affiliation": "Princeton University"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15865799"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Research data for \"Dynamic Metal-Support Interaction Dictates Cu Nanoparticle Sintering on Al2O3 Surfaces\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/15865800",
+    "self_html": "https://zenodo.org/records/15865800",
+    "preview_html": "https://zenodo.org/records/15865800?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15865800",
+    "self_doi": "https://doi.org/10.5281/zenodo.15865800",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15865800",
+    "reserve_doi": "https://zenodo.org/api/records/15865800/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15865799",
+    "parent_html": "https://zenodo.org/records/15865799",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15865799",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15865799",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15865800/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15865800/sequence/default",
+    "files": "https://zenodo.org/api/records/15865800/files",
+    "media_files": "https://zenodo.org/api/records/15865800/media-files",
+    "archive": "https://zenodo.org/api/records/15865800/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15865800/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15865800/versions/latest",
+    "latest_html": "https://zenodo.org/records/15865800/latest",
+    "versions": "https://zenodo.org/api/records/15865800/versions",
+    "draft": "https://zenodo.org/api/records/15865800/draft",
+    "access_links": "https://zenodo.org/api/records/15865800/access/links",
+    "access_grants": "https://zenodo.org/api/records/15865800/access/grants",
+    "access_users": "https://zenodo.org/api/records/15865800/access/users",
+    "access_request": "https://zenodo.org/api/records/15865800/access/request",
+    "access": "https://zenodo.org/api/records/15865800/access",
+    "communities": "https://zenodo.org/api/records/15865800/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15865800/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15865800/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15865800/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/15865800/quota-increase",
+    "requests": "https://zenodo.org/api/records/15865800/requests"
+  },
+  "updated": "2025-07-11T18:44:48.974477+00:00",
+  "recid": "15865800",
+  "revision": 4,
+  "files": [
+    {
+      "id": "c0cb0eb8-f065-4565-8705-5ff2d06115a3",
+      "key": "dptrain_inputs.zip",
+      "size": 1020,
+      "checksum": "md5:2a9308f54b666b4653137825d1175226",
+      "links": {
+        "self": "https://zenodo.org/api/records/15865800/files/dptrain_inputs.zip/content"
+      }
+    },
+    {
+      "id": "439eff02-6814-42ef-81a0-90e4d4e1a406",
+      "key": "global_minima.zip",
+      "size": 333749,
+      "checksum": "md5:9788d7f13403450552e4ad1642c6a478",
+      "links": {
+        "self": "https://zenodo.org/api/records/15865800/files/global_minima.zip/content"
+      }
+    },
+    {
+      "id": "d932573f-823b-4192-8eed-c8c0111e2989",
+      "key": "dataset.zip",
+      "size": 746392511,
+      "checksum": "md5:e88745ca2cfd25ef0b152f5fa3ed6bd9",
+      "links": {
+        "self": "https://zenodo.org/api/records/15865800/files/dataset.zip/content"
+      }
+    },
+    {
+      "id": "e1c2a127-219b-47a9-a45f-51b9a8ab86f4",
+      "key": "vasp_inputs.zip",
+      "size": 1815,
+      "checksum": "md5:6fe4f25a0496085c76cd2fddecef4edb",
+      "links": {
+        "self": "https://zenodo.org/api/records/15865800/files/vasp_inputs.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1363170"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 242,
+    "unique_downloads": 230,
+    "views": 252,
+    "unique_views": 239,
+    "version_downloads": 242,
+    "version_unique_downloads": 230,
+    "version_unique_views": 239,
+    "version_views": 252
+  },
+  "state": "done",
+  "submitted": true
+}

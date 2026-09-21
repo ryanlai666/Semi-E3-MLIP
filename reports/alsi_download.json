@@ -1,0 +1,10 @@
+{
+  "url": "https://archive.materialscloud.org/records/zztez-8a187/files/dataset.AlSi.zip",
+  "md5": "4c2aa17fe6b4aceb8e15e473d5813f7d",
+  "bytes": 362401526,
+  "members": [
+    "dataset-AlSi/",
+    "dataset-AlSi/train.data",
+    "dataset-AlSi/test.data"
+  ]
+}

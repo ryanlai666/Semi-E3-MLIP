@@ -1,0 +1,219 @@
+{
+  "files": [
+    {
+      "id": 57225266,
+      "name": "nep.in",
+      "size": 245,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225266",
+      "supplied_md5": "e26f57758e3add42f9b1b2aa0193daf6",
+      "computed_md5": "e26f57758e3add42f9b1b2aa0193daf6",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 57225269,
+      "name": "nep.txt",
+      "size": 100924,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225269",
+      "supplied_md5": "aeff6b11a09ad36cd3436ab32611dbce",
+      "computed_md5": "aeff6b11a09ad36cd3436ab32611dbce",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 57225278,
+      "name": "train.xyz",
+      "size": 25318961,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225278",
+      "supplied_md5": "6333dbd53713f3e265c7db3d8aa81daf",
+      "computed_md5": "6333dbd53713f3e265c7db3d8aa81daf",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 57225272,
+      "name": "nep.in",
+      "size": 245,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225272",
+      "supplied_md5": "f88d5db13708d18c34eb9dc566763620",
+      "computed_md5": "f88d5db13708d18c34eb9dc566763620",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 57225275,
+      "name": "nep.txt",
+      "size": 100925,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225275",
+      "supplied_md5": "2c1e43660451e7e9f4dd7db25c907710",
+      "computed_md5": "2c1e43660451e7e9f4dd7db25c907710",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 57225281,
+      "name": "train.xyz",
+      "size": 31174572,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57225281",
+      "supplied_md5": "8faad620169c068d18994b7e576993b5",
+      "computed_md5": "8faad620169c068d18994b7e576993b5",
+      "mimetype": "text/plain"
+    }
+  ],
+  "folder_structure": {
+    "57225266": "NEP-datasets/ZrO2",
+    "57225269": "NEP-datasets/ZrO2",
+    "57225272": "NEP-datasets/Al2O3",
+    "57225275": "NEP-datasets/Al2O3",
+    "57225278": "NEP-datasets/ZrO2",
+    "57225281": "NEP-datasets/Al2O3"
+  },
+  "authors": [
+    {
+      "id": 21979784,
+      "full_name": "Rui Yang",
+      "first_name": "Rui",
+      "last_name": "Yang",
+      "is_active": true,
+      "url_name": "Rui_Yang",
+      "orcid_id": ""
+    },
+    {
+      "id": 21142916,
+      "full_name": "Qiaoling Si",
+      "first_name": "Qiaoling",
+      "last_name": "Si",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 562357,
+      "full_name": "Qiang Sheng",
+      "first_name": "Qiang",
+      "last_name": "Sheng",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1405321,
+      "full_name": "Mingyang Yang",
+      "first_name": "Mingyang",
+      "last_name": "Yang",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 9266528,
+      "full_name": "Mu Du",
+      "first_name": "Mu",
+      "last_name": "Du",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5908949,
+      "full_name": "Xiao-Lei Shi",
+      "first_name": "Xiao-Lei",
+      "last_name": "Shi",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 2071546,
+      "full_name": "Guihua Tang",
+      "first_name": "Guihua",
+      "last_name": "Tang",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1526674,
+      "full_name": "Zhi-Gang Chen",
+      "first_name": "Zhi-Gang",
+      "last_name": "Chen",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Neuroevolution_potential_models_and_datasets_from_Atomic_armor_for_thermal_stability_in_nanoporous_structures_/29923850",
+  "download_disabled": false,
+  "description": "<pre>This file contains the neuroevolution potential (NEP) models and datasets used in the paper \"Atomic armor for thermal stability in nanoporous structures\" published in [Proceedings of the National Academy of Sciences of the United States of America (PNAS)]. Note that nep.in, nep.txt, and train.xyz contains the specific parameters used to obtain the NEP model, the NEP model itself, and the dataset used, respectively.</pre><p><br></p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 56695872,
+  "created_date": "2025-08-16T07:09:27Z",
+  "modified_date": "2025-08-16T07:09:28Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Amorphous",
+    "Molecular Dynamics",
+    "Al2O3",
+    "ZrO2"
+  ],
+  "keywords": [
+    "Amorphous",
+    "Molecular Dynamics",
+    "Al2O3",
+    "ZrO2"
+  ],
+  "categories": [
+    {
+      "id": 30166,
+      "title": "Condensed matter modelling and density functional theory",
+      "parent_id": 30157,
+      "path": "/30082/30157/30166",
+      "source_id": "510403",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Yang, Rui; Si, Qiaoling; Sheng, Qiang; Yang, Mingyang; Du, Mu; Shi, Xiao-Lei; et al. (2025). Neuroevolution potential models and datasets from \"Atomic armor for thermal stability in nanoporous structures\". figshare. Dataset. https://doi.org/10.6084/m9.figshare.29923850.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 29923850,
+  "title": "Neuroevolution potential models and datasets from \"Atomic armor for thermal stability in nanoporous structures\"",
+  "doi": "10.6084/m9.figshare.29923850.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/29923850",
+  "published_date": "2025-08-16T07:09:27Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/29923850",
+  "url_public_api": "https://api.figshare.com/v2/articles/29923850",
+  "url_private_html": "https://figshare.com/account/articles/29923850",
+  "url_public_html": "https://figshare.com/articles/dataset/Neuroevolution_potential_models_and_datasets_from_Atomic_armor_for_thermal_stability_in_nanoporous_structures_/29923850",
+  "timeline": {
+    "posted": "2025-08-16T07:09:27",
+    "firstOnline": "2025-08-16"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

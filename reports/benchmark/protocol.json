@@ -1,0 +1,26 @@
+{
+  "checkpoint": "runs\\device\\expanded_tensor\\best.pt",
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "datasets": {
+    "train": {
+      "path": "data\\device_expanded\\train.jsonl",
+      "sha256": "55a88d0d5d32daecea971b86c627a4a938cbfeae677f100230b767e04ad88bdf"
+    },
+    "validation": {
+      "path": "data\\device_expanded\\valid.jsonl",
+      "sha256": "c75883f0628100a222172955afc8d2aa26fd166c590b9587a788eace52b24494"
+    },
+    "test": {
+      "path": "data\\device\\test.jsonl",
+      "sha256": "dfa3c5fbea16b1d8bf7d6ea29f5c57db35a9bf560f6a76085a9ed9cb7b4751e3"
+    },
+    "oxide_test": {
+      "path": "data\\device_expanded\\aloe_test.jsonl",
+      "sha256": "9695d615c3eb6073eae2352c78ae5f4444819cabd0419bdd4cb1b9feaf2b5c3d"
+    }
+  },
+  "atom_budget": 1024,
+  "edge_budget": 64000,
+  "device": "cpu",
+  "used_for_selection": false
+}

@@ -1,0 +1,86 @@
+{
+  "selection": "composition only; no filtering by prediction errors, forces or energies",
+  "split_policy": "retain original parent-disjoint split",
+  "splits": {
+    "train": {
+      "frames": 939,
+      "formulas": {
+        "Si": 124,
+        "SiO2": 85,
+        "TiO2": 135,
+        "RuO2": 60,
+        "Hf": 33,
+        "Cu": 42,
+        "Ta": 39,
+        "Ta2O5": 8,
+        "Zr": 30,
+        "WO3": 54,
+        "CuO": 53,
+        "ZrO2": 33,
+        "CoO": 47,
+        "W": 58,
+        "Al": 11,
+        "Ru": 26,
+        "Ti": 22,
+        "Co": 25,
+        "HfO2": 43,
+        "Al2O3": 10,
+        "Co3O4": 1
+      },
+      "parents": 96
+    },
+    "valid": {
+      "frames": 145,
+      "formulas": {
+        "SiO2": 32,
+        "W": 6,
+        "Zr": 6,
+        "Ta": 5,
+        "Al2O3": 10,
+        "CoO": 17,
+        "WO3": 14,
+        "Si": 16,
+        "Ti": 3,
+        "HfO2": 5,
+        "Cu": 5,
+        "Co": 3,
+        "Ta2O5": 7,
+        "TiO2": 5,
+        "Al": 1,
+        "Co3O4": 1,
+        "CuO": 1,
+        "ZrO2": 3,
+        "Cu2O": 1,
+        "RuO2": 2,
+        "Ru": 1,
+        "Hf": 1
+      },
+      "parents": 86
+    },
+    "test": {
+      "frames": 122,
+      "formulas": {
+        "HfO2": 5,
+        "SiO2": 34,
+        "Si": 15,
+        "Cu": 5,
+        "W": 6,
+        "CuO": 4,
+        "Ta": 5,
+        "Ta2O5": 7,
+        "TiO2": 12,
+        "CoO": 3,
+        "WO3": 5,
+        "ZrO2": 5,
+        "Zr": 3,
+        "Hf": 1,
+        "Co": 2,
+        "Al2O3": 6,
+        "Ti": 2,
+        "Al": 1,
+        "Co3O4": 1
+      },
+      "parents": 90
+    }
+  }
+}

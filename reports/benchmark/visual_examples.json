@@ -1,0 +1,95 @@
+{
+  "selection": "Lexicographically first test ID per chemical system",
+  "examples": [
+    {
+      "id": "mp-1239196",
+      "system": "Al",
+      "force_mae_eV_A": 0.10194292621730411
+    },
+    {
+      "id": "mp-1182923",
+      "system": "Al-O",
+      "force_mae_eV_A": 0.11808487142163611
+    },
+    {
+      "id": "mp-1072089",
+      "system": "Co",
+      "force_mae_eV_A": 3.309818981102176e-05
+    },
+    {
+      "id": "matpes-20240214_19275_0",
+      "system": "Co-O",
+      "force_mae_eV_A": 0.3141884359346104
+    },
+    {
+      "id": "matpes-20240214_1120774_0",
+      "system": "Cu",
+      "force_mae_eV_A": 0.051670385885451565
+    },
+    {
+      "id": "matpes-20240214_1147768_0",
+      "system": "Cu-O",
+      "force_mae_eV_A": 0.24827201616598446
+    },
+    {
+      "id": "mp-100",
+      "system": "Hf",
+      "force_mae_eV_A": 0.0
+    },
+    {
+      "id": "matpes-20240214_1018721_0",
+      "system": "Hf-O",
+      "force_mae_eV_A": 0.5474640528678025
+    },
+    {
+      "id": "matpes-20240214_10851_0",
+      "system": "O-Si",
+      "force_mae_eV_A": 0.5500505318139776
+    },
+    {
+      "id": "matpes-20240214_1372329_0",
+      "system": "O-Ta",
+      "force_mae_eV_A": 2.303610368519052
+    },
+    {
+      "id": "matpes-20240214_1445035_0",
+      "system": "O-Ti",
+      "force_mae_eV_A": 0.22701979823831964
+    },
+    {
+      "id": "matpes-20240214_715923_1",
+      "system": "O-W",
+      "force_mae_eV_A": 0.8079397245941369
+    },
+    {
+      "id": "matpes-20240214_754403_0",
+      "system": "O-Zr",
+      "force_mae_eV_A": 0.33573036696183944
+    },
+    {
+      "id": "matpes-20240214_1120447_0",
+      "system": "Si",
+      "force_mae_eV_A": 0.30196314152656095
+    },
+    {
+      "id": "matpes-20240214_1217805_0",
+      "system": "Ta",
+      "force_mae_eV_A": 3.910795462576121
+    },
+    {
+      "id": "mp-1238818",
+      "system": "Ti",
+      "force_mae_eV_A": 0.07932836694916326
+    },
+    {
+      "id": "matpes-20240214_11334_0",
+      "system": "W",
+      "force_mae_eV_A": 0.40409898405073325
+    },
+    {
+      "id": "matpes-20240214_8635_0",
+      "system": "Zr",
+      "force_mae_eV_A": 0.004231014965768141
+    }
+  ]
+}

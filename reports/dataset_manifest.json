@@ -1,0 +1,11 @@
+{
+  "dataset": "MatPES",
+  "release": "2025.2",
+  "functional": "r2SCAN",
+  "revision": "47d2cc020cf913b5a48a3480136a128dddc0a92c",
+  "url": "https://huggingface.co/datasets/materialyze/matpes/resolve/47d2cc020cf913b5a48a3480136a128dddc0a92c/MatPES-R2SCAN-2025.2.jsonl",
+  "sha256": "cce36109689d75446b720d21a11faf3ed980df1a32ce6387237629774a770606",
+  "bytes": 1946162981,
+  "license_from_dataset_card": "BSD-3-Clause",
+  "verified": true
+}

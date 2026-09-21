@@ -1,0 +1,41 @@
+{
+  "train": {
+    "frames": 131328,
+    "unique_exact_geometries": 124413,
+    "chemical_systems": {
+      "O": 16,
+      "Al-Cu-O": 107268,
+      "Al-O": 6416,
+      "Cu": 17628
+    },
+    "unique_chemical_systems": {
+      "O": 16,
+      "Al-Cu-O": 100677,
+      "Al-O": 6407,
+      "Cu": 17313
+    }
+  },
+  "valid": {
+    "frames": 16248,
+    "unique_exact_geometries": 16135,
+    "chemical_systems": {
+      "O": 16,
+      "Al-Cu-O": 13313,
+      "Al-O": 782,
+      "Cu": 2137
+    },
+    "unique_chemical_systems": {
+      "O": 16,
+      "Al-Cu-O": 13206,
+      "Al-O": 782,
+      "Cu": 2131
+    }
+  },
+  "cross_split_exact_geometry_overlap": 1580,
+  "union_unique_exact_geometries": 138968,
+  "source": "https://zenodo.org/records/15865800",
+  "classification": "Mixed DFT-labelled training snapshots; individual AIMD identity and chronology absent",
+  "training_enabled": false,
+  "label_settings": "VASP PBE, 400 eV; source PAW labels and inputs in unialcu_vasp_inputs.zip",
+  "dedup_limit": "Exact geometry only, not rotation/permutation/translation invariant"
+}

@@ -13,10 +13,11 @@ def main():
     parser.add_argument("--checkpoint", default="runs/research/attention_final/best.pt")
     parser.add_argument("--data",default="data/processed/test.jsonl")
     parser.add_argument("--output",default="reports/visualizations")
+    parser.add_argument("--device",default="cpu")
     args=parser.parse_args()
     output=Path(args.output)
     output.mkdir(parents=True,exist_ok=True)
-    calculate=Calculator(args.checkpoint,"cpu")
+    calculate=Calculator(args.checkpoint,args.device)
     cases=choose_cases(list(read_jsonl(args.data)))
     results={}
     for name,rows in cases.items():
@@ -41,7 +42,7 @@ def main():
             results[name]={"initial_id":row["id"],"failed":str(exc)}
         write_json("reports/simulation_checks.json",results)
         print(name, json.dumps(results[name]),flush=True)
-    compare_cases(args.checkpoint,args.data,args.output,"cpu")
+    compare_cases(args.checkpoint,args.data,args.output,args.device)
     learning_curves(Path(args.checkpoint).parent,"reports/learning_curves.png")
     gallery=output/"index.html"
     page=gallery.read_text(encoding="utf-8")

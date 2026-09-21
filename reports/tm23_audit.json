@@ -1,0 +1,254 @@
+{
+  "source": "https://archive.materialscloud.org/record/2024.48",
+  "frames": 24000,
+  "files": {
+    "Cu_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Cu_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_cold_train.jsonl"
+    },
+    "Cu_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Cu_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_cold_test.jsonl"
+    },
+    "Cu_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Cu_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_warm_train.jsonl"
+    },
+    "Cu_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Cu_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_warm_test.jsonl"
+    },
+    "Cu_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Cu_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_melt_train.jsonl"
+    },
+    "Cu_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Cu_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Cu_melt_test.jsonl"
+    },
+    "W_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/W_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\W_cold_train.jsonl"
+    },
+    "W_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/W_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\W_cold_test.jsonl"
+    },
+    "W_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/W_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\W_warm_train.jsonl"
+    },
+    "W_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/W_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\W_warm_test.jsonl"
+    },
+    "W_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/W_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\W_melt_train.jsonl"
+    },
+    "W_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/W_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\W_melt_test.jsonl"
+    },
+    "Ti_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ti_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_cold_train.jsonl"
+    },
+    "Ti_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ti_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_cold_test.jsonl"
+    },
+    "Ti_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ti_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_warm_train.jsonl"
+    },
+    "Ti_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ti_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_warm_test.jsonl"
+    },
+    "Ti_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ti_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_melt_train.jsonl"
+    },
+    "Ti_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ti_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ti_melt_test.jsonl"
+    },
+    "Ta_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ta_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_cold_train.jsonl"
+    },
+    "Ta_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ta_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_cold_test.jsonl"
+    },
+    "Ta_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ta_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_warm_train.jsonl"
+    },
+    "Ta_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ta_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_warm_test.jsonl"
+    },
+    "Ta_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ta_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_melt_train.jsonl"
+    },
+    "Ta_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ta_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ta_melt_test.jsonl"
+    },
+    "Co_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Co_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_cold_train.jsonl"
+    },
+    "Co_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Co_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_cold_test.jsonl"
+    },
+    "Co_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Co_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_warm_train.jsonl"
+    },
+    "Co_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Co_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_warm_test.jsonl"
+    },
+    "Co_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Co_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_melt_train.jsonl"
+    },
+    "Co_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Co_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Co_melt_test.jsonl"
+    },
+    "Ru_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ru_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_cold_train.jsonl"
+    },
+    "Ru_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ru_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_cold_test.jsonl"
+    },
+    "Ru_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ru_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_warm_train.jsonl"
+    },
+    "Ru_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ru_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_warm_test.jsonl"
+    },
+    "Ru_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Ru_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_melt_train.jsonl"
+    },
+    "Ru_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Ru_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Ru_melt_test.jsonl"
+    },
+    "Hf_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Hf_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_cold_train.jsonl"
+    },
+    "Hf_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Hf_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_cold_test.jsonl"
+    },
+    "Hf_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Hf_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_warm_train.jsonl"
+    },
+    "Hf_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Hf_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_warm_test.jsonl"
+    },
+    "Hf_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Hf_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_melt_train.jsonl"
+    },
+    "Hf_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Hf_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Hf_melt_test.jsonl"
+    },
+    "Zr_cold_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Zr_cold_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_cold_train.jsonl"
+    },
+    "Zr_cold_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Zr_cold_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_cold_test.jsonl"
+    },
+    "Zr_warm_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Zr_warm_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_warm_train.jsonl"
+    },
+    "Zr_warm_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Zr_warm_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_warm_test.jsonl"
+    },
+    "Zr_melt_train": {
+      "frames": 900,
+      "source_member": "benchmarking_master_collection/Zr_melt_nequip_train.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_melt_train.jsonl"
+    },
+    "Zr_melt_test": {
+      "frames": 100,
+      "source_member": "benchmarking_master_collection/Zr_melt_nequip_test.xyz",
+      "path": "data\\source_isolated\\tm23\\Zr_melt_test.jsonl"
+    }
+  },
+  "notes": [
+    "Do not also ingest 2700cwm files: they repeat these labels.",
+    "Original test files remain test-only; train and test share a trajectory.",
+    "Use whole-temperature holdouts for transfer testing; no independent-seed claim.",
+    "No explicit time in XYZ: ordering/timing not verified for animation.",
+    "Stress preserved as metadata pending unit/sign verification.",
+    "Nonspin labels: particularly important for Co; never pool with spin-polarized labels."
+  ]
+}

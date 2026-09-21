@@ -15,7 +15,8 @@ def freeze(trials, output):
         p = Path(trial['checkpoint'])
         records.append({'name':trial['name'],'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                         'checkpoint':str(p),'metal':trial['metal'],'seed':trial['seed'],
-                        'train_frames':trial['train_frames'],'architecture':trial['architecture']})
+                        'train_frames':trial['train_frames'],'architecture':trial['architecture'],
+                        'train_config':trial['train_config'],'model_config':trial['model_config']})
     frozen = {'checkpoints':records,'selection_source':'warm validation only',
               'test_regimes':['cold','warm','melt'],'nve_seed':43,
               'note':'All configurations frozen before any final test evaluation.'}
@@ -79,11 +80,12 @@ def main():
     results={}
     for trial in trials:
         results[trial['name']]={}
-        for regime in ('cold','warm','melt'):
+        for regime in ('train','validation','cold','warm','melt'):
             path=output/'tests'/f"{trial['name']}_{regime}.json"
             if path.exists(): metric=json.loads(path.read_text())
             else: metric=evaluate_checkpoint(trial['checkpoint'],
-                f"data/focused/{trial['metal']}_cold_{trial['train_frames']}/test_{regime}.jsonl",
+                Path(f"data/focused/{trial['metal']}_cold_{trial['train_frames']}") /
+                ('train.jsonl' if regime=='train' else 'valid.jsonl' if regime=='validation' else f'test_{regime}.jsonl'),
                 path,atom_budget=1024,edge_budget=64000)
             assert not metric['excluded']
             results[trial['name']][regime]=metric

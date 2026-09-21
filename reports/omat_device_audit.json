@@ -1,0 +1,309 @@
+{
+  "files": {
+    "test\\aimd-from-PBE-1000-npt\\test.aselmdb": {
+      "scanned": 9392,
+      "selected": 2,
+      "formulas": {
+        "CuO": 2
+      },
+      "parents": 1
+    },
+    "test\\aimd-from-PBE-1000-nvt\\test.aselmdb": {
+      "scanned": 13346,
+      "selected": 2,
+      "formulas": {
+        "ZrO2": 2
+      },
+      "parents": 2
+    },
+    "test\\aimd-from-PBE-3000-npt\\test.aselmdb": {
+      "scanned": 3033,
+      "selected": 2,
+      "formulas": {
+        "HfO2": 2
+      },
+      "parents": 2
+    },
+    "test\\aimd-from-PBE-3000-nvt\\test.aselmdb": {
+      "scanned": 3925,
+      "selected": 2,
+      "formulas": {
+        "TiO2": 1,
+        "SiO2": 1
+      },
+      "parents": 2
+    },
+    "test\\rattled-1000\\test.aselmdb": {
+      "scanned": 6749,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "test\\rattled-1000-subsampled\\test.aselmdb": {
+      "scanned": 1488,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "test\\rattled-300\\test.aselmdb": {
+      "scanned": 3307,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "test\\rattled-300-subsampled\\test.aselmdb": {
+      "scanned": 2218,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "test\\rattled-500\\test.aselmdb": {
+      "scanned": 3605,
+      "selected": 1,
+      "formulas": {
+        "HfO2": 1
+      },
+      "parents": 1
+    },
+    "test\\rattled-500-subsampled\\test.aselmdb": {
+      "scanned": 2293,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "test\\rattled-relax\\test.aselmdb": {
+      "scanned": 4371,
+      "selected": 1,
+      "formulas": {
+        "WO3": 1
+      },
+      "parents": 1
+    },
+    "train\\aimd-from-PBE-1000-npt\\train.aselmdb": {
+      "scanned": 211578,
+      "selected": 27,
+      "formulas": {
+        "SiO2": 6,
+        "TiO2": 4,
+        "CuO": 1,
+        "Al2O3": 1,
+        "CoO": 1,
+        "Al": 2,
+        "Hf": 4,
+        "Zr": 2,
+        "Ta": 2,
+        "ZrO2": 1,
+        "Co": 2,
+        "Ti": 1
+      },
+      "parents": 21
+    },
+    "train\\aimd-from-PBE-1000-nvt\\train.aselmdb": {
+      "scanned": 201512,
+      "selected": 23,
+      "formulas": {
+        "Si": 4,
+        "Ru": 3,
+        "W": 3,
+        "SiO2": 4,
+        "Cu": 1,
+        "Co": 2,
+        "TiO2": 1,
+        "ZrO2": 1,
+        "Zr": 1,
+        "CoO": 1,
+        "Ta": 2
+      },
+      "parents": 18
+    },
+    "train\\aimd-from-PBE-3000-npt\\train.aselmdb": {
+      "scanned": 60477,
+      "selected": 9,
+      "formulas": {
+        "Si": 2,
+        "SiO2": 3,
+        "Al2O3": 3,
+        "Al": 1
+      },
+      "parents": 7
+    },
+    "train\\aimd-from-PBE-3000-nvt\\train.aselmdb": {
+      "scanned": 78011,
+      "selected": 15,
+      "formulas": {
+        "Al": 3,
+        "Zr": 1,
+        "SiO2": 4,
+        "Si": 3,
+        "Ru": 1,
+        "HfO2": 2,
+        "Al2O3": 1
+      },
+      "parents": 14
+    },
+    "train\\rattled-1000\\train.aselmdb": {
+      "scanned": 113337,
+      "selected": 11,
+      "formulas": {
+        "CuO": 2,
+        "Ta2O5": 1,
+        "Al2O3": 3,
+        "SiO2": 1,
+        "RuO2": 3,
+        "CoO": 1
+      },
+      "parents": 9
+    },
+    "train\\rattled-1000-subsampled\\train.aselmdb": {
+      "scanned": 38603,
+      "selected": 7,
+      "formulas": {
+        "Si": 2,
+        "HfO2": 1,
+        "SiO2": 1,
+        "CuO": 1,
+        "Al": 1,
+        "Co": 1
+      },
+      "parents": 7
+    },
+    "train\\rattled-300\\train.aselmdb": {
+      "scanned": 62894,
+      "selected": 2,
+      "formulas": {
+        "CuO": 1,
+        "Co": 1
+      },
+      "parents": 2
+    },
+    "train\\rattled-300-subsampled\\train.aselmdb": {
+      "scanned": 34462,
+      "selected": 3,
+      "formulas": {
+        "TiO2": 1,
+        "Co": 1,
+        "Ta": 1
+      },
+      "parents": 3
+    },
+    "train\\rattled-500\\train.aselmdb": {
+      "scanned": 68885,
+      "selected": 7,
+      "formulas": {
+        "HfO2": 1,
+        "Co": 2,
+        "CuO": 1,
+        "Cu": 2,
+        "CoO": 1
+      },
+      "parents": 7
+    },
+    "train\\rattled-500-subsampled\\train.aselmdb": {
+      "scanned": 39548,
+      "selected": 3,
+      "formulas": {
+        "W": 1,
+        "Al": 1,
+        "SiO2": 1
+      },
+      "parents": 3
+    },
+    "train\\rattled-relax\\train.aselmdb": {
+      "scanned": 100543,
+      "selected": 6,
+      "formulas": {
+        "SiO2": 1,
+        "Ta": 3,
+        "Ru": 1,
+        "TiO2": 1
+      },
+      "parents": 4
+    },
+    "val\\aimd-from-PBE-1000-npt\\val.aselmdb": {
+      "scanned": 22357,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\aimd-from-PBE-1000-nvt\\val.aselmdb": {
+      "scanned": 21558,
+      "selected": 1,
+      "formulas": {
+        "SiO2": 1
+      },
+      "parents": 1
+    },
+    "val\\aimd-from-PBE-3000-npt\\val.aselmdb": {
+      "scanned": 6524,
+      "selected": 1,
+      "formulas": {
+        "Si": 1
+      },
+      "parents": 1
+    },
+    "val\\aimd-from-PBE-3000-nvt\\val.aselmdb": {
+      "scanned": 8406,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\rattled-1000\\val.aselmdb": {
+      "scanned": 12293,
+      "selected": 2,
+      "formulas": {
+        "SiO2": 2
+      },
+      "parents": 2
+    },
+    "val\\rattled-1000-subsampled\\val.aselmdb": {
+      "scanned": 4178,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\rattled-300\\val.aselmdb": {
+      "scanned": 6859,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\rattled-300-subsampled\\val.aselmdb": {
+      "scanned": 3739,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\rattled-500\\val.aselmdb": {
+      "scanned": 7516,
+      "selected": 0,
+      "formulas": {},
+      "parents": 0
+    },
+    "val\\rattled-500-subsampled\\val.aselmdb": {
+      "scanned": 4306,
+      "selected": 1,
+      "formulas": {
+        "SiO2": 1
+      },
+      "parents": 1
+    },
+    "val\\rattled-relax\\val.aselmdb": {
+      "scanned": 9996,
+      "selected": 1,
+      "formulas": {
+        "Al": 1
+      },
+      "parents": 1
+    }
+  },
+  "selected_total": 129,
+  "parent_overlap_across_official_partitions": {
+    "test|train": 0,
+    "test|val": 0,
+    "train|val": 0
+  },
+  "training_enabled": false,
+  "split_policy": "Repartition by parent before training; official test parents remain excluded from training.",
+  "energy": "raw total energy; MP2020 corrections deliberately unused",
+  "trajectory_order_verified": false
+}

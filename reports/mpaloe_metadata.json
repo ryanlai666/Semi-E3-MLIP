@@ -1,0 +1,235 @@
+{
+  "files": [
+    {
+      "id": 57488704,
+      "name": "MP_ALOE_data.jsonl.gz",
+      "size": 675635633,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/57488704",
+      "supplied_md5": "0cac41b76cdc936848d360a14bdc9bf2",
+      "computed_md5": "0cac41b76cdc936848d360a14bdc9bf2",
+      "mimetype": "application/gzip"
+    },
+    {
+      "id": 55909334,
+      "name": "MPALOE.model",
+      "size": 31894259,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909334",
+      "supplied_md5": "73cbee33ebb1fd0a7b7b0bdc1cc54800",
+      "computed_md5": "73cbee33ebb1fd0a7b7b0bdc1cc54800",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 55909340,
+      "name": "MatPES.model",
+      "size": 31892386,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909340",
+      "supplied_md5": "2a128f32ecc36a1328b98b4d7717d72b",
+      "computed_md5": "2a128f32ecc36a1328b98b4d7717d72b",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 55909343,
+      "name": "MPALOE_MatPES_combined.model",
+      "size": 31894259,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909343",
+      "supplied_md5": "e0d97bf8a8eb61973ccb47924b74bf3c",
+      "computed_md5": "e0d97bf8a8eb61973ccb47924b74bf3c",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 55909346,
+      "name": "off_equilibrium_forces_data.json",
+      "size": 8428773,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909346",
+      "supplied_md5": "3a06ab1441d4391d3d59290014f59360",
+      "computed_md5": "3a06ab1441d4391d3d59290014f59360",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 55909355,
+      "name": "iter_1.zip",
+      "size": 1152706784,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909355",
+      "supplied_md5": "5f0a11a261769a43d4162cfe7b4ab3cb",
+      "computed_md5": "5f0a11a261769a43d4162cfe7b4ab3cb",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 55909349,
+      "name": "iter_2.zip",
+      "size": 988537024,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909349",
+      "supplied_md5": "3e357c4110589c69a37499e9b7488b02",
+      "computed_md5": "3e357c4110589c69a37499e9b7488b02",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 55909352,
+      "name": "iter_3.zip",
+      "size": 990550037,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55909352",
+      "supplied_md5": "49b7a947ed40d2a4f9276a729c6d1b35",
+      "computed_md5": "49b7a947ed40d2a4f9276a729c6d1b35",
+      "mimetype": "application/zip"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 17656335,
+      "full_name": "Matthew Kuner",
+      "first_name": "Matthew",
+      "last_name": "Kuner",
+      "is_active": true,
+      "url_name": "Matthew_Kuner",
+      "orcid_id": ""
+    },
+    {
+      "id": 9383835,
+      "full_name": "Aaron D. Kaplan",
+      "first_name": "Aaron D.",
+      "last_name": "Kaplan",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5775778,
+      "full_name": "Kristin Persson",
+      "first_name": "Kristin",
+      "last_name": "Persson",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5788089,
+      "full_name": "Mark Asta",
+      "first_name": "Mark",
+      "last_name": "Asta",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 4376803,
+      "full_name": "Daryl C. Chrzan",
+      "first_name": "Daryl C.",
+      "last_name": "Chrzan",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/MP-ALOE_An_r2SCAN_dataset_for_universal_machine_learning_interatomic_potentials/29452190",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">MP-ALOE is an r2SCAN dataset for Universal Machine Learning Interatomic Potentials (UMLIPs).</p><p dir=\"ltr\">The `MP_ALOE_DATA.jsonl.gz` file is the main distribution, containing pymatgen structure objects, associated properties (e.g. energies, forces, stresses, magmoms), and metadata about the structures' origin and a few sanity checks.</p><p dir=\"ltr\">The `MPALOE.model`, `MatPES.model`, and `MPALOE_MatPES_combined.model` files are all MACE potentials trained on the respective dataset(s).</p><p dir=\"ltr\">The `off_equilibrium_forces_data.json` contains the information necessary to recreate the off-equilibrium forces benchmark from the MP-ALOE paper.</p><p dir=\"ltr\">The files labeled `iter_[1,2,3].zip` contain the parsed Emmet TaskDocs, which contain information such as the input parameters used, energy at each electronic step, and a bunch of other more in-depth information about each calculation. It is expected that these files will not be needed for most users.</p>",
+  "funding": "This work was intellectually led by the Materials Project program KC23MP, supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, Materials Sciences and Engineering Division under contract No. DE-AC02-05-CH11231.\n\nMatthew Kuner was supported in part by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-2146752. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.\n\nThis research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).\n\nThis research used the Lawrencium computational cluster resource provided by the IT Division at the Lawrence Berkeley National Laboratory (Supported by the Director, Office of Science, Office of Basic Energy Sciences, of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231). \n\nThis research used resources of the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility located at Lawrence Berkeley National Laboratory, operated under Contract No. DE-AC02-05CH11231 using NERSC award BES-ERCAP-0022838.",
+  "funding_list": [
+    {
+      "id": 29126729,
+      "title": "This work was intellectually led by the Materials Project program KC23MP, supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, Materials Sciences and Engineering Division under contract No. DE-AC02-05-CH11231.\n\nMatthew Kuner was supported in part by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-2146752. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.\n\nThis research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).\n\nThis research used the Lawrencium computational cluster resource provided by the IT Division at the Lawrence Berkeley National Laboratory (Supported by the Director, Office of Science, Office of Basic Energy Sciences, of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231). \n\nThis research used resources of the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility located at Lawrence Berkeley National Laboratory, operated under Contract No. DE-AC02-05CH11231 using NERSC award BES-ERCAP-0022838.",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 2,
+  "status": "public",
+  "size": 3911539155,
+  "created_date": "2025-08-29T21:13:18Z",
+  "modified_date": "2025-08-29T21:13:18Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "universal machine learning interatomic potentials",
+    "dataset",
+    "active learning",
+    "off-equilibrium structures",
+    "density functional theory",
+    "r2SCAN",
+    "MP-ALOE"
+  ],
+  "keywords": [
+    "universal machine learning interatomic potentials",
+    "dataset",
+    "active learning",
+    "off-equilibrium structures",
+    "density functional theory",
+    "r2SCAN",
+    "MP-ALOE"
+  ],
+  "categories": [
+    {
+      "id": 25168,
+      "title": "Theory and design of materials",
+      "parent_id": 25141,
+      "path": "/25066/25141/25168",
+      "source_id": "340309",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 30166,
+      "title": "Condensed matter modelling and density functional theory",
+      "parent_id": 30157,
+      "path": "/30082/30157/30166",
+      "source_id": "510403",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 29173,
+      "title": "Machine learning not elsewhere classified",
+      "parent_id": 29152,
+      "path": "/28798/29152/29173",
+      "source_id": "461199",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Kuner, Matthew; Kaplan, Aaron D.; Persson, Kristin; Asta, Mark; Chrzan, Daryl C. (2025). MP-ALOE: An r2SCAN dataset for universal machine learning interatomic potentials. figshare. Dataset. https://doi.org/10.6084/m9.figshare.29452190.v2",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 29452190,
+  "title": "MP-ALOE: An r2SCAN dataset for universal machine learning interatomic potentials",
+  "doi": "10.6084/m9.figshare.29452190.v2",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/29452190",
+  "published_date": "2025-08-29T21:13:18Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/29452190",
+  "url_public_api": "https://api.figshare.com/v2/articles/29452190",
+  "url_private_html": "https://figshare.com/account/articles/29452190",
+  "url_public_html": "https://figshare.com/articles/dataset/MP-ALOE_An_r2SCAN_dataset_for_universal_machine_learning_interatomic_potentials/29452190",
+  "timeline": {
+    "posted": "2025-08-29T21:13:18",
+    "firstOnline": "2025-07-01"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

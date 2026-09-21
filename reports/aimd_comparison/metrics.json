@@ -1,0 +1,62 @@
+{
+  "checkpoint": "runs/device/expanded_tensor/best.pt",
+  "used_for_selection": false,
+  "cases": {
+    "Si_110_elong0.500": {
+      "force_mae_eV_A": 0.1928167710971753,
+      "force_rmse_eV_A": 0.2688022037235901,
+      "force_frames": 21,
+      "model_simulations": [
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 42,
+          "temperature_target_K": 300,
+          "final_temperature_K": 276.3714263996848,
+          "energy_change_eV_atom": 0.0054076486692517176,
+          "energy_range_eV_atom": 0.008590173560963666,
+          "energy_slope_eV_atom_ps": 0.006255502427799932,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 43,
+          "temperature_target_K": 300,
+          "final_temperature_K": 293.51332420851077,
+          "energy_change_eV_atom": 0.010681313975081989,
+          "energy_range_eV_atom": 0.013764393899083205,
+          "energy_slope_eV_atom_ps": 0.021474127557955386,
+          "drift_is_conservation_check": false
+        },
+        {
+          "ensemble": "nvt",
+          "steps": 1000,
+          "dt_fs": 0.5,
+          "seed": 44,
+          "temperature_target_K": 300,
+          "final_temperature_K": 258.83959078133796,
+          "energy_change_eV_atom": 0.00418853771092413,
+          "energy_range_eV_atom": 0.012609334348326229,
+          "energy_slope_eV_atom_ps": 0.011539499803787542,
+          "drift_is_conservation_check": false
+        }
+      ],
+      "failed_runs": [],
+      "reference": {
+        "path": "data\\aimd\\Si_110_elong0.500.jsonl",
+        "frames": 101,
+        "dt_fs": 5.0,
+        "temperature_K": 300.0,
+        "source_prefix": "Si_SiO2/s4-dpgen/input/data.init/Si/surf/gendata/surf-110/elong-0.500/",
+        "duration_fs": 500.0,
+        "ensemble": "NVT Nose-Hoover",
+        "circumstance": "Si (110) surface, source elongation parameter 0.500",
+        "limitation": "500 fs, PBE reference versus r2SCAN model; no reference velocities"
+      }
+    }
+  },
+  "limitations": "500 fs; surface transfer; PBE versus r2SCAN; different thermostat and initial velocities; no diffusion claim"
+}

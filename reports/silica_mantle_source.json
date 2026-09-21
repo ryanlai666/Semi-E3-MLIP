@@ -1,0 +1,110 @@
+{
+  "created": "2025-09-03T22:04:38.215791+00:00",
+  "modified": "2025-09-03T22:04:38.372587+00:00",
+  "id": 17049935,
+  "conceptrecid": "17049934",
+  "doi": "10.5281/zenodo.17049935",
+  "conceptdoi": "10.5281/zenodo.17049934",
+  "doi_url": "https://doi.org/10.5281/zenodo.17049935",
+  "metadata": {
+    "title": "SiO2 Melting and Phase Boundary under Mantle Conditions determined from Machine Learning Potentials",
+    "doi": "10.5281/zenodo.17049935",
+    "publication_date": "2025-09-03",
+    "description": "<p>The training set and the machine learning potential of SiO2</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Deng, Xin",
+        "affiliation": "Carnegie Institution for Science",
+        "orcid": "0000-0001-8110-7536"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17049934"
+          }
+        }
+      ]
+    }
+  },
+  "title": "SiO2 Melting and Phase Boundary under Mantle Conditions determined from Machine Learning Potentials",
+  "links": {
+    "self": "https://zenodo.org/api/records/17049935",
+    "self_html": "https://zenodo.org/records/17049935",
+    "preview_html": "https://zenodo.org/records/17049935?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17049935",
+    "self_doi": "https://doi.org/10.5281/zenodo.17049935",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17049935",
+    "reserve_doi": "https://zenodo.org/api/records/17049935/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17049934",
+    "parent_html": "https://zenodo.org/records/17049934",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17049934",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17049934",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17049935/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17049935/sequence/default",
+    "files": "https://zenodo.org/api/records/17049935/files",
+    "media_files": "https://zenodo.org/api/records/17049935/media-files",
+    "archive": "https://zenodo.org/api/records/17049935/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17049935/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17049935/versions/latest",
+    "latest_html": "https://zenodo.org/records/17049935/latest",
+    "versions": "https://zenodo.org/api/records/17049935/versions",
+    "draft": "https://zenodo.org/api/records/17049935/draft",
+    "access_links": "https://zenodo.org/api/records/17049935/access/links",
+    "access_grants": "https://zenodo.org/api/records/17049935/access/grants",
+    "access_users": "https://zenodo.org/api/records/17049935/access/users",
+    "access_request": "https://zenodo.org/api/records/17049935/access/request",
+    "access": "https://zenodo.org/api/records/17049935/access",
+    "communities": "https://zenodo.org/api/records/17049935/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17049935/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17049935/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17049935/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/17049935/quota-increase",
+    "requests": "https://zenodo.org/api/records/17049935/requests"
+  },
+  "updated": "2025-09-03T22:04:38.372587+00:00",
+  "recid": "17049935",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e5a9a99e-9cce-4fef-a671-f7509de3df9a",
+      "key": "SiO2_dataset.tar.gz",
+      "size": 77337416,
+      "checksum": "md5:712d91532db36c8a920576293f2d3d3f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17049935/files/SiO2_dataset.tar.gz/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "202838"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 30,
+    "unique_downloads": 30,
+    "views": 40,
+    "unique_views": 40,
+    "version_downloads": 30,
+    "version_unique_downloads": 30,
+    "version_unique_views": 40,
+    "version_views": 40
+  },
+  "state": "done",
+  "submitted": true
+}

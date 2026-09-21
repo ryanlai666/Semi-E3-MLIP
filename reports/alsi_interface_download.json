@@ -1,0 +1,504 @@
+{
+  "revision": "f42e4e9911936e6c56f0d869d6e36bba80a1b960",
+  "files": [
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.000\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.000/box.npy",
+      "git_blob_sha1": "19eadb0fd3af58761967b8d5efe168852c9dba02",
+      "sha256": "aab1a2c3421cb1f67cb80cdc2f933727635547bbb003eed13c5f9b1cbeaeb2f6",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.000\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.000/coord.npy",
+      "git_blob_sha1": "d1dfc3813ff00ffcf5c21fea6731872963a5d4a0",
+      "sha256": "b2bd12305fbd3d45710693dd2f600b98d2d39e96d3e5cc7c56689fb12dfa8c74",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.000\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.000/energy.npy",
+      "git_blob_sha1": "1800ae2a1bc6b26b5da00445ced4b1b9e6c12576",
+      "sha256": "b8a9357ad3bc61d38fd66c89bd6e792cbfcae31de432f471678b5af2b19b28af",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.000\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.000/force.npy",
+      "git_blob_sha1": "4ef96283b54e69183717eb80f5e261958d66b7b7",
+      "sha256": "a092e29f5a3ae99e6d7e90ef08f81aa764cb6c360fb231e81be8494f9fb7e536",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.000\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.000/virial.npy",
+      "git_blob_sha1": "6a79f04546b36f8634dc098ca0769c3f0838e649",
+      "sha256": "d4f39e70c2bed4ec7c4ca46913e6d98be443d47029b1ab3ef029afd00d0d389e",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.001\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.001/box.npy",
+      "git_blob_sha1": "498fe7d8e012519325974128e95a2293c2f671e3",
+      "sha256": "f19d5797f3f94d2e05697f5b722f71750e555c2ab824b21ea196153cd5a6d482",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.001\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.001/coord.npy",
+      "git_blob_sha1": "b42757878ea5f57ad22c1046b1add5c0be1be70a",
+      "sha256": "6ee4980604475b612a6399bfdff679eecb97d6d21421331388bc9cbf2d38fe61",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.001\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.001/energy.npy",
+      "git_blob_sha1": "c08d5eff961f8f3dcb5792c1fdfd5335b849d9b9",
+      "sha256": "f99513765ac6ea9f9f607021a678c93f71e85a7ec38c4f9719040458655d67d6",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.001\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.001/force.npy",
+      "git_blob_sha1": "128c8163c3854a3d6a7bade970b77238b685c273",
+      "sha256": "26b56611991b585037a5eba852ad1bbad6edb8ef221403472d2dc59568a22bd9",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.001\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.001/virial.npy",
+      "git_blob_sha1": "dc8b811a118a90f79365b417843102e3b441a503",
+      "sha256": "78c7e6fa6ed284cce5b21c3eeec3f1e5f5ef8b7400ce493692ef2ea30d75a5a7",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.002\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.002/box.npy",
+      "git_blob_sha1": "72a785fe9a9964fc6050891b62d86756250a33e3",
+      "sha256": "8b14c54e1ebb8ae92fc274037c39cc3f72b1c40d12df902be7edb4be3e287f9d",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.002\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.002/coord.npy",
+      "git_blob_sha1": "dfa10cb705278f9859672687a646a2b63ef988ae",
+      "sha256": "fc089e0ce632e680cc5d9c5643d376fdd4e28c7c3986a74988e1228500d5404b",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.002\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.002/energy.npy",
+      "git_blob_sha1": "84c428c2531dcfe8c7a7f62f303edb5bd728536f",
+      "sha256": "b6ff279d86133dc6fda79037bf772f8b98b543fff5a2a00ca66f84978b1cd0d7",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.002\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.002/force.npy",
+      "git_blob_sha1": "1354332058179ecde5dd734f3196c399202ea211",
+      "sha256": "b2af82f2c6082d932e4c01156d08142eeaf6ac21cfe490da6c452c4ec20d29cc",
+      "bytes": 48960128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.002\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.002/virial.npy",
+      "git_blob_sha1": "3a2bbf6ae0e11b53ace279fa4dadf535d8676221",
+      "sha256": "5ef8514256f7f078aef3ddfa22cf79ae0ad99d1cade53010679377cd92d3abfc",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.003\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.003/box.npy",
+      "git_blob_sha1": "d96ee1641bd343d74170916e1a3968615ef562da",
+      "sha256": "6fc87b3ebffbdaf2c7e224ff9abd81c6c549dec6d4ea4728da95fbc9fe6a2fd7",
+      "bytes": 216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.003\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.003/coord.npy",
+      "git_blob_sha1": "0ebbc223f6049ae3714022ca8e45b27b65cbe145",
+      "sha256": "137dc93d01d2a3e96c1d82b5d36e1d8e7a280ceb02493912136aceae6309ed9e",
+      "bytes": 29376128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.003\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.003/energy.npy",
+      "git_blob_sha1": "d9c9d4c99b7dc04e9f51bba1ad1c1f2a68823c00",
+      "sha256": "1f415536ebe6307c231dda92bb4edce0112c2a475e944d022cdcf7e8757b9eec",
+      "bytes": 24128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.003\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.003/force.npy",
+      "git_blob_sha1": "1d4d9117a7ff796cb2d52394003008b9c949ffca",
+      "sha256": "0aaa316720de3271c03d046fd763f85759919cd82bf71dc8751520455a9b5fec",
+      "bytes": 29376128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\set.003\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/set.003/virial.npy",
+      "git_blob_sha1": "aeb2feb9b45c28a25f82b4ec0f7ffca73f17e1ac",
+      "sha256": "7874ca5125c3d45211264bd8e1504a0b54ddba4b12d7ce52c6a7d15f7c3e17c7",
+      "bytes": 216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\type.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/type.raw",
+      "git_blob_sha1": "bd51f33318ab2866f427e2904a1c4277b8cae292",
+      "sha256": "d429ada00e467d1987fd28a9ecca80e037937d83940e5e7ce7316a46400998f1",
+      "bytes": 816
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Al-Si-Interface\\Al192Si216\\type_map.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Al-Si-Interface/Al192Si216/type_map.raw",
+      "git_blob_sha1": "b5d11ab030e411f94fe95e270c56969088eed16e",
+      "sha256": "b8917607ef629ceefd30ab185398f3eaa311fa411c73b1c16076699bb5731625",
+      "bytes": 6
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.000\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.000/box.npy",
+      "git_blob_sha1": "4bad3894acef11a96e0c7fdf7747676a2fbf60e2",
+      "sha256": "59384129bc8c3394bcb89cfdbf14b2f6fc2e6ae9e79406678050a4071bb9744a",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.000\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.000/coord.npy",
+      "git_blob_sha1": "2d3678b3739862fc92264b6958ccfe172dc4c4c4",
+      "sha256": "f206964c3865918616f436b74642b8b5c6a369685f16637df2eb1070439cfa50",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.000\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.000/energy.npy",
+      "git_blob_sha1": "5bb57f93bb985374da26784a42417ccba69649d9",
+      "sha256": "69a26117dd7af699e72f5f013e8d6fb4225615fa39d8a3db80a708a6645e5795",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.000\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.000/force.npy",
+      "git_blob_sha1": "f24058d4034f741d4e86af016ab14ce29ae57305",
+      "sha256": "1f94fb80023f7aa85b6d19312b72e18a331a6ec21ebd20776458c67a102d3e67",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.000\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.000/virial.npy",
+      "git_blob_sha1": "1a5d9ff523cf2a35b421fa45343b30aad10210e2",
+      "sha256": "f4d0d974cb9a2f227bda068730cfbdd779ce02761b2e1548b0e3daa35a9166c6",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.001\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.001/box.npy",
+      "git_blob_sha1": "20fdb3fbb4dee4d4c56cee261363c3b33261ce53",
+      "sha256": "251a27b732cc9c35c83783922d036d12696f6b0ca9aaec3824088c399e66f3ce",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.001\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.001/coord.npy",
+      "git_blob_sha1": "f4bc370bff601a774d0929521713889824c8cf08",
+      "sha256": "655223f94fa3230ba8dc20577da0ef23ee2e017bbaa662a4e431a028127b39d8",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.001\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.001/energy.npy",
+      "git_blob_sha1": "11cf40b3b23cbf8f05b112bd8e081d655ea017a1",
+      "sha256": "e6fdb77ef6b838af6440500b7ea10105d0167341a59bebdb9c9dce0c444448e9",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.001\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.001/force.npy",
+      "git_blob_sha1": "ec21324da54604fff3a0271a05871149c5375a09",
+      "sha256": "6fc3fd1ee31dd6defcf287a75a750ce3c23869f4669ea24fd5b73273b9eeb3c1",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.001\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.001/virial.npy",
+      "git_blob_sha1": "a6dd06a3e00f1e8fecb3b4cb6d9e0f5324574c4e",
+      "sha256": "94e9ea96cc87ca7fe84d0319fff6c1c009cf2b09db2ad22a652c25b9b436c39c",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.002\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.002/box.npy",
+      "git_blob_sha1": "e1262748dcb9da8d987720d7244a00bcbdc213b0",
+      "sha256": "8d198245259d115dd1c255a9254e1cf33be59c1e4604d865f531a620832d69cf",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.002\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.002/coord.npy",
+      "git_blob_sha1": "c6d405be9d71ce2c4a69aecbd549aee8be871a9f",
+      "sha256": "a43adbe7a6f8b9b31b2e8da20a2855b88e794773e80d554988f638f11b9b4e2a",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.002\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.002/energy.npy",
+      "git_blob_sha1": "c05b1a1bffc1880c162aac09bd86c813369684d8",
+      "sha256": "7b71cd72e90dcf20898252bda291cd7e7bab0b239748b077956281467873a97c",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.002\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.002/force.npy",
+      "git_blob_sha1": "3756182fade0f69fce95b606fff56c806a6db036",
+      "sha256": "a132a3e0c734c200e3af156f78003dc125520b2f3115f25cd00a07744bb5572c",
+      "bytes": 38400128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.002\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.002/virial.npy",
+      "git_blob_sha1": "8e9164b22eb8ff349dce7957b8cde52127576cde",
+      "sha256": "f4687db38f733667017f7b3900c3d5aff6669e1555aa3b126f00051c655aaade",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.003\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.003/box.npy",
+      "git_blob_sha1": "8e0129237f579cf865e48009b04bea91859dc128",
+      "sha256": "d2513a5b3a3d4410f0c91e423783d4458bb69814079ae93337aec4a0c333f3ad",
+      "bytes": 58016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.003\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.003/coord.npy",
+      "git_blob_sha1": "097b5c877af11c96aa6c35a8f3a120959a813612",
+      "sha256": "75e95c958f744910dc16a48bd88098728fd3b9a674cdaf23b7994930007e4b2a",
+      "bytes": 6174848
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.003\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.003/energy.npy",
+      "git_blob_sha1": "4a088f4e718b1cac36e6b7c1a315fd8585ca6bd7",
+      "sha256": "60ca76557391fad4d9478eecd33368d1b503ae65321a487166118fa9ce9b3faa",
+      "bytes": 6560
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.003\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.003/force.npy",
+      "git_blob_sha1": "1c1fff3c526d6e5ce40ee5040dd9cf989dc2fa15",
+      "sha256": "b96ff7f1a63d8b1f24a8c9b2ecc3953699ec2e4f69bb5d94582879a06b2e286d",
+      "bytes": 6174848
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\set.003\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/set.003/virial.npy",
+      "git_blob_sha1": "bb71aaca92a1252292cd166fb45f9161ad5709ad",
+      "sha256": "c834aa98b47725afed8e7c73e57eb9941f1cf030bacf053689e96662e72f105c",
+      "bytes": 58016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\type.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/type.raw",
+      "git_blob_sha1": "23395c00b02e88dfb76b02d1ae1db2150fa1f89c",
+      "sha256": "10431abf82610ea929eb606ca267f8b0b9edba7fd024bdbb689ee0a5258b6caf",
+      "bytes": 640
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Al\\Al320\\type_map.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Al/Al320/type_map.raw",
+      "git_blob_sha1": "d061aecc4edf1264e52b72e2efe0e2a449ec8bd1",
+      "sha256": "caca9e1e8fb0757238c027c8bad3af35e724e3a84ae3acb5a3cd2db9a9966f95",
+      "bytes": 3
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.000\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.000/box.npy",
+      "git_blob_sha1": "b979ebec3f4bcd407725c6bd4d7f2337fe7c5f38",
+      "sha256": "8c606706b28e085ae3051fb8e734c8689af720e1acb4e228fd86c9a11ae3707b",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.000\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.000/coord.npy",
+      "git_blob_sha1": "4400fccc01f86e7c124bcf7c11a418a61533d009",
+      "sha256": "49f170c548e3301a467e752dbbec4ef0e32f99b49dea5855a33977c59b9caa74",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.000\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.000/energy.npy",
+      "git_blob_sha1": "b400b62acafca1cb7fc7db2b942de99db3b15e07",
+      "sha256": "acecb8337a3ca1e2c724d4735e84a78d5b4dc24043b2b7e35b304cadb069dd71",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.000\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.000/force.npy",
+      "git_blob_sha1": "048da8781fa99a8c8e1fd903ddac831fa8689272",
+      "sha256": "15c50077659ec8fc85d024358fbe45bae90b95a1495509584b9e4026ca14bfe8",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.000\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.000/virial.npy",
+      "git_blob_sha1": "10f31f80c1156ac7b8ef9550c6a31d105cfa7646",
+      "sha256": "07cc52d31149289b762622cf637f2868962b10c4964326f7a06c88968b96eb68",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.001\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.001/box.npy",
+      "git_blob_sha1": "1c949ba1669e99e745db26f71433360275d51017",
+      "sha256": "73d30f083b5eb20d9ed46ec682fa9cfd102ea80557dc8c81cb778274b4de5136",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.001\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.001/coord.npy",
+      "git_blob_sha1": "dcd9e41f3c25d4a6a18e934433061b78fb47b267",
+      "sha256": "1e137d212e84af50858c0ae74efa8c87122b9ea80293cc35b00d364522facdb8",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.001\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.001/energy.npy",
+      "git_blob_sha1": "e04c05daf1734b6553688b54a3c0ed5ae40e734b",
+      "sha256": "c2d32fb4a18a3577d02b25016865eb9757af29eb677d2b835419aca5095cc140",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.001\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.001/force.npy",
+      "git_blob_sha1": "8205f7a0a482d6b7d073f5dd575ae984b38bdb15",
+      "sha256": "9f3a600ba3006804ef83896333373f3da6188af9400b85c0c509277f52d18523",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.001\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.001/virial.npy",
+      "git_blob_sha1": "64690940ed7df04b9beed3fe0c2abe3a951f4193",
+      "sha256": "b81e6008a2fff2b476cd81ef93245a1a3f86069b9f6dbd7b9a0668a755bd5df2",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.002\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.002/box.npy",
+      "git_blob_sha1": "c6b6be8f07495b802409348c931c77ee95f69183",
+      "sha256": "757bfbeb7686c1269a199be90c6512caf0008064abbbb0e04c171e9221370d49",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.002\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.002/coord.npy",
+      "git_blob_sha1": "ab8c578f592bc0684dc4c9a09964a757a9aa64ea",
+      "sha256": "700915859ee137367369596e2a7440972c32fe92719df4279a54510e91693e14",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.002\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.002/energy.npy",
+      "git_blob_sha1": "145eff06b01194fd59ec0733e2e38e47f74ff588",
+      "sha256": "d0b53ea8de8dd812bee1150ab0b883b8eb4e2ba4e2159a963fc4a1dab64474fc",
+      "bytes": 40128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.002\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.002/force.npy",
+      "git_blob_sha1": "10907e5e4cc5b797bac557f9f97cb954db281b8e",
+      "sha256": "97d585e35ab7641664ee666b15df74f92d5e013dc4921ccb546aad9d9d1ad827",
+      "bytes": 15360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.002\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.002/virial.npy",
+      "git_blob_sha1": "efaaa5e6e915d37c48072238d30d36bb25c8a4b2",
+      "sha256": "f74986f5b84185a8f822b9d41177c331895466deba5d36193480c93cd0f6485b",
+      "bytes": 360128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.003\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.003/box.npy",
+      "git_blob_sha1": "ef9b9bcacf19951c955f0a72bcb27ba01e8f7cd7",
+      "sha256": "4acc9053e59bb4d738a2636ba9ebccb9bd0d98ae88c5b4a809c4ed07d8752669",
+      "bytes": 216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.003\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.003/coord.npy",
+      "git_blob_sha1": "fe96d183510026ab43483af962c8c85a39141351",
+      "sha256": "6cae784f0c12dc15ed14846fb9a6db8d91a5bc6d49026f5843e17c356268bedd",
+      "bytes": 9216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.003\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.003/energy.npy",
+      "git_blob_sha1": "21306a204fee6838e3c66d23d6496dc2f6428082",
+      "sha256": "bec6adde5d00435a511393bd48292a41eca048e88b0511d044ff2646719b0cc9",
+      "bytes": 24128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.003\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.003/force.npy",
+      "git_blob_sha1": "da6d89a23b7a3b6e1ae80bbdceed97bdf05126ab",
+      "sha256": "ec64fe31b063d8b379e6386b9f99e17bfb9849ad27b9eaa38d5d5578492ed38b",
+      "bytes": 9216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.003\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.003/virial.npy",
+      "git_blob_sha1": "758c5ac0703c925fcd312f420296228d638888e9",
+      "sha256": "0a2b8650802803da0c9f18bbd347deebb9c99e07e3dd122093deddff97dba075",
+      "bytes": 216128
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.004\\box.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.004/box.npy",
+      "git_blob_sha1": "5905ff35c64acdcc8f0c22675cec373c78a45748",
+      "sha256": "492bbb5fbb808a369613ee43a15ef872d0029a08d821e7b9a58d9ad3b278e14c",
+      "bytes": 58016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.004\\coord.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.004/coord.npy",
+      "git_blob_sha1": "d56ec2de22d48cd2d249c8ccb58868a14ed465b4",
+      "sha256": "cc3aeb2141c06240209c171de3f69e43ad17b7adc0e926af4c123d513954a44b",
+      "bytes": 2470016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.004\\energy.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.004/energy.npy",
+      "git_blob_sha1": "b24fc477baef4beb0394cd2379529e85d7553d2d",
+      "sha256": "380d80b3ba0b8ec61b6f9d49e932d8fac3ca2e56bfdc5740553f7c9689180d66",
+      "bytes": 6560
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.004\\force.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.004/force.npy",
+      "git_blob_sha1": "26b4445138ae7af22057cade3c4606ab321e7f97",
+      "sha256": "83d2810b3bc69e93c3a339ebade99612415f8086c65e45b68a8f95138b649435",
+      "bytes": 2470016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\set.004\\virial.npy",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/set.004/virial.npy",
+      "git_blob_sha1": "dd9a97fbd691af2be14ab9b11a73f28fc310122a",
+      "sha256": "2eafc93eedc7c54a993c1cde6fe46b55bd4f4c6edc7c1ed2c09853ec5f82193e",
+      "bytes": 58016
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\type.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/type.raw",
+      "git_blob_sha1": "9e77e6496073a895c438910ab126c37580640c23",
+      "sha256": "23435f5e49cf2fa72113d48715fbef0fe23c8c2dcc6615ffd9c82537d8c08289",
+      "bytes": 256
+    },
+    {
+      "path": "data\\raw\\alsi_interface_2025\\Dataset\\Bulk_Si\\Si128\\type_map.raw",
+      "url": "https://raw.githubusercontent.com/krutarth24/Al-Si-DeePMD-NNP/f42e4e9911936e6c56f0d869d6e36bba80a1b960/Dataset/Bulk_Si/Si128/type_map.raw",
+      "git_blob_sha1": "b5d11ab030e411f94fe95e270c56969088eed16e",
+      "sha256": "b8917607ef629ceefd30ab185398f3eaa311fa411c73b1c16076699bb5731625",
+      "bytes": 6
+    }
+  ],
+  "citation": "https://doi.org/10.1063/5.0243641",
+  "license": "No explicit license file in pinned repository tree; retain source attribution."
+}

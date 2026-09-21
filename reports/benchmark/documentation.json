@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-09-21T06:33:14.577717+00:00",
+  "complete": false,
+  "pending_artifacts": [
+    "reports/focused/summary.json",
+    "reports/focused/md.json",
+    "reports/benchmark/pilot_completion.json",
+    "reports/benchmark/inference.json",
+    "reports/simulation_checks.json"
+  ],
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "materials": 20,
+  "aimd_completed_cases": 1
+}

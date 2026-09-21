@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-21",
+  "archives": [
+    {
+      "path": "data\\raw\\tm23.zip",
+      "bytes": 936628742,
+      "sha256": "f390a15b29fdaa21192db9506da3a73e64650900d834ec2759bb36bcc07b83c6",
+      "source": "https://archive.materialscloud.org/record/2024.48"
+    },
+    {
+      "path": "data\\raw\\unialcu.zip",
+      "bytes": 746392511,
+      "sha256": "3c64b0a98f5f5ee085eb10e87767ab8dcb6dbd58e7c1b4dde3c5efe42b7971c7",
+      "source": "https://zenodo.org/records/15865800"
+    },
+    {
+      "path": "data\\raw\\alsi_2025.zip",
+      "bytes": 362401526,
+      "sha256": "0d7c4a8d7528ac8152ee5f9d15a53741344d8ecbfcf834ab13eed02666960919",
+      "source": "https://doi.org/10.24435/materialscloud:3h-sc"
+    },
+    {
+      "path": "data\\raw\\silica_mantle.tar.gz",
+      "bytes": 77337416,
+      "sha256": "ccb8e2e61174ee0a5750476980562b34988ce5a43f1000d73d2339c5c45914f9",
+      "source": "https://zenodo.org/records/17049935"
+    },
+    {
+      "path": "data\\raw\\omat24_1M_251210.tar.gz",
+      "bytes": 2274568000,
+      "sha256": "789ecc1306575a1652806b339265d7659c57282eeb1b3e3b54ba0e1154938b81",
+      "source": "https://huggingface.co/datasets/facebook/OMAT24"
+    }
+  ],
+  "audit_reports": [
+    "tm23_audit.json",
+    "omat_device_audit.json",
+    "oxide_data_audit.json",
+    "unialcu_audit.json",
+    "alsi_alloy_audit.json",
+    "alsi_interface_audit.json",
+    "aimd_extended_manifest.json",
+    "silica_reference_manifest.json",
+    "silica_mantle_audit.json"
+  ],
+  "aimd_derived_records_in_three_focused_sources": 112608,
+  "cross_source_deduplicated": false,
+  "readiness": "Enough for substantial source-specific pilots; not validated universal device coverage",
+  "merged_into_r2scan_training": false
+}
