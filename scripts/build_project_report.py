@@ -2,6 +2,8 @@
 import argparse
 from datetime import datetime, timezone
 import json
+import hashlib
+import subprocess
 from pathlib import Path
 import shutil
 import numpy as np
@@ -47,11 +49,13 @@ def focused_table(study,tests,key="force_mae_eV_A",scale=1):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--allow-partial',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--allow-partial',action='store_true')
+    parser.add_argument('--visibility',choices=['private','public'],default='private');args=parser.parse_args()
+    if args.visibility=='public' and args.allow_partial:raise ValueError('Public-release documentation requires completed results')
     required=['reports/focused/summary.json','reports/focused/md.json','reports/aimd_comparison/metrics.json',
               'reports/benchmark/complete.json','reports/benchmark/pilot_completion.json',
               'reports/benchmark/inference.json','reports/simulation_checks.json',
-              'reports/benchmark/dataset_distributions.json']
+              'reports/benchmark/dataset_distributions.json','reports/visualizations/complete.json']
     missing=[p for p in required if not (ROOT/p).exists()]
     focused_state=read('reports/focused/confirm.json',{})
     if not focused_state.get('complete') or len(focused_state.get('trials',[]))!=12:
@@ -67,6 +71,10 @@ def main():
     if not args.allow_partial:
         from plot_aimd_results import main as plot_aimd
         plot_aimd()
+        from focused_distributions import main as plot_focused_data
+        plot_focused_data()
+        from plot_material_dynamics import main as plot_dynamics
+        plot_dynamics()
     ASSETS.mkdir(parents=True,exist_ok=True)
     for name in ('backbone','generalization','hyperparameter_comparison'):
         for ext in ('png','svg','pdf'):copy_asset(f'reports/figures/{name}.{ext}')
@@ -78,12 +86,19 @@ def main():
         for ext in ('png','svg','pdf'):
             copy_asset(f'reports/aimd_comparison/{name}_metrics.{ext}','aimd_'+name+'_metrics.'+ext)
     for name in ('silicon','copper','silica','alumina','hafnia','titania'):
-        for ext in ('gif','png'):copy_asset(f'reports/visualizations/{name}.{ext}','forces_'+name+'.'+ext)
+        for ext in ('gif','png'):
+            copy_asset(f'reports/visualizations/{name}.{ext}','forces_'+name+'.'+ext)
+            copy_asset(f'reports/visualizations/{name}_md.{ext}','md_'+name+'.'+ext)
     benchmark={s:read(f'reports/benchmark/{s}.json') for s in ('train','validation','test','oxide_test')}
     overview=table(['Partition','Frames','Energy MAE (meV/atom)','Force MAE (eV/A)'],[
         [label,benchmark[s]['overall']['frames'],number(benchmark[s]['overall']['energy_mae_eV_atom'],1000),
          number(benchmark[s]['overall']['force_mae_eV_A'])]
         for s,label in [('train','Expanded training'),('validation','MatPES validation'),('test','MatPES test'),('oxide_test','MP-ALOE oxide test')]])
+    tails=table(['Partition','Force RMSE (eV/A)','High-force MAE (eV/A)','Zero-force baseline MAE','Model / baseline'],[
+        [split,number(value['overall']['force_rmse_eV_A']),number(value['overall']['high_force_mae_eV_A']),
+         number(value['overall']['zero_force_baseline_mae_eV_A']),
+         f"{100*value['overall']['force_mae_eV_A']/value['overall']['zero_force_baseline_mae_eV_A']:.1f}%"]
+        for split,value in benchmark.items()])
     coverage=read('reports/benchmark/materials.json')['systems']
     materials=table(['System','Train / valid / test / oxide-test frames','Train force MAE','MatPES test force MAE','Oxide test force MAE'],[
         [r['label'],' / '.join(str((r[s] or {}).get('frames',0)) for s in ('train','validation','test','oxide_test')),
@@ -96,6 +111,21 @@ def main():
     tests=read('reports/focused/tests.json')
     focused=focused_table(study,tests) if tests else f"Confirmation training in progress: {len(study['trials'])}/12 trial records. Final test results are not yet available."
     focused_energy=focused_table(study,tests,'energy_mae_eV_atom',1000) if tests else 'Energy tables will be generated after checkpoint freezing.'
+    seed_table=table(['Material','Frames','Seed','Validation MAE','Cold MAE','Warm MAE','Molten MAE','Molten RMSE'],[
+        [t['metal'].title(),t['train_frames'],t['seed'],
+         *[number(tests[t['name']][regime]['overall']['force_mae_eV_A']) for regime in ('validation','cold','warm','melt')],
+         number(tests[t['name']]['melt']['overall']['force_rmse_eV_A'])] for t in study['trials']]) if tests else 'Per-seed final tests are pending.'
+    cost=[]
+    trials={t['name']:t for t in screen['trials']+study['trials']}
+    for name,trial in trials.items():
+        history=ROOT/Path(trial['checkpoint'].replace('\\','/')).parent/'history.jsonl'
+        if history.exists():
+            rows=[json.loads(line) for line in history.read_text().splitlines()]
+            cost.append({'name':name,'epochs_recorded':rows[-1]['epoch'],'parameters':trial['parameters'],
+                         'epoch_seconds_sum':sum(r['epoch_seconds'] for r in rows),
+                         'history_sha256':hashlib.sha256(history.read_bytes()).hexdigest()})
+    (ROOT/'reports/focused/training_cost.json').write_text(json.dumps({'trials':cost,
+        'limitation':'Measured epoch wall times exclude graph preparation and include concurrent workload effects. Not a controlled architecture speed comparison.'},indent=2)+'\n')
     aimd_rows=[]
     for name,case in aimd['cases'].items():
         aimd_rows.append([name.replace('_',' '),case.get('force_frames',0),number(case.get('force_mae_eV_A')),
@@ -107,6 +137,10 @@ def main():
         md_rows.append([name,'failed' if case.get('failed') else number(case['energy_range_eV_atom'],1000),
                         '--' if case.get('failed') else number(case['energy_slope_eV_atom_ps'],1000)])
     md_table=table(['Model / timestep','Energy range (meV/atom)','Fitted drift (meV/atom/ps)'],md_rows) if md_rows else 'Focused NVE diagnostics are queued after training.'
+    material_checks=read('reports/simulation_checks.json',{})
+    material_md=table(['Material','Relaxed to tolerance','0.5 fs NVE range (meV/atom)','0.25 fs NVE range (meV/atom)'],[
+        [name,c.get('relaxation_converged','failed'),number(c.get('nve_05',{}).get('energy_range_eV_atom'),1000),
+         number(c.get('nve_025',{}).get('energy_range_eV_atom'),1000)] for name,c in material_checks.items()])
     inference=read('reports/benchmark/inference.json')
     perf=table(['Device','System','Atoms','Median (ms)','p10 / p90 (ms)'],[
         [r['device'],r['system'],r['atoms'],number(r['median_ms']),f"{r['p10_ms']:.2f} / {r['p90_ms']:.2f}"] for r in inference['cases']]) if inference else 'Inference timing is queued after training and AIMD finish to avoid competing workloads.'
@@ -127,6 +161,13 @@ All force MAEs are averages over Cartesian force components. Energy MAE is per a
 Training metrics use the selected checkpoint, not the last epoch. The expanded
 training set includes MatPES and MP-ALOE data; their held-out sets remain separate.
 The broad model does not meet the original 10 meV/atom / 0.1 eV/A test goals.
+
+{tails}
+
+High-force MAE includes Cartesian components of atoms whose reference force
+magnitude exceeds 1 eV/A. Model/baseline is a force-MAE ratio, not an accuracy
+percentage. The large MatPES test RMSE exposes a heavy error tail that MAE alone
+would conceal.
 
 ![Material performance and coverage](assets/material_benchmark.png)
 
@@ -181,9 +222,32 @@ are a held-out temperature/trajectory shift. Seed variation is not independent-
 dataset uncertainty. The 900-frame runs consume more optimizer updates than
 300-frame runs, so this is an equal-epoch, not equal-compute, learning curve.
 
+![Focused PBE temperature-regime distributions](assets/focused_dataset_distributions.png)
+
+These distributions use TM23 PBE labels and remain separate from the r2SCAN
+broad-model data. Energy is shifted by the cold-training mean only. The cold
+300-frame cohort is nested within the plotted 900-frame cohort.
+
+All initialization seeds (force metrics in eV/A):
+
+{seed_table}
+
+[Measured training cost and parameter counts](../reports/focused/training_cost.json).
+Epoch wall times include concurrent workloads and are not a controlled speed ranking.
+
 ## Numerical stability
 
 {md_table}
+
+![Focused numerical energy traces](assets/focused_nve.png)
+
+Broad-model metal and oxide checks:
+
+{material_md}
+
+![Metal/oxide NVE energy traces](assets/material_nve.png)
+
+[Animated force and timestep comparisons](gallery.md).
 
 These are 100 fs model-only NVE checks at 300 K initial velocities. They measure
 integration behavior, not agreement with DFT trajectories. A short trace and a
@@ -193,9 +257,12 @@ small energy drift do not establish long-time stability.
 
 {perf}
 
+![Measured CPU and CUDA inference latency](assets/inference_benchmark.png)
+
 Batch size one; five warmups and 30 timed calls per structure. Timings include
 neighbor enumeration, transfers, energy, forces, and stress. CPU and CUDA use the
-same checkpoint. This is a local small-cell benchmark, not a comparison against
+same checkpoint. The examples include primitive test cells and a 216-atom Si
+surface. This is a local benchmark, not a comparison against
 MACE, NequIP, or other packages. Hardware and software are recorded in
 [`inference.json`](../reports/benchmark/inference.json).
 
@@ -227,6 +294,17 @@ coefficient is inferred from 500 fs.
 - [Data acquisition and limitations](aimd_expansion.md), [simulation protocol](simulation_validation.md).
 '''
     (ROOT/'docs/results.md').write_text(results,encoding='utf-8')
+    case_info=read('reports/visualizations/cases.json',{})
+    gallery=['# Metal and oxide visualization gallery',
+        'Static force animations show held-out configurations and camera motion, not continuous AIMD. Each pair shares geometry and force-arrow scale. Model-only MD panels use identical initial positions/velocities at two timesteps. Numerical stability is separate from DFT accuracy.',
+        '[Complete quantitative results](results.md) | [Real external AIMD comparisons](results.md#external-aimd-comparison)']
+    for name,case in case_info.items():
+        gallery.extend([f'## {name.title()}',f"Selected-example mean force MAE: {case['mean_force_mae_eV_A']:.3f} eV/A.",
+            f'![DFT and model force comparison for {name}](assets/forces_{name}.gif)'])
+        if (ASSETS/f'md_{name}.gif').exists():
+            gallery.extend(['Model-only NVE timestep comparison (100 fs; not AIMD):',f'![Model-only MD timestep comparison for {name}](assets/md_{name}.gif)'])
+    gallery.append('[Exact structure IDs and plotting scales](../reports/visualizations/cases.json)')
+    (ROOT/'docs/gallery.md').write_text('\n\n'.join(gallery)+'\n',encoding='utf-8')
     focus_image='![Controlled temperature transfer](docs/assets/temperature_transfer.png)' if (ASSETS/'temperature_transfer.png').exists() else ''
     preview=next((name for name,c in aimd['cases'].items() if c.get('model_simulations')),None)
     aimd_preview=f'![AIMD reference and independent model dynamics](docs/assets/aimd_{preview}.gif)' if preview else ''
@@ -251,7 +329,7 @@ rank-two tensor features; gated or smooth-attention message passing; and
 conservative forces and stress from a learned total energy. It uses PyTorch
 without ASE, e3nn, PyG, or pretrained MLIP weights.
 
-**Status:** {state} The repository remains private.
+**Status:** {state} Repository visibility: {args.visibility}.
 The broad model is a research baseline, not a validated production MD potential.
 
 ## Materials at a glance
@@ -317,7 +395,7 @@ structural statistics](docs/results.md#external-aimd-comparison).
 
 Each pair uses the same held-out geometry, camera, and force-arrow scale.
 Examples are selected by ID rather than error. These are static DFT comparisons;
-they are not presented as continuous AIMD. [Force parity and complete metrics](docs/results.md).
+they are not presented as continuous AIMD. [Force parity and complete metrics](docs/results.md) ? [Animated metal/oxide gallery](docs/gallery.md).
 
 ## Quick start
 
@@ -384,11 +462,16 @@ are versioned separately from the source archives.
     (ROOT/'README.md').write_text(readme,encoding='utf-8')
     for svg in ASSETS.glob('*.svg'):
         svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
-    manifest={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'complete':not missing,
+    try:
+        commit=subprocess.check_output(['git','-c','safe.directory='+ROOT.as_posix(),'rev-parse','HEAD'],cwd=ROOT,text=True,stderr=subprocess.DEVNULL).strip()
+    except (OSError,subprocess.CalledProcessError):commit=None
+    source_hashes={str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest()
+                   for folder in ('semi_mlip','scripts') for p in (ROOT/folder).glob('*.py')}
+    manifest={'code_commit_at_generation':commit,'source_sha256':source_hashes,'generated_at_utc':datetime.now(timezone.utc).isoformat(),'complete':not missing,
               'pending_artifacts':missing,'checkpoint_sha256':selection['checkpoint_sha256'],
               'materials':len(coverage),'aimd_completed_cases':len(aimd['cases'])}
     (ROOT/'reports/benchmark/documentation.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    print(json.dumps(manifest,indent=2))
+    print(json.dumps({k:v for k,v in manifest.items() if k!='source_sha256'},indent=2))
 
 
 if __name__=='__main__':main()

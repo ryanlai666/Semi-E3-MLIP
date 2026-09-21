@@ -1,5 +1,6 @@
 """Frozen-model held-out case animations and short simulation diagnostics."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -56,6 +57,8 @@ def main():
                          f'<p>NVE energy range: {report["nve_05"]["energy_range_eV_atom"]:.3g} versus '
                          f'{report["nve_025"]["energy_range_eV_atom"]:.3g} eV/atom.</p></section>')
     gallery.write_text(page.replace('</body>', ''.join(cards)+'</body>'),encoding="utf-8")
+    write_json(output/'complete.json',{'complete':True,'checkpoint_sha256':hashlib.sha256(Path(args.checkpoint).read_bytes()).hexdigest(),
+        'dataset_sha256':hashlib.sha256(Path(args.data).read_bytes()).hexdigest(),'device':args.device,'cases':list(results)})
 
 
 if __name__ == "__main__":

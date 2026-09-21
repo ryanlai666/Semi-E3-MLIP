@@ -1,14 +1,19 @@
-﻿"""Resume only existing interrupted device pilots with their saved configurations."""
+"""Resume only existing interrupted device pilots with their saved configurations."""
 import json
 from pathlib import Path
 import torch
 from semi_mlip.data import write_json
 from semi_mlip.model import ModelConfig
 from semi_mlip.train import TrainConfig, train
-from collect_search import main as collect
+
+
+def pilot_finished(folder, payload, config):
+    # Legacy pilot scripts never use stop_after_epochs: timing.json marks completion.
+    return (folder/'timing.json').exists() or payload['epoch']+1>=config.epochs or payload.get('early_stopped',False)
 
 
 def main():
+    from collect_search import main as collect
     output = Path('reports/benchmark/pilot_completion.json')
     completed = []
     for folder in sorted(Path('runs/device').iterdir()):
@@ -17,7 +22,9 @@ def main():
             continue
         payload = torch.load(last, map_location='cpu', weights_only=False)
         config = TrainConfig(**payload['train_config'])
-        finished = payload['epoch'] + 1 >= config.epochs or payload.get('early_stopped', False)
+        # Legacy completed runs predate the checkpoint early_stopped field.
+        # These pilot scripts write timing.json only after finishing, never as a stop-after probe.
+        finished = pilot_finished(folder,payload,config)
         start = payload['epoch'] + 1
         if not finished:
             data = 'data/device_expanded' if folder.name.startswith('expanded') else 'data/device'

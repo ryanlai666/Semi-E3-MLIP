@@ -1,0 +1,23 @@
+{
+  "initial_unfinished_runs": {
+    "attention_geglu": 128,
+    "expanded_tensor_seed43": 115,
+    "tensor16_seed43": 52
+  },
+  "legacy_completion_correction": {
+    "attention_lr1e3": [
+      141,
+      142
+    ],
+    "attention_lr3e4": [
+      173,
+      174
+    ],
+    "expanded_attention": [
+      199,
+      200
+    ]
+  },
+  "note": "Legacy completed checkpoints lacked early_stopped metadata. Three completed pilots advanced one epoch before the continuation script was corrected to honor their timing.json completion markers. Histories are preserved. The frozen expanded_tensor best checkpoint remained unchanged; external benchmark selection was not repeated.",
+  "frozen_reference_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc"
+}

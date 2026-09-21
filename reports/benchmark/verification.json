@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "passed_tests": 38,
+  "pytest_seconds": 7.27,
+  "command": ".venv/Scripts/python -m pytest -q -p no:cacheprovider --basetemp=.test-tmp-21",
+  "package_install": "Editable Semi-E3-MLIP 0.1.0 installed without changing dependencies; semi-e3-mlip --help passed",
+  "coverage": "Existing physics/data/integrator suite plus skew-cell trajectory analysis and legacy pilot-completion regression tests."
+}

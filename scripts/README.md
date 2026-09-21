@@ -10,6 +10,7 @@ are local prerequisites; the repository intentionally excludes their binaries.
 | Device scope | `device_subset.py`, `prepare_mpaloe.py` | Fixed device and expanded partitions |
 | Focused data | `import_tm23.py`, `prepare_focused.py` | Cu/Ti cold training and protected temperature regimes |
 | Focused pipeline | `continue_focused.ps1` | Screening, three-seed confirmation, frozen tests, NVE |
+| Fresh baseline reproduction | `reproduce_baseline.py --run runs/reproduction/broad` | Same fixed configuration, new checkpoint and local evaluations |
 | Remaining existing pilots | `resume_pilots.py` | Exact saved-config resumption; no new variants |
 | Material benchmark | `benchmark_materials.py --device cpu` | 20-system train/validation/test metrics and figures |
 | External AIMD | `compare_aimd.py CHECKPOINT --device cuda` | Three-seed Si surface comparison and animations |

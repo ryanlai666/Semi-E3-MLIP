@@ -17,7 +17,7 @@ LABELS = {'Al-O':'Al oxides','Co-O':'Co oxides','Cu-O':'Cu oxides','Hf-O':'Hf ox
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--device',default='cpu');args=parser.parse_args()
     selection=json.loads(Path('reports/aimd_comparison/selection.json').read_text())
-    checkpoint=Path(selection['checkpoint']);out=Path('reports/benchmark');out.mkdir(exist_ok=True)
+    checkpoint=Path(selection['checkpoint'].replace('\\','/'));out=Path('reports/benchmark');out.mkdir(exist_ok=True)
     if hashlib.sha256(checkpoint.read_bytes()).hexdigest()!=selection['checkpoint_sha256']:
         raise ValueError('Frozen benchmark checkpoint changed')
     files={'train':Path('data/device_expanded/train.jsonl'),

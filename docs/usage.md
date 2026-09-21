@@ -169,3 +169,34 @@ silicon archive; `scripts/compare_aimd.py CHECKPOINT` compares three external
 300 K surface AIMD cases with our independent Langevin trajectories. This is
 a short, cross-functional and surface-transfer diagnostic, not a matched-r2SCAN
 accuracy benchmark. See [simulation protocol](simulation_validation.md).
+
+
+## Reproduce the fixed multi-material baseline
+
+After the baseline download/prepare steps above:
+
+```powershell
+python scripts/device_subset.py
+python scripts/download_mpaloe.py
+python scripts/prepare_mpaloe.py
+python scripts/reproduce_baseline.py --run runs/reproduction/broad
+# If interrupted:
+python scripts/reproduce_baseline.py --run runs/reproduction/broad --resume
+```
+
+This uses the versioned baseline configuration and selects the best epoch on
+validation, then writes train/validation/test metrics under the new run directory.
+It never replaces the frozen reference checkpoint or the versioned benchmark
+reports. CUDA scatter reductions can yield small numerical differences, so a
+retrained checkpoint is not expected to reproduce the original binary hash.
+
+The Cu/Ti protocol additionally requires the source TM23 archive at
+`data/raw/tm23.zip`, verified by `scripts/import_tm23.py`, followed by
+`scripts/prepare_focused.py`. The original recorded study is frozen after its
+final tests. A new study must preserve the reference reports and use independent
+run/report directories; do not remove the freeze marker to silently retune it.
+
+The AIMD comparison requires the Si/SiO2 source archive at
+`data/raw/Si_SiO2.zip`, verified by `scripts/import_aimd.py`. Its force labels,
+chronology, and cell geometry are independently checked during import. Archive
+sources and checksums are in the versioned manifests and data audit.

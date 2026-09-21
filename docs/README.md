@@ -3,6 +3,7 @@
 | Topic | Guide |
 | --- | --- |
 | Measured train/test performance and AIMD comparison | [Results](results.md) |
+| Animated metal/oxide force and model-only MD comparisons | [Gallery](gallery.md) |
 | Installation, training, prediction, relaxation, MD | [Usage](usage.md) |
 | Equivariant attention and tensor architecture | [Architecture](attention.md) |
 | Dataset choice and scientific context | [Research](research.md) |
