@@ -303,6 +303,7 @@ coefficient is inferred from 500 fs.
             f'![DFT and model force comparison for {name}](assets/forces_{name}.gif)'])
         if (ASSETS/f'md_{name}.gif').exists():
             gallery.extend(['Model-only NVE timestep comparison (100 fs; not AIMD):',f'![Model-only MD timestep comparison for {name}](assets/md_{name}.gif)'])
+    gallery.append('The smaller timestep reduced the total-energy range in five of six cases. Copper was slightly nonmonotonic: 2.733e-6 versus 2.992e-6 eV/atom at 0.5 and 0.25 fs. These short checks do not establish long-term stability.')
     gallery.append('[Exact structure IDs and plotting scales](../reports/visualizations/cases.json)')
     (ROOT/'docs/gallery.md').write_text('\n\n'.join(gallery)+'\n',encoding='utf-8')
     focus_image='![Controlled temperature transfer](docs/assets/temperature_transfer.png)' if (ASSETS/'temperature_transfer.png').exists() else ''
