@@ -8,4 +8,4 @@ The active iteration is `experiment/001-cu-ti-temperature-transfer`. Use subsequ
 
 Raw datasets, virtual environments, training runs, and checkpoints stay outside Git. Review selected reports before adding them; avoid committing generated trajectories or bulky artifacts by default.
 
-No remote is configured. Before the first push, obtain the intended owner/repository and verify its actual private visibility using the hosting service. A local branch name or Git setting does not make a hosted repository private. If creating a repository, explicitly create it private and verify that status before pushing. Do not push to a public destination or change visibility without the user's instruction.
+The intended remote is `https://github.com/ryanlai666/Semi-E3-MLIP.git`, authorized by the owner and verified private through the GitHub API on 2026-09-21. Verify its actual private visibility before pushing. A local branch name or Git setting does not make a hosted repository private. If creating a repository, explicitly create it private and verify that status before pushing. Do not push to a public destination or change visibility without the user's instruction.

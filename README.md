@@ -1,4 +1,4 @@
-# semi-mlip
+# Semi-E3-MLIP
 
 A from-scratch PyTorch conservative E(3) scalar-vector GNN for semiconductor
 industry metals and oxides. Uses PyTorch, NumPy, and Python standard-library I/O.
@@ -14,6 +14,28 @@ The [expanded AIMD inventory and suitability audit](docs/aimd_expansion.md)
 documents the additional 2025–2026 device-material datasets, actual local counts,
 duplicate leakage, DFT compatibility, and remaining coverage gaps. OMat ingestion
 uses our own reader with the optional LMDB storage dependency (`.[data]`).
+
+## Project and repository
+
+Repository: [ryanlai666/Semi-E3-MLIP](https://github.com/ryanlai666/Semi-E3-MLIP)
+(private). The Python import remains `semi_mlip`; both `semi-e3-mlip` and the
+existing `semi-mlip` command are supported. Datasets and checkpoints remain local.
+
+## Resume the focused Cu/Ti study
+
+From the repository root, with no other focused training process running:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/continue_focused.ps1
+```
+
+This resumes the six architecture screens, runs the selected architectures at
+300/900 training frames with three seeds, then freezes checkpoint selection
+before protected test evaluation and short NVE checks. It stops on a failed
+stage. After `reports/focused/frozen.json` exists, rerun only
+`.\.venv\Scripts\python scripts/finish_focused.py --md` to finish evaluation;
+the training scripts intentionally refuse further tuning of a frozen study.
+See [the fixed protocol](docs/focused_experiments.md) for split limitations.
 
 ## Setup on Windows
 

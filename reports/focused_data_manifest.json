@@ -1,0 +1,192 @@
+{
+  "datasets": {
+    "data\\focused\\cu_cold_300": {
+      "counts": {
+        "train": 300,
+        "valid": 90,
+        "test_cold": 100,
+        "test_warm": 100,
+        "test_melt": 100
+      },
+      "groups": {
+        "train": [
+          "TM23-Cu-cold"
+        ],
+        "valid": [
+          "TM23-Cu-warm"
+        ],
+        "test_cold": [
+          "TM23-Cu-cold"
+        ],
+        "test_warm": [
+          "TM23-Cu-warm"
+        ],
+        "test_melt": [
+          "TM23-Cu-melt"
+        ]
+      },
+      "exact_geometry_overlap": {
+        "train|valid": 0,
+        "test_cold|train": 0,
+        "test_cold|valid": 0,
+        "test_cold|test_warm": 0,
+        "test_cold|test_melt": 0,
+        "test_warm|train": 0,
+        "test_warm|valid": 0,
+        "test_melt|train": 0,
+        "test_melt|valid": 0,
+        "test_melt|test_warm": 0
+      },
+      "file_sha256": {
+        "train": "b32a21038b324b6ec67f3e70f045518a13a1852e52321a4ac734caa0ed78a19f",
+        "valid": "c239223f9b435cbc41bcff30a049daad73eac4f5ed53e31b88576119c2d85e52",
+        "test_cold": "456f7c697903c8418f375670822dda2e66a4b831f57f17b6c83244f167f0e8f3",
+        "test_warm": "07131506a9f6bee3fabc77b6bc3945e08f28dc68ce80fa7c77f2c3d1b8459acb",
+        "test_melt": "85ce1bb3c18a6c48c62b486a1784a584b24c0ec8be7c34ef987d0b671c29dff8"
+      }
+    },
+    "data\\focused\\cu_cold_900": {
+      "counts": {
+        "train": 900,
+        "valid": 90,
+        "test_cold": 100,
+        "test_warm": 100,
+        "test_melt": 100
+      },
+      "groups": {
+        "train": [
+          "TM23-Cu-cold"
+        ],
+        "valid": [
+          "TM23-Cu-warm"
+        ],
+        "test_cold": [
+          "TM23-Cu-cold"
+        ],
+        "test_warm": [
+          "TM23-Cu-warm"
+        ],
+        "test_melt": [
+          "TM23-Cu-melt"
+        ]
+      },
+      "exact_geometry_overlap": {
+        "train|valid": 0,
+        "test_cold|train": 0,
+        "test_cold|valid": 0,
+        "test_cold|test_warm": 0,
+        "test_cold|test_melt": 0,
+        "test_warm|train": 0,
+        "test_warm|valid": 0,
+        "test_melt|train": 0,
+        "test_melt|valid": 0,
+        "test_melt|test_warm": 0
+      },
+      "file_sha256": {
+        "train": "41b0f19a7e37758c448127ffbb0164a8c1e8c8a55d604ad37cdf675b3eb70ae9",
+        "valid": "c239223f9b435cbc41bcff30a049daad73eac4f5ed53e31b88576119c2d85e52",
+        "test_cold": "456f7c697903c8418f375670822dda2e66a4b831f57f17b6c83244f167f0e8f3",
+        "test_warm": "07131506a9f6bee3fabc77b6bc3945e08f28dc68ce80fa7c77f2c3d1b8459acb",
+        "test_melt": "85ce1bb3c18a6c48c62b486a1784a584b24c0ec8be7c34ef987d0b671c29dff8"
+      }
+    },
+    "data\\focused\\ti_cold_300": {
+      "counts": {
+        "train": 300,
+        "valid": 90,
+        "test_cold": 100,
+        "test_warm": 100,
+        "test_melt": 100
+      },
+      "groups": {
+        "train": [
+          "TM23-Ti-cold"
+        ],
+        "valid": [
+          "TM23-Ti-warm"
+        ],
+        "test_cold": [
+          "TM23-Ti-cold"
+        ],
+        "test_warm": [
+          "TM23-Ti-warm"
+        ],
+        "test_melt": [
+          "TM23-Ti-melt"
+        ]
+      },
+      "exact_geometry_overlap": {
+        "train|valid": 0,
+        "test_cold|train": 0,
+        "test_cold|valid": 0,
+        "test_cold|test_warm": 0,
+        "test_cold|test_melt": 0,
+        "test_warm|train": 0,
+        "test_warm|valid": 0,
+        "test_melt|train": 0,
+        "test_melt|valid": 0,
+        "test_melt|test_warm": 0
+      },
+      "file_sha256": {
+        "train": "5accefe93b5db602705d28c8a941ec5622c73e73bb0d028576bf391afffacd6c",
+        "valid": "c67b776d915853577a7d62ee316b74c182e9d68af2efe0cbcb590fac585d9e42",
+        "test_cold": "f64584111963e9a0a2f646e8e26d14b2d53daf8ac7d4de8104ef7fa4a9cffe6d",
+        "test_warm": "a3a0d068d61af8e569b30b67384fdfa5e4f01ee84f75678891359433639f1baa",
+        "test_melt": "ecf1997a61ca48dee1bbafee4c45b955ebae5c5a34bae9a7c5036ad24abd8ef7"
+      }
+    },
+    "data\\focused\\ti_cold_900": {
+      "counts": {
+        "train": 900,
+        "valid": 90,
+        "test_cold": 100,
+        "test_warm": 100,
+        "test_melt": 100
+      },
+      "groups": {
+        "train": [
+          "TM23-Ti-cold"
+        ],
+        "valid": [
+          "TM23-Ti-warm"
+        ],
+        "test_cold": [
+          "TM23-Ti-cold"
+        ],
+        "test_warm": [
+          "TM23-Ti-warm"
+        ],
+        "test_melt": [
+          "TM23-Ti-melt"
+        ]
+      },
+      "exact_geometry_overlap": {
+        "train|valid": 0,
+        "test_cold|train": 0,
+        "test_cold|valid": 0,
+        "test_cold|test_warm": 0,
+        "test_cold|test_melt": 0,
+        "test_warm|train": 0,
+        "test_warm|valid": 0,
+        "test_melt|train": 0,
+        "test_melt|valid": 0,
+        "test_melt|test_warm": 0
+      },
+      "file_sha256": {
+        "train": "ec2a67c63340ffe6d4b10dbfe951d2c08ab2bf597cb4f20ce46986f21eafa7f8",
+        "valid": "c67b776d915853577a7d62ee316b74c182e9d68af2efe0cbcb590fac585d9e42",
+        "test_cold": "f64584111963e9a0a2f646e8e26d14b2d53daf8ac7d4de8104ef7fa4a9cffe6d",
+        "test_warm": "a3a0d068d61af8e569b30b67384fdfa5e4f01ee84f75678891359433639f1baa",
+        "test_melt": "ecf1997a61ca48dee1bbafee4c45b955ebae5c5a34bae9a7c5036ad24abd8ef7"
+      }
+    }
+  },
+  "selection": "ID-hash nested sample; independent of label values and model predictions",
+  "label_family": "TM23 VASP PBE nonspin, dense-k labels on Gamma-AIMD geometries",
+  "limitations": [
+    "Warm validation is a temperature-transfer selection set, not in-domain validation.",
+    "Cold and warm final tests share source trajectories with training/validation respectively.",
+    "Molten test is a held-out temperature/trajectory, not an independent seed replicate.",
+    "Exact geometry checks do not establish near-duplicate independence."
+  ]
+}

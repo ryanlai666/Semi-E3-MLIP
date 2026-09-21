@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "semi-mlip"
+name = "Semi-E3-MLIP"
 version = "0.1.0"
 description = "From-scratch conservative scalar-vector E(3) interatomic potential"
 requires-python = ">=3.11"
@@ -15,6 +15,7 @@ visualize = ["matplotlib>=3.8", "pillow>=10"]
 data = ["lmdb>=2.3"]
 
 [project.scripts]
+semi-e3-mlip = "semi_mlip.cli:main"
 semi-mlip = "semi_mlip.cli:main"
 
 [tool.setuptools.packages.find]

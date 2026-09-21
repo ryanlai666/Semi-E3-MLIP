@@ -6,3 +6,12 @@ data/
 runs/
 *.pt
 .test-tmp*/
+
+# Generated logs, trajectories and renderings remain local.
+*.log
+reports/**/md/
+reports/**/*.png
+reports/**/*.svg
+reports/**/*.pdf
+.env
+.env.*
