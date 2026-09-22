@@ -1,0 +1,97 @@
+{
+  "description": "Published shared configuration; fresh random weights for topology inspection only",
+  "config": {
+    "scalar_channels": 64,
+    "vector_channels": 32,
+    "blocks": 4,
+    "radial_basis": 32,
+    "cutoff": 5.0,
+    "activation": "swiglu",
+    "average_neighbors": 43.825026652452024,
+    "chemical_descriptors": false,
+    "auxiliary_heads": false,
+    "attention": true,
+    "attention_heads": 4,
+    "tensor_channels": 16
+  },
+  "input": {
+    "atoms": 3,
+    "edges": 12,
+    "structures": 1
+  },
+  "source_model_sha256": "84e1e982445e64fc22cb24d1dd335e5999499832236cbe5c1726db3714ec7f32",
+  "versions": {
+    "torch": "2.14.0+cu126",
+    "torchinfo": "1.8.0",
+    "torchviz": "0.0.3",
+    "graphviz": "0.21"
+  },
+  "models": {
+    "1x": {
+      "parameters": 354545,
+      "modules": {
+        "embedding": 7616,
+        "interactions": 342736,
+        "readout": 4193
+      },
+      "config": {
+        "scalar_channels": 64,
+        "vector_channels": 32,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 43.825026652452024,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 16
+      }
+    },
+    "2x": {
+      "parameters": 1356513,
+      "modules": {
+        "embedding": 15232,
+        "interactions": 1324704,
+        "readout": 16577
+      },
+      "config": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 43.825026652452024,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32
+      }
+    },
+    "4x": {
+      "parameters": 5288873,
+      "modules": {
+        "embedding": 30464,
+        "interactions": 5192488,
+        "readout": 65921
+      },
+      "config": {
+        "scalar_channels": 256,
+        "vector_channels": 128,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 43.825026652452024,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 64
+      }
+    }
+  }
+}

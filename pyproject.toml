@@ -18,6 +18,7 @@ Repository = "https://github.com/ryanlai666/Semi-E3-MLIP"
 test = ["pytest>=8"]
 visualize = ["matplotlib>=3.8", "pillow>=10"]
 data = ["lmdb>=2.3"]
+inspect = ["torchinfo==1.8.0", "torchviz==0.0.3", "graphviz==0.21", "matplotlib>=3.8"]
 
 [project.scripts]
 semi-e3-mlip = "semi_mlip.cli:main"

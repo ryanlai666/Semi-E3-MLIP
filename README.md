@@ -10,7 +10,7 @@ PyTorch from scratch · Energy-derived forces · Periodic structures · Reproduc
 
 </div>
 
-![Implemented E(3) model architecture](docs/assets/backbone.png)
+![Implemented E(3) model architecture](docs/assets/backbone_summary.png)
 
 Semi-E3-MLIP is a research codebase for learning potential-energy surfaces across
 semiconductor-relevant materials. It implements scalar, vector, and optional
@@ -20,6 +20,39 @@ without ASE, e3nn, PyG, or pretrained MLIP weights.
 
 **Status:** Training and evaluation complete for the recorded study. Repository visibility: public.
 The broad model is a research baseline, not a validated production MD potential.
+
+## Backbone architecture and parameter summary
+
+The published shared model uses **354,545 trainable parameters**, four independent
+interaction blocks, 32 radial basis functions, four attention heads, and a 5 A
+periodic cutoff. The diagram above expands one repeated interaction block and
+shows the energy readout and conservative force/stress derivatives.
+
+| Component | Feature/output shape | Trainable parameters |
+| --- | --- | ---: |
+| Species embedding | `[N, 64]` | 7,616 |
+| Interaction block 1 | scalar `[N,64]`, vector `[N,3,32]`, tensor `[N,3,3,16]` | 85,684 |
+| Interaction block 2 | Same shapes | 85,684 |
+| Interaction block 3 | Same shapes | 85,684 |
+| Interaction block 4 | Same shapes | 85,684 |
+| SwiGLU atomic energy readout | `[N,1]` | 4,193 |
+| Fixed elemental offsets + structure sum | Energy `[B]` | 0 |
+| Energy derivatives | Forces `[N,3]`; stress `[B,3,3]` | 0 |
+| **Total** | **N atoms; B structures** | **354,545** |
+
+| Width study | Scalar / vector / tensor channels | Parameters | Status |
+| --- | --- | ---: | --- |
+| 1x shared | 64 / 32 / 16 | 354,545 | Published baseline configuration |
+| 2x | 128 / 64 / 32 | 1,356,513 | Experimental width study |
+| 4x | 256 / 128 / 64 | 5,288,873 | Experimental width study |
+
+These are measured module counts, not estimates from channel width. Widening
+changes capacity; it does not by itself establish better molten-state accuracy.
+See the [full torchinfo summaries and block details](docs/backbone_summary.md),
+[vector diagram](docs/assets/backbone_summary.svg), and
+[actual torchviz energy graph (DOT)](reports/architecture/backbone_autograd.dot).
+The schematic summarizes the implementation; the DOT file records autograd
+operations. Inspection uses synthetic geometry and is not a new benchmark.
 
 ## Materials at a glance
 

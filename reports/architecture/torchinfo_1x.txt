@@ -1,0 +1,101 @@
+=============================================================================================================================
+Layer (type (var_name))                            Input Shape               Output Shape              Param #
+=============================================================================================================================
+EnergyBackbone (EnergyBackbone)                    [3]                       [1]                       --
+├─Potential (potential)                            --                        --                        --
+│    └─Embedding (embedding)                       [3]                       [3, 64]                   7,616
+│    └─ModuleList (interactions)                   --                        --                        --
+│    │    └─Interaction (0)                        [3, 64]                   [3, 64]                   --
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   128
+│    │    │    └─Linear (target_gate)              [3, 64]                   [3, 160]                  10,400
+│    │    │    └─ScalarMLP (source)                [3, 64]                   [3, 160]                  --
+│    │    │    │    └─Linear (first)               [3, 64]                   [3, 198]                  12,870
+│    │    │    │    └─Linear (last)                [3, 99]                   [3, 160]                  16,000
+│    │    │    └─Linear (radial)                   [12, 32]                  [12, 160]                 5,280
+│    │    │    └─Linear (query)                    [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (key)                      [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (attention_radial)         [12, 32]                  [12, 4]                   132
+│    │    │    └─Linear (vector_mix)               [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_a)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_b)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   (recursive)
+│    │    │    └─Linear (tensor_mix)               [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_a)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_b)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─ScalarMLP (scalar_update)         [3, 112]                  [3, 112]                  --
+│    │    │    │    └─Linear (first)               [3, 112]                  [3, 170]                  19,210
+│    │    │    │    └─Linear (last)                [3, 85]                   [3, 112]                  9,632
+│    │    └─Interaction (1)                        [3, 64]                   [3, 64]                   --
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   128
+│    │    │    └─Linear (target_gate)              [3, 64]                   [3, 160]                  10,400
+│    │    │    └─ScalarMLP (source)                [3, 64]                   [3, 160]                  --
+│    │    │    │    └─Linear (first)               [3, 64]                   [3, 198]                  12,870
+│    │    │    │    └─Linear (last)                [3, 99]                   [3, 160]                  16,000
+│    │    │    └─Linear (radial)                   [12, 32]                  [12, 160]                 5,280
+│    │    │    └─Linear (query)                    [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (key)                      [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (attention_radial)         [12, 32]                  [12, 4]                   132
+│    │    │    └─Linear (vector_mix)               [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_a)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_b)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   (recursive)
+│    │    │    └─Linear (tensor_mix)               [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_a)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_b)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─ScalarMLP (scalar_update)         [3, 112]                  [3, 112]                  --
+│    │    │    │    └─Linear (first)               [3, 112]                  [3, 170]                  19,210
+│    │    │    │    └─Linear (last)                [3, 85]                   [3, 112]                  9,632
+│    │    └─Interaction (2)                        [3, 64]                   [3, 64]                   --
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   128
+│    │    │    └─Linear (target_gate)              [3, 64]                   [3, 160]                  10,400
+│    │    │    └─ScalarMLP (source)                [3, 64]                   [3, 160]                  --
+│    │    │    │    └─Linear (first)               [3, 64]                   [3, 198]                  12,870
+│    │    │    │    └─Linear (last)                [3, 99]                   [3, 160]                  16,000
+│    │    │    └─Linear (radial)                   [12, 32]                  [12, 160]                 5,280
+│    │    │    └─Linear (query)                    [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (key)                      [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (attention_radial)         [12, 32]                  [12, 4]                   132
+│    │    │    └─Linear (vector_mix)               [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_a)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_b)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   (recursive)
+│    │    │    └─Linear (tensor_mix)               [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_a)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_b)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─ScalarMLP (scalar_update)         [3, 112]                  [3, 112]                  --
+│    │    │    │    └─Linear (first)               [3, 112]                  [3, 170]                  19,210
+│    │    │    │    └─Linear (last)                [3, 85]                   [3, 112]                  9,632
+│    │    └─Interaction (3)                        [3, 64]                   [3, 64]                   --
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   128
+│    │    │    └─Linear (target_gate)              [3, 64]                   [3, 160]                  10,400
+│    │    │    └─ScalarMLP (source)                [3, 64]                   [3, 160]                  --
+│    │    │    │    └─Linear (first)               [3, 64]                   [3, 198]                  12,870
+│    │    │    │    └─Linear (last)                [3, 99]                   [3, 160]                  16,000
+│    │    │    └─Linear (radial)                   [12, 32]                  [12, 160]                 5,280
+│    │    │    └─Linear (query)                    [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (key)                      [3, 64]                   [3, 64]                   4,096
+│    │    │    └─Linear (attention_radial)         [12, 32]                  [12, 4]                   132
+│    │    │    └─Linear (vector_mix)               [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_a)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─Linear (vector_b)                 [3, 3, 32]                [3, 3, 32]                1,024
+│    │    │    └─LayerNorm (norm)                  [3, 64]                   [3, 64]                   (recursive)
+│    │    │    └─Linear (tensor_mix)               [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_a)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─Linear (tensor_b)                 [3, 3, 3, 16]             [3, 3, 3, 16]             256
+│    │    │    └─ScalarMLP (scalar_update)         [3, 112]                  [3, 112]                  --
+│    │    │    │    └─Linear (first)               [3, 112]                  [3, 170]                  19,210
+│    │    │    │    └─Linear (last)                [3, 85]                   [3, 112]                  9,632
+│    └─ScalarMLP (readout)                         [3, 64]                   [3, 1]                    --
+│    │    └─Linear (first)                         [3, 64]                   [3, 64]                   4,160
+│    │    └─Linear (last)                          [3, 32]                   [3, 1]                    33
+=============================================================================================================================
+Total params: 354,545
+Trainable params: 354,545
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 1.26
+=============================================================================================================================
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.24
+Params size (MB): 1.42
+Estimated Total Size (MB): 1.66
+=============================================================================================================================
