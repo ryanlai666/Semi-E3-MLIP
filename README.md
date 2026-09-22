@@ -177,3 +177,5 @@ Separate models for six additional TM23 metals, elemental Al/Si, and ten oxide c
 ## Alloy transfer verification
 
 The frozen shared model was tested without retraining on **2,421 previously unused r2SCAN configurations across six binary systems**. None meets both project energy/force targets. [Alloy errors, parity plots and phase-stability limits](docs/alloy_validation.md) explain why these results do not establish an equilibrium phase diagram.
+
+[Model size, literature and research plan](docs/model_capacity.md) | [Continuous AIMD energy/force parity](docs/aimd_parity.md)

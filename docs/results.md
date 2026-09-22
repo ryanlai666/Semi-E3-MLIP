@@ -250,3 +250,5 @@ coefficient is inferred from 500 fs.
 - [AIMD protocol and hashes](../reports/aimd_comparison/protocol.json), [source manifest](../reports/aimd_manifest.json).
 - [Material results](../reports/benchmark/materials.json), [raw focused results](../reports/focused/tests.json).
 - [Data acquisition and limitations](aimd_expansion.md), [simulation protocol](simulation_validation.md).
+
+[Model size, literature and research plan](model_capacity.md) | [Continuous AIMD energy/force parity](aimd_parity.md)

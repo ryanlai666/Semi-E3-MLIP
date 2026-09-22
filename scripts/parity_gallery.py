@@ -43,7 +43,7 @@ def predict(checkpoint, expected_hash, file):
 
 def joined(items):return {k:np.concatenate([d[k] for d in items]) for k in items[0]}
 
-def render(name,title,partitions):
+def render(name,title,partitions,energy_label="Offset-adjusted energy (eV/atom)"):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -51,7 +51,7 @@ def render(name,title,partitions):
     metrics={}
     for i,(split,d) in enumerate(partitions.items()):
         metrics[split]={}
-        for j,(ref,pred,label) in enumerate([('er','ep','Offset-adjusted energy (eV/atom)'),('fr','fp','Force component (eV/A)')]):
+        for j,(ref,pred,label) in enumerate([('er','ep',energy_label),('fr','fp','Force component (eV/A)')]):
             ax=axes[i,j];x=d[ref];y=d[pred]
             if not len(x):ax.text(.5,.5,'No held-out records\nNot a zero-error result',ha='center',va='center',transform=ax.transAxes);ax.set_axis_off();continue
             assert np.isfinite(x).all() and np.isfinite(y).all(),f'Nonfinite prediction: {name} {split}'
@@ -149,6 +149,7 @@ def main():
     lines+=['','No elemental Ru shared-model test exists; its test panels explicitly show no records. Missing source partitions are not zero error.', '',
         '[Numerical parity metrics, counts, checkpoint hashes and plotting conventions](../reports/parity/manifest.json).']
     if Path('docs/alloy_validation.md').exists():lines+=['','## Alloy holdout verification','','[Six additional binary systems: parity, errors and phase-stability limits](alloy_validation.md).']
+    if Path('docs/aimd_parity.md').exists():lines+=['','[Continuous AIMD energy/force parity](aimd_parity.md) | [Model capacity and research plan](model_capacity.md).']
     Path('docs/parity.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 if __name__=='__main__':main()

@@ -1,0 +1,80 @@
+{
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "selection": "All stored reference frames and all force components; frozen model on reference geometries.",
+  "energy": "Each trajectory and each method separately referenced to its first-frame energy; this removes an arbitrary constant, is not a fitted slope, and does not test absolute energy accuracy.",
+  "limitation": "CP2K/PBE reference versus r2SCAN model; cross-method surface transfer diagnostic, not matched-Hamiltonian validation.",
+  "cases": {
+    "Si_110_elong0.500": {
+      "frames": 101,
+      "reference_sha256": "a94a3a435502c1a0c826ed4385ac1dde2acd2ccfc7fda11b9900707697cc47c0",
+      "raw_energy_mae_eV_atom_not_comparable_zero": 98.63976332885161,
+      "parity": {
+        "External AIMD snapshots": {
+          "er": {
+            "points": 101,
+            "mae": 0.05430054673354111,
+            "rmse": 0.05710072870043167
+          },
+          "fr": {
+            "points": 65448,
+            "mae": 0.194196264788361,
+            "rmse": 0.2696555174672261
+          }
+        }
+      }
+    },
+    "Si_111_elong0.500": {
+      "frames": 101,
+      "reference_sha256": "367e125f0b35b5d0ae0f095d2d1be82dada889fbea44f5f9d4fc382fb5c51219",
+      "raw_energy_mae_eV_atom_not_comparable_zero": 98.64729800362444,
+      "parity": {
+        "External AIMD snapshots": {
+          "er": {
+            "points": 101,
+            "mae": 0.03225109854327976,
+            "rmse": 0.03345205215142805
+          },
+          "fr": {
+            "points": 65448,
+            "mae": 0.20797509009664375,
+            "rmse": 0.2744840154871229
+          }
+        }
+      }
+    },
+    "Si_110_elong1.500": {
+      "frames": 101,
+      "reference_sha256": "89fa3a5319feabf8b6f5e1ee542f60bc00f550427d5f1b9cf9fa228869cb43b8",
+      "raw_energy_mae_eV_atom_not_comparable_zero": 98.64185674854107,
+      "parity": {
+        "External AIMD snapshots": {
+          "er": {
+            "points": 101,
+            "mae": 0.07041961927312614,
+            "rmse": 0.07467451463749519
+          },
+          "fr": {
+            "points": 65448,
+            "mae": 0.21274911589232298,
+            "rmse": 0.30045384292973676
+          }
+        }
+      }
+    }
+  },
+  "overall": {
+    "All reference snapshots": {
+      "er": {
+        "points": 303,
+        "mae": 0.052323754849982335,
+        "rmse": 0.05760733792266296
+      },
+      "fr": {
+        "points": 196344,
+        "mae": 0.20497349025910921,
+        "rmse": 0.28185580509053415
+      }
+    }
+  },
+  "complete": true
+}

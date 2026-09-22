@@ -55,3 +55,5 @@ No elemental Ru shared-model test exists; its test panels explicitly show no rec
 ## Alloy holdout verification
 
 [Six additional binary systems: parity, errors and phase-stability limits](alloy_validation.md).
+
+[Model size, literature and research plan](model_capacity.md) | [Continuous AIMD energy/force parity](aimd_parity.md)
