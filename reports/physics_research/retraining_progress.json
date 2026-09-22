@@ -1,0 +1,41 @@
+{
+  "complete": false,
+  "trials": [
+    {
+      "name": "shared_ta_o_expanded_plain_s42",
+      "complete": false
+    },
+    {
+      "name": "shared_ta_o_expanded_stabilized_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ti_plain_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ti_stabilized_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ru_plain_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ru_stabilized_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ta_plain_s42",
+      "complete": false
+    },
+    {
+      "name": "mixed_ta_stabilized_s42",
+      "complete": false
+    },
+    {
+      "name": "shared_ta_o_expanded_stabilized_core_s42",
+      "complete": false
+    }
+  ]
+}

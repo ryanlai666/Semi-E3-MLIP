@@ -1,0 +1,365 @@
+{
+  "source": "https://doi.org/10.24435/materialscloud:hm-6z",
+  "paper": "https://www.nature.com/articles/s41524-026-01977-3",
+  "files": {
+    "Readme.md": {
+      "md5": "md5:7f16729658981386aa2a846bd5bf16c4",
+      "sha256": "f06ad8e0000070963c2657d5aa60a484b7cd987dfddda1886084617a7939b50c",
+      "bytes": 1340
+    },
+    "Metal-43-Dataset.zip": {
+      "md5": "md5:a151f12d190537d918f5621741bc8a0a",
+      "sha256": "09e81d3b37b5a9f0c2729ed8215ee2a6678f712f5741292fffb16e46cc7970b9",
+      "bytes": 641504186
+    }
+  },
+  "priority_inventory": {
+    "Metal-43-Dataset/Al_fcc_1120.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Al"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Al_fcc_300.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Al"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Al_fcc_467.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Al"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Al_fcc_933.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Al"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Hf_hcp_1253.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Hf"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Hf_hcp_2506.extxyz": {
+      "frames": 1001,
+      "elements": [
+        "Hf"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Hf_hcp_300.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Hf"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Hf_hcp_3007.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Hf"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ru_hcp_1304.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ru"
+      ],
+      "atom_counts": [
+        120
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ru_hcp_2607.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ru"
+      ],
+      "atom_counts": [
+        120
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ru_hcp_300.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ru"
+      ],
+      "atom_counts": [
+        120
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ru_hcp_3218.extxyz": {
+      "frames": 1007,
+      "elements": [
+        "Ru"
+      ],
+      "atom_counts": [
+        120
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ta_bcc_1645.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ta"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ta_bcc_300.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ta"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ta_bcc_3290.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ta"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ta_bcc_3948.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ta"
+      ],
+      "atom_counts": [
+        128
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ti_p6-mmm_1941.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ti"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ti_p6-mmm_2297.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ti"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ti_p6-mmm_300.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ti"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    },
+    "Metal-43-Dataset/Ti_p6-mmm_970.extxyz": {
+      "frames": 1000,
+      "elements": [
+        "Ti"
+      ],
+      "atom_counts": [
+        108
+      ],
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "free_energy",
+        "pbc",
+        "stress"
+      ]
+    }
+  },
+  "status": "Downloaded, checksummed and inventoried only; no model predictions or training use.",
+  "limitations": [
+    "Audit DFT functional, pseudopotentials, smearing, magnetism and units before comparisons.",
+    "Do not assume cells above the melting temperature have actually melted; inspect structural statistics.",
+    "Temperature files contain correlated snapshots, not independent replicates.",
+    "Do not fit an energy shift on the final test set."
+  ]
+}

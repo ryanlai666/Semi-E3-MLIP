@@ -1,0 +1,71 @@
+{
+  "checkpoint_sha256": "c39f5a5028d6bc69b1d8c136b1fa8275dadea7e7b717e1e7f00680fee3af9863",
+  "selection": "Post-hoc: worst cached molten energy error and first cold test frame. No training or model selection.",
+  "cases": {
+    "test_cold": {
+      "id": "TM23-Ti_cold_test-0",
+      "minimum_distance_A": 2.4692009397823895,
+      "edges": 2162,
+      "mean_neighbors": 27.025,
+      "trace": [
+        {
+          "block": 1,
+          "scalar_absmax": 2.5001065731048584,
+          "vector_absmax": 1.3373312950134277,
+          "tensor_absmax": 1.6741405725479126
+        },
+        {
+          "block": 2,
+          "scalar_absmax": 2.2008097171783447,
+          "vector_absmax": 1.469462275505066,
+          "tensor_absmax": 2.3632798194885254
+        },
+        {
+          "block": 3,
+          "scalar_absmax": 2.180056095123291,
+          "vector_absmax": 1.810938835144043,
+          "tensor_absmax": 5.085118293762207
+        }
+      ],
+      "force_absmax_eV_A": 1.4368679523468018,
+      "force_mae_eV_A": 0.03634135167392717,
+      "reference_force_absmax_eV_A": 1.45527393
+    },
+    "test_melt": {
+      "id": "TM23-Ti_melt_test-50",
+      "minimum_distance_A": 1.7789270066583236,
+      "edges": 2268,
+      "mean_neighbors": 28.35,
+      "trace": [
+        {
+          "block": 1,
+          "scalar_absmax": 6.622760772705078,
+          "vector_absmax": 30.932397842407227,
+          "tensor_absmax": 5.331960201263428
+        },
+        {
+          "block": 2,
+          "scalar_absmax": 2059.909423828125,
+          "vector_absmax": 29799.62109375,
+          "tensor_absmax": 7519.13916015625
+        },
+        {
+          "block": 3,
+          "scalar_absmax": 1512119069573120.0,
+          "vector_absmax": 1.7017557078484451e+19,
+          "tensor_absmax": 5.818380238702248e+18
+        }
+      ],
+      "force_absmax_eV_A": 6.817449435371633e+31,
+      "force_mae_eV_A": 1.1027929010541968e+30,
+      "reference_force_absmax_eV_A": 8.45940972
+    }
+  },
+  "training_minimum_distance_quantiles_A": {
+    "0": 2.234444434250805,
+    "0.01": 2.3274884986145565,
+    "0.5": 2.453612423658277,
+    "0.99": 2.5339159833016534,
+    "1": 2.548797214226063
+  }
+}

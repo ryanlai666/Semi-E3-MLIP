@@ -1,0 +1,792 @@
+{
+  "phase": "Exploratory single-seed, matched 60-epoch priority pilots; not a converged three-seed confirmation.",
+  "dependency": "Wait for the entire current width queue to finish successfully before using the GPU.",
+  "studies": {
+    "mixed_ti": {
+      "label_family": "PBE nonspin TM23",
+      "partitions": {
+        "train": {
+          "path": "data\\priority_v1\\mixed_ti\\train.jsonl",
+          "frames": 2520,
+          "groups": 3,
+          "sha256": "e087007bb86d98722d00fddf5e43b0a8ae36197f81a237091db031eb2778ad05",
+          "systems": {
+            "Ti": 2520
+          }
+        },
+        "valid": {
+          "path": "data\\priority_v1\\mixed_ti\\valid.jsonl",
+          "frames": 180,
+          "groups": 2,
+          "sha256": "1607caeae7c713b46be739a15be3ca44b3e7f2aeb114302695643b2f649d0bad",
+          "systems": {
+            "Ti": 180
+          }
+        },
+        "test_cold": {
+          "path": "data\\priority_v1\\mixed_ti\\test_cold.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "f64584111963e9a0a2f646e8e26d14b2d53daf8ac7d4de8104ef7fa4a9cffe6d",
+          "systems": {
+            "Ti": 100
+          }
+        },
+        "test_warm": {
+          "path": "data\\priority_v1\\mixed_ti\\test_warm.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "a3a0d068d61af8e569b30b67384fdfa5e4f01ee84f75678891359433639f1baa",
+          "systems": {
+            "Ti": 100
+          }
+        },
+        "test_melt": {
+          "path": "data\\priority_v1\\mixed_ti\\test_melt.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "ecf1997a61ca48dee1bbafee4c45b955ebae5c5a34bae9a7c5036ad24abd8ef7",
+          "systems": {
+            "Ti": 100
+          }
+        }
+      },
+      "limitation": "Original tests already inspected and share source trajectories. Adding molten training changes this to within-temperature validation, not blind molten extrapolation. ID holdouts are not independent trajectories."
+    },
+    "mixed_ru": {
+      "label_family": "PBE nonspin TM23",
+      "partitions": {
+        "train": {
+          "path": "data\\priority_v1\\mixed_ru\\train.jsonl",
+          "frames": 2520,
+          "groups": 3,
+          "sha256": "faa21bcead72363295d7d3e794510fe6f6d3cf41195b6ccca6f75ccdb4948c34",
+          "systems": {
+            "Ru": 2520
+          }
+        },
+        "valid": {
+          "path": "data\\priority_v1\\mixed_ru\\valid.jsonl",
+          "frames": 180,
+          "groups": 2,
+          "sha256": "850c394988411bd434a29d855984e2eda9343d2a9cc83cfe51e6df3056940b37",
+          "systems": {
+            "Ru": 180
+          }
+        },
+        "test_cold": {
+          "path": "data\\priority_v1\\mixed_ru\\test_cold.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "848326217c848ea670eae41cab30c75206740e27e77e6f5f2748bfa68b0ad1a1",
+          "systems": {
+            "Ru": 100
+          }
+        },
+        "test_warm": {
+          "path": "data\\priority_v1\\mixed_ru\\test_warm.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "c4ab035f2a66ad6085dbb822b013bc73b55cc8267cdefc9623ff57dc86236f82",
+          "systems": {
+            "Ru": 100
+          }
+        },
+        "test_melt": {
+          "path": "data\\priority_v1\\mixed_ru\\test_melt.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "596a2b1fd3b8fce088351117c168d5cf8c1826c02cc4b90add38226b10711535",
+          "systems": {
+            "Ru": 100
+          }
+        }
+      },
+      "limitation": "Original tests already inspected and share source trajectories. Adding molten training changes this to within-temperature validation, not blind molten extrapolation. ID holdouts are not independent trajectories."
+    },
+    "mixed_ta": {
+      "label_family": "PBE nonspin TM23",
+      "partitions": {
+        "train": {
+          "path": "data\\priority_v1\\mixed_ta\\train.jsonl",
+          "frames": 2520,
+          "groups": 3,
+          "sha256": "b419beeeed18d4f023d72eba7e0def7ef72378357cc77490dc3d0b56756f8c5e",
+          "systems": {
+            "Ta": 2520
+          }
+        },
+        "valid": {
+          "path": "data\\priority_v1\\mixed_ta\\valid.jsonl",
+          "frames": 180,
+          "groups": 2,
+          "sha256": "5f5833351985be17f96931f6b01c4868dfe6053438d3e262f57cf5ffb6ad9800",
+          "systems": {
+            "Ta": 180
+          }
+        },
+        "test_cold": {
+          "path": "data\\priority_v1\\mixed_ta\\test_cold.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "beb122a13174571e950ac0a521107fbecda71cc06eaaa6099676c958ef9411bf",
+          "systems": {
+            "Ta": 100
+          }
+        },
+        "test_warm": {
+          "path": "data\\priority_v1\\mixed_ta\\test_warm.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "dbde20a47f0031124f66ecac64fb30381f51f81609d18342786800d5fab36f7e",
+          "systems": {
+            "Ta": 100
+          }
+        },
+        "test_melt": {
+          "path": "data\\priority_v1\\mixed_ta\\test_melt.jsonl",
+          "frames": 100,
+          "groups": 1,
+          "sha256": "07dabb6f3775ffc11b794cc334a99e0c69133a005a0e2cf1918f0f443fff70cd",
+          "systems": {
+            "Ta": 100
+          }
+        }
+      },
+      "limitation": "Original tests already inspected and share source trajectories. Adding molten training changes this to within-temperature validation, not blind molten extrapolation. ID holdouts are not independent trajectories."
+    },
+    "shared_ta_o_expanded": {
+      "label_family": "r2SCAN",
+      "partitions": {
+        "train": {
+          "path": "data\\priority_v1\\shared_ta_o_expanded\\train.jsonl",
+          "frames": 4995,
+          "groups": 1017,
+          "sha256": "0af6eddd68b0ba365b47c588629aad7f894f62bf804fdaa2a6d7d56d2092e3a7",
+          "systems": {
+            "Si": 124,
+            "O-Si": 277,
+            "O-Ti": 444,
+            "O-Ru": 219,
+            "Hf": 33,
+            "Cu": 42,
+            "Ta": 39,
+            "O-Ta": 1868,
+            "Zr": 30,
+            "O-W": 192,
+            "Cu-O": 326,
+            "O-Zr": 363,
+            "Co-O": 384,
+            "W": 58,
+            "Al": 11,
+            "Ru": 26,
+            "Ti": 22,
+            "Co": 25,
+            "Hf-O": 403,
+            "Al-O": 109
+          }
+        },
+        "valid": {
+          "path": "data\\priority_v1\\shared_ta_o_expanded\\valid.jsonl",
+          "frames": 376,
+          "groups": 163,
+          "sha256": "e5540fef0176203fa0c149de9f0faede4be80ac06e36caba56d14bdb00b8cb20",
+          "systems": {
+            "O-Si": 32,
+            "W": 6,
+            "Zr": 6,
+            "Ta": 5,
+            "Al-O": 10,
+            "Co-O": 18,
+            "O-W": 14,
+            "Si": 16,
+            "Ti": 3,
+            "Hf-O": 5,
+            "Cu": 5,
+            "Co": 3,
+            "O-Ta": 238,
+            "O-Ti": 5,
+            "Al": 1,
+            "Cu-O": 2,
+            "O-Zr": 3,
+            "O-Ru": 2,
+            "Ru": 1,
+            "Hf": 1
+          }
+        },
+        "new_ta_o_test": {
+          "path": "data\\priority_v1\\shared_ta_o_expanded\\new_ta_o_test.jsonl",
+          "frames": 228,
+          "groups": 76,
+          "sha256": "dfab75c6c72c9ffafb146c3d1d59fafdb58e5c9880aea97bf7b1998f9767fc1b",
+          "systems": {
+            "O-Ta": 228
+          }
+        },
+        "historical_test": {
+          "path": "data\\priority_v1\\shared_ta_o_expanded\\historical_test.jsonl",
+          "frames": 122,
+          "groups": 90,
+          "sha256": "ee77224ad5fedf18d5d1feb08dd192f930553f416fcc87d63b6abb977dac89b0",
+          "systems": {
+            "Hf-O": 5,
+            "O-Si": 34,
+            "Si": 15,
+            "Cu": 5,
+            "W": 6,
+            "Cu-O": 4,
+            "Ta": 5,
+            "O-Ta": 7,
+            "O-Ti": 12,
+            "Co-O": 4,
+            "O-W": 5,
+            "O-Zr": 5,
+            "Zr": 3,
+            "Hf": 1,
+            "Co": 2,
+            "Al-O": 6,
+            "Ti": 2,
+            "Al": 1
+          }
+        },
+        "historical_aloe_test": {
+          "path": "data\\priority_v1\\shared_ta_o_expanded\\historical_aloe_test.jsonl",
+          "frames": 279,
+          "groups": 93,
+          "sha256": "af1540ba4e4a035b8684b9599102a8df52742894944efd2b383f29eb09fe1d06",
+          "systems": {
+            "O-Zr": 42,
+            "O-Ti": 39,
+            "O-Si": 24,
+            "Hf-O": 45,
+            "O-Ru": 21,
+            "Co-O": 42,
+            "O-W": 18,
+            "Cu-O": 33,
+            "Al-O": 12,
+            "O-Ta": 3
+          }
+        }
+      },
+      "counts": {
+        "raw_ta_o": 2367,
+        "known_parent_excluded": 27
+      },
+      "added": {
+        "train": 1839,
+        "test": 228,
+        "valid": 231
+      },
+      "added_formulas": {
+        "TaO": 732,
+        "TaO2": 429,
+        "TaO4": 57,
+        "Ta2O": 273,
+        "Ta4O": 42,
+        "TaO3": 246,
+        "Ta3O": 144,
+        "Ta3O5": 24,
+        "Ta2O3": 84,
+        "Ta3O2": 69,
+        "Ta5O3": 15,
+        "Ta6O": 12,
+        "Ta4O3": 42,
+        "Ta3O4": 57,
+        "TaO5": 18,
+        "TaO6": 12,
+        "Ta5O": 18,
+        "Ta5O2": 15,
+        "TaO7": 9
+      },
+      "limitation": "New Ta-O parent groups exclude known Ta-O parents. Composition/prototype grouping does not establish complete structural independence. Historical tests remain post-hoc diagnostics."
+    }
+  },
+  "trials": [
+    {
+      "name": "shared_ta_o_expanded_plain_s42",
+      "study": "shared_ta_o_expanded",
+      "variant": "plain",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 1,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": false,
+        "bounded_gates": false,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "shared_ta_o_expanded_stabilized_s42",
+      "study": "shared_ta_o_expanded",
+      "variant": "stabilized",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 1,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": true,
+        "bounded_gates": true,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ti_plain_s42",
+      "study": "mixed_ti",
+      "variant": "plain",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": false,
+        "bounded_gates": false,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ti_stabilized_s42",
+      "study": "mixed_ti",
+      "variant": "stabilized",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": true,
+        "bounded_gates": true,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ru_plain_s42",
+      "study": "mixed_ru",
+      "variant": "plain",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": false,
+        "bounded_gates": false,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ru_stabilized_s42",
+      "study": "mixed_ru",
+      "variant": "stabilized",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": true,
+        "bounded_gates": true,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ta_plain_s42",
+      "study": "mixed_ta",
+      "variant": "plain",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": false,
+        "bounded_gates": false,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "mixed_ta_stabilized_s42",
+      "study": "mixed_ta",
+      "variant": "stabilized",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 0,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": true,
+        "bounded_gates": true,
+        "repulsive_core": false,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    },
+    {
+      "name": "shared_ta_o_expanded_stabilized_core_s42",
+      "study": "shared_ta_o_expanded",
+      "variant": "stabilized_core",
+      "train": {
+        "epochs": 60,
+        "max_train": 0,
+        "max_valid": 0,
+        "atom_budget": 1024,
+        "edge_budget": 64000,
+        "accumulation": 1,
+        "seed": 42,
+        "lr": 0.001,
+        "min_lr": 3e-06,
+        "warmup_fraction": 0.05,
+        "weight_decay": 1e-05,
+        "energy_weight": 1.0,
+        "force_weight": 10.0,
+        "stress_weight": 1,
+        "device": "auto",
+        "loss": "pseudo_huber",
+        "huber_delta": 1.0,
+        "auxiliary_weight": 0.0,
+        "patience": 0,
+        "minimum_epochs": 50,
+        "monitor_train_every": 10,
+        "microbatch_atoms": 256,
+        "microbatch_edges": 16000,
+        "selection_metric": "balanced_macro",
+        "selection_energy_scale": 0.01,
+        "selection_force_scale": 0.1
+      },
+      "model": {
+        "scalar_channels": 128,
+        "vector_channels": 64,
+        "blocks": 4,
+        "radial_basis": 32,
+        "cutoff": 5.0,
+        "activation": "swiglu",
+        "average_neighbors": 16.0,
+        "chemical_descriptors": false,
+        "auxiliary_heads": false,
+        "attention": true,
+        "attention_heads": 4,
+        "tensor_channels": 32,
+        "equivariant_norm": true,
+        "bounded_gates": true,
+        "repulsive_core": true,
+        "core_inner": 0.8,
+        "core_outer": 1.5
+      },
+      "parameters": 1356513
+    }
+  ],
+  "priority_data_sha256": "d18230dc44a0a47b99887aa987883e8369057671c269b1c536fab6ff65ef12b7",
+  "code_sha256": {
+    "semi_mlip/model.py": "de29107551ef0a1f8ade4103dc029e1f2ac58b44e1d49c157e01a0f42998c9a3",
+    "semi_mlip/train.py": "0be0844f8047ca802e111ccf43497bf4fe78760ed7cc4b47d1c12252447a8961",
+    "semi_mlip/repulsion.py": "ce967fab43694fd6be4408b9487de98397661e264cf738d6d20b045365057482"
+  },
+  "selection": "Equal-chemistry mean of 0.5*(energy_MAE/0.01 + force_MAE/0.1); no test selection.",
+  "evaluation": "Freeze all checkpoints before reading model errors on tests. TM23 and historical r2SCAN tests are post-hoc; new Ta-O groups are untouched at protocol time.",
+  "claims": "Changing data and selection confounds comparisons with old published models; causal architecture comparisons use matched plain/stabilized pairs within this protocol."
+}

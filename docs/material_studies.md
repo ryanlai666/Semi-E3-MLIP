@@ -97,3 +97,5 @@ For this repository, the immediate research priorities are to diagnose the cold-
 ## Alloy transfer follow-up
 
 The frozen shared model has now been checked on 2,421 previously unused r2SCAN binary configurations across Al-Si, Al-Ti, Cu-Zr, Hf-Zr, Ta-W and Ti-W. None meets both project targets. See [alloy errors, parity plots and phase-stability limits](alloy_validation.md). These are off-equilibrium DFT snapshots, not a validated equilibrium phase diagram.
+
+[Physics research and Ru/Ta/Ti/Ta-O recovery experiments](physics_research.md)

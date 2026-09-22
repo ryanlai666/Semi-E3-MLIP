@@ -53,3 +53,5 @@ The existing expanded-attention to expanded-tensor comparison improves validatio
 The current recommendation is to test **coverage and numerical behavior alongside a moderate width increase**, rather than assume that a larger model will extrapolate correctly. No proposed architecture change or new training result is reported as completed here.
 
 [Running 1x/2x/4x width study](width_scaling.md) | [Replacement alloy references](alloy_references.md)
+
+[Physics research and Ru/Ta/Ti/Ta-O recovery experiments](physics_research.md)
