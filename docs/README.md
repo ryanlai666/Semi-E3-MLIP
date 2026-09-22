@@ -28,3 +28,5 @@ Follow-up: [independent material results](material_studies.md) and [fixed protoc
 | Which systems are accurate enough, and are the weights shared? | [Suitability and coverage](material_studies.md) |
 | Where are overall and per-system train/test parity plots? | [Parity gallery](parity.md) |
 | Where are all specialist numbers and learning curves? | [Detailed metrics](material_study_metrics.md) |
+
+Alloy follow-up: [six binary chemistry holdouts and phase-stability limits](alloy_validation.md).

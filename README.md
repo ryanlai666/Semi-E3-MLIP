@@ -173,3 +173,7 @@ Separate models for six additional TM23 metals, elemental Al/Si, and ten oxide c
 [Full train/test results, distributions and learning curves](docs/material_studies.md). Al remains exploratory because its MatPES test contains only one frame. Known Cu/Ti molten-transfer failures remain documented above.
 
 ![Independent-model test results](docs/assets/material_studies/test_forces.png)
+
+## Alloy transfer verification
+
+The frozen shared model was tested without retraining on **2,421 previously unused r2SCAN configurations across six binary systems**. None meets both project energy/force targets. [Alloy errors, parity plots and phase-stability limits](docs/alloy_validation.md) explain why these results do not establish an equilibrium phase diagram.

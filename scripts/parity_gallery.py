@@ -148,6 +148,7 @@ def main():
         lines.append(f'| {element} | {elemental} | {link(oxide)} |')
     lines+=['','No elemental Ru shared-model test exists; its test panels explicitly show no records. Missing source partitions are not zero error.', '',
         '[Numerical parity metrics, counts, checkpoint hashes and plotting conventions](../reports/parity/manifest.json).']
+    if Path('docs/alloy_validation.md').exists():lines+=['','## Alloy holdout verification','','[Six additional binary systems: parity, errors and phase-stability limits](alloy_validation.md).']
     Path('docs/parity.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 if __name__=='__main__':main()

@@ -51,3 +51,7 @@ The paired layout below is a navigation aid, not a claim that elemental and oxid
 No elemental Ru shared-model test exists; its test panels explicitly show no records. Missing source partitions are not zero error.
 
 [Numerical parity metrics, counts, checkpoint hashes and plotting conventions](../reports/parity/manifest.json).
+
+## Alloy holdout verification
+
+[Six additional binary systems: parity, errors and phase-stability limits](alloy_validation.md).

@@ -1,0 +1,12 @@
+{
+  "tests_passed": 42,
+  "test_seconds": 5.95,
+  "command": "python -m pytest -q -p no:cacheprovider --basetemp=.test-tmp-alloys",
+  "default_alloy_ingestion": false,
+  "holdout_opt_in": true,
+  "changed_model_weights": false,
+  "visual_review": [
+    "alloy_composition_errors.png"
+  ],
+  "parity_metric_checks": "Energy and force MAEs agree with frozen evaluation within rtol=0.02, atol=2e-5."
+}

@@ -93,3 +93,7 @@ For this repository, the immediate research priorities are to diagnose the cold-
 - [Train/test parity gallery: shared model overall, every system, and all specialists](parity.md).
 - [Detailed train/validation/test tables, learning curves and distributions](material_study_metrics.md).
 - [Frozen protocols, checkpoint hashes and raw metrics](../reports/material_studies).
+
+## Alloy transfer follow-up
+
+The frozen shared model has now been checked on 2,421 previously unused r2SCAN binary configurations across Al-Si, Al-Ti, Cu-Zr, Hf-Zr, Ta-W and Ti-W. None meets both project targets. See [alloy errors, parity plots and phase-stability limits](alloy_validation.md). These are off-equilibrium DFT snapshots, not a validated equilibrium phase diagram.

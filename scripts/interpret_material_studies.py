@@ -99,6 +99,8 @@ def update_report():
     text=text.rstrip()+'\n\n## Plots and detailed results\n\n- [Train/test parity gallery: shared model overall, every system, and all specialists](parity.md).\n- [Detailed train/validation/test tables, learning curves and distributions](material_study_metrics.md).\n- [Frozen protocols, checkpoint hashes and raw metrics](../reports/material_studies).\n' if '## Plots and detailed results' not in text else text
     navigation='[Train/test parity plots](parity.md) | [Detailed metrics](material_study_metrics.md) | [Model scope](#one-potential-or-separate-potentials) | [Metal/oxide coverage](#complete-metaloxide-coverage)'
     if navigation not in text:text=text.replace('# Independent material studies\n','# Independent material studies\n\n'+navigation+'\n',1)
+    if Path('reports/alloy_validation/summary.json').exists() and '## Alloy transfer follow-up' not in text:
+        text+='\n## Alloy transfer follow-up\n\nThe frozen shared model has now been checked on 2,421 previously unused r2SCAN binary configurations across Al-Si, Al-Ti, Cu-Zr, Hf-Zr, Ta-W and Ti-W. None meets both project targets. See [alloy errors, parity plots and phase-stability limits](alloy_validation.md). These are off-equilibrium DFT snapshots, not a validated equilibrium phase diagram.\n'
     p.write_text(text,encoding='utf-8')
     Path('reports/material_studies/suitability.json').write_text(json.dumps({'thresholds':{'energy_mae_eV_atom':.01,'force_mae_eV_A':.1},
         'purpose':'Project screening targets; not a production-MD certification','elemental':assessment,'oxide_subsets_shared_better_both_metrics':int(improved),

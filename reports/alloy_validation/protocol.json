@@ -1,0 +1,18 @@
+{
+  "systems": [
+    "Al-Si",
+    "Al-Ti",
+    "Cu-Zr",
+    "Hf-Zr",
+    "Ta-W",
+    "Ti-W"
+  ],
+  "source": "https://doi.org/10.6084/m9.figshare.29452190.v2",
+  "paper": "https://www.nature.com/articles/s41524-025-01834-9",
+  "archive_md5": "0cac41b76cdc936848d360a14bdc9bf2",
+  "checkpoint": "runs\\device\\expanded_tensor\\best.pt",
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "selection": "All valid non-MP-sourced records in six declared binary chemical systems; composition-only scope, no prediction/energy/force filtering.",
+  "role": "Untouched chemistry holdout for the existing shared checkpoint. No fitting, fine-tuning, checkpoint selection or new hyperparameter search.",
+  "classification": "Off-equilibrium r2SCAN DFT snapshots, not verified continuous AIMD or equilibrium phase-diagram data."
+}

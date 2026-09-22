@@ -466,6 +466,10 @@ are versioned separately from the source archives.
 - DFT functional, trajectory, temperature, and source differences are preserved in
   the reports. Short model-only MD checks and external AIMD comparisons are separate.
 '''
+    if (ROOT/'docs/parity.md').exists():
+        readme+='\n## Further validation\n\n[Material suitability and shared-versus-specialist model scope](docs/material_studies.md) | [Overall and per-system train/test parity](docs/parity.md).\n'
+    if (ROOT/'docs/alloy_validation.md').exists():
+        readme+='\n[Alloy holdouts and phase-stability limits](docs/alloy_validation.md): six previously unused binary systems, evaluated with the frozen shared model.\n'
     (ROOT/'README.md').write_text(readme,encoding='utf-8')
     for svg in ASSETS.glob('*.svg'):
         svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')

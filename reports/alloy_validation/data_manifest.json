@@ -1,0 +1,155 @@
+{
+  "counts": {
+    "scanned": 909792,
+    "composition_candidates": 2499,
+    "mp_sourced_excluded": 78
+  },
+  "systems": {
+    "Al-Si": {
+      "path": "data/alloy_validation/Al_Si.jsonl",
+      "sha256": "b005e44bdc037620ebd7f541bcf1fdf63dcf08dc07a59aaa4b7376e99bde3897",
+      "frames": 228,
+      "parent_groups": 71,
+      "formulas": {
+        "Al4Si": 3,
+        "AlSi": 84,
+        "AlSi2": 33,
+        "Al2Si": 36,
+        "Al3Si4": 3,
+        "Al4Si3": 6,
+        "AlSi3": 21,
+        "Al3Si2": 6,
+        "Al3Si": 15,
+        "AlSi4": 12,
+        "Al2Si3": 9
+      }
+    },
+    "Al-Ti": {
+      "path": "data/alloy_validation/Al_Ti.jsonl",
+      "sha256": "6f3f82f81d84fc0649aedbb33d204d768edc304b2c292f7bc383dee3999526f5",
+      "frames": 501,
+      "parent_groups": 147,
+      "formulas": {
+        "Ti3Al2": 21,
+        "TiAl2": 87,
+        "Ti2Al": 84,
+        "Ti4Al": 9,
+        "TiAl": 201,
+        "Ti5Al": 9,
+        "TiAl5": 6,
+        "Ti3Al4": 12,
+        "Ti4Al3": 6,
+        "Ti2Al5": 6,
+        "Ti7Al": 3,
+        "Ti3Al": 15,
+        "Ti5Al3": 6,
+        "Ti3Al5": 3,
+        "TiAl3": 12,
+        "TiAl7": 3,
+        "TiAl4": 3,
+        "Ti2Al3": 12,
+        "TiAl6": 3
+      }
+    },
+    "Cu-Zr": {
+      "path": "data/alloy_validation/Cu_Zr.jsonl",
+      "sha256": "c7fc3c8cb38e09a0eab579e81e5550e3d843cad7919c028d0d4421c5ae7d5c37",
+      "frames": 312,
+      "parent_groups": 100,
+      "formulas": {
+        "Zr2Cu3": 15,
+        "Zr3Cu2": 21,
+        "Zr4Cu": 9,
+        "ZrCu": 147,
+        "Zr2Cu": 60,
+        "Zr5Cu": 3,
+        "ZrCu2": 9,
+        "Zr3Cu4": 3,
+        "Zr4Cu3": 9,
+        "Zr3Cu": 21,
+        "ZrCu3": 6,
+        "Zr5Cu3": 3,
+        "Zr5Cu2": 3,
+        "Zr6Cu": 3
+      }
+    },
+    "Hf-Zr": {
+      "path": "data/alloy_validation/Hf_Zr.jsonl",
+      "sha256": "cea460d7f11192f0a096a857ad85b29de96c2b47417145c851ae86ffb0972462",
+      "frames": 312,
+      "parent_groups": 96,
+      "formulas": {
+        "Hf4Zr": 6,
+        "HfZr4": 6,
+        "Hf3Zr2": 15,
+        "HfZr": 138,
+        "Hf5Zr": 3,
+        "HfZr5": 9,
+        "Hf2Zr": 42,
+        "HfZr2": 66,
+        "Hf3Zr4": 6,
+        "HfZr3": 15,
+        "Hf2Zr5": 3,
+        "Hf3Zr": 3
+      }
+    },
+    "Ta-W": {
+      "path": "data/alloy_validation/Ta_W.jsonl",
+      "sha256": "f9e421d97b8357e8230fd3df6f56f057bdf70564d808266250bd1573c0afabcb",
+      "frames": 300,
+      "parent_groups": 89,
+      "formulas": {
+        "TaW2": 54,
+        "Ta4W": 3,
+        "TaW4": 9,
+        "TaW5": 6,
+        "Ta2W": 48,
+        "Ta2W5": 3,
+        "Ta3W4": 6,
+        "TaW": 102,
+        "Ta3W5": 3,
+        "Ta3W": 18,
+        "Ta5W": 3,
+        "Ta5W2": 3,
+        "Ta3W2": 15,
+        "TaW3": 9,
+        "Ta4W3": 3,
+        "Ta5W3": 3,
+        "Ta2W3": 12
+      }
+    },
+    "Ti-W": {
+      "path": "data/alloy_validation/Ti_W.jsonl",
+      "sha256": "c682187903ef15a909ba4e0b27107f74aef96b2e07b718a5ef61f61cc7814329",
+      "frames": 768,
+      "parent_groups": 216,
+      "formulas": {
+        "Ti4W": 6,
+        "Ti2W3": 42,
+        "Ti3W2": 24,
+        "Ti2W": 138,
+        "TiW": 264,
+        "TiW2": 141,
+        "Ti5W2": 3,
+        "Ti4W3": 15,
+        "Ti6W": 6,
+        "Ti3W": 36,
+        "Ti5W3": 6,
+        "TiW3": 54,
+        "Ti2W5": 3,
+        "Ti3W4": 12,
+        "Ti3W5": 9,
+        "TiW4": 3,
+        "TiW5": 3,
+        "TiW7": 3
+      }
+    }
+  },
+  "training_chemistry_overlap": [],
+  "limitations": [
+    "Chemistry-disjoint from training, but same MP-ALOE dataset family; not independent DFT methodology.",
+    "Prototype/ionic-step snapshots are correlated; configuration counts are not trajectory replicates.",
+    "Geometry deduplication does not prove absence of structural similarity.",
+    "No verified fully relaxed ground-state set or matched elemental endpoints; cannot establish an equilibrium convex hull."
+  ]
+}

@@ -24,11 +24,11 @@ def stress_from_matpes(stress):
     return (-0.1 / GPA_PER_EV_A3 * s).tolist()
 
 
-def convert(raw):
+def convert(raw, *, allow_alloys=False):
     elements = set(raw["elements"])
     if not elements or not elements <= ELEMENTS.keys():
         raise ValueError("outside_elements")
-    if len(elements) > 1 and "O" not in elements:
+    if len(elements) > 1 and "O" not in elements and not allow_alloys:
         raise ValueError("oxygen_free_alloy")
     if raw.get("functional", "").lower() != "r2scan":
         raise ValueError("wrong_functional")

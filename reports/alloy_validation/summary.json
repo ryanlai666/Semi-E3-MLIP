@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "metrics": {
+    "Al-Si": {
+      "frames": 228,
+      "atoms": 1227,
+      "energy_mae_eV_atom": 0.22748547822815007,
+      "energy_rmse_eV_atom": 0.3249822576199426,
+      "force_mae_eV_A": 0.29326406545030764,
+      "force_rmse_eV_A": 0.571298996616967,
+      "stress_mae_eV_A3": 0.028139168020217525,
+      "offset_baseline_mae_eV_atom": 0.5032844446630993,
+      "zero_force_baseline_mae_eV_A": 0.4616696992148872,
+      "high_force_mae_eV_A": 0.5783732119753277
+    },
+    "Al-Ti": {
+      "frames": 501,
+      "atoms": 2625,
+      "energy_mae_eV_atom": 0.2566478905698355,
+      "energy_rmse_eV_atom": 0.32754530371275964,
+      "force_mae_eV_A": 0.25171786898182996,
+      "force_rmse_eV_A": 0.4316527828537058,
+      "stress_mae_eV_A3": 0.026853562231796576,
+      "offset_baseline_mae_eV_atom": 1.0939387796834599,
+      "zero_force_baseline_mae_eV_A": 0.278579481326984,
+      "high_force_mae_eV_A": 0.4899934958171404
+    },
+    "Cu-Zr": {
+      "frames": 312,
+      "atoms": 1671,
+      "energy_mae_eV_atom": 0.39185808407991995,
+      "energy_rmse_eV_atom": 0.5043463129753706,
+      "force_mae_eV_A": 0.395441648817862,
+      "force_rmse_eV_A": 0.7205645963891069,
+      "stress_mae_eV_A3": 0.017479865183452223,
+      "offset_baseline_mae_eV_atom": 0.6466642267004833,
+      "zero_force_baseline_mae_eV_A": 0.37905045169559126,
+      "high_force_mae_eV_A": 0.6825441952807647
+    },
+    "Hf-Zr": {
+      "frames": 312,
+      "atoms": 1602,
+      "energy_mae_eV_atom": 0.45550888869780837,
+      "energy_rmse_eV_atom": 0.7050304567147831,
+      "force_mae_eV_A": 0.25547335719482084,
+      "force_rmse_eV_A": 0.4436468076104045,
+      "stress_mae_eV_A3": 0.015789767661686792,
+      "offset_baseline_mae_eV_atom": 1.8278202154906802,
+      "zero_force_baseline_mae_eV_A": 0.3814363597378277,
+      "high_force_mae_eV_A": 0.3924608314189813
+    },
+    "Ta-W": {
+      "frames": 300,
+      "atoms": 1590,
+      "energy_mae_eV_atom": 0.3012578134531699,
+      "energy_rmse_eV_atom": 0.3720772996560177,
+      "force_mae_eV_A": 0.4065736604675632,
+      "force_rmse_eV_A": 0.7422900507873896,
+      "stress_mae_eV_A3": 0.04344276806915775,
+      "offset_baseline_mae_eV_atom": 0.5106452425304706,
+      "zero_force_baseline_mae_eV_A": 0.4341541280754716,
+      "high_force_mae_eV_A": 0.6293413296662896
+    },
+    "Ti-W": {
+      "frames": 768,
+      "atoms": 4041,
+      "energy_mae_eV_atom": 0.4056718728248896,
+      "energy_rmse_eV_atom": 0.6077579236556294,
+      "force_mae_eV_A": 0.4247363739808542,
+      "force_rmse_eV_A": 0.8407004720173603,
+      "stress_mae_eV_A3": 0.03713410110496051,
+      "offset_baseline_mae_eV_atom": 1.107085878506563,
+      "zero_force_baseline_mae_eV_A": 0.4729528716184108,
+      "high_force_mae_eV_A": 0.7287759367933583
+    }
+  },
+  "checkpoint_sha256": "f2286fe10cf6c9218a78f463d1b19beff301d255eec62c633135cabc84cb5bcc",
+  "not_phase_diagram": true,
+  "not_continuous_aimd": true,
+  "overall_parity": {
+    "Alloy holdout": {
+      "er": {
+        "points": 2421,
+        "mae": 0.34975593771892655,
+        "rmse": 0.5131423074789936
+      },
+      "fr": {
+        "points": 38268,
+        "mae": 0.3491264922694926,
+        "rmse": 0.674576138394342
+      }
+    }
+  },
+  "alloy_holdout_frames": 2421
+}
