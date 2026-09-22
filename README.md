@@ -166,6 +166,8 @@ are versioned separately from the source archives.
 
 ## Independent material studies
 
+**Model scope:** these are independent specialist fits; the separate shared baseline uses one checkpoint for all 20 chemical systems. Current results do not validate general molten or metal/oxide-interface MD. [Suitability and complete coverage](docs/material_studies.md) | [Train/test parity gallery](docs/parity.md).
+
 Separate models for six additional TM23 metals, elemental Al/Si, and ten oxide chemical systems: 18 studies and 54 fits. Each uses three initialization seeds and validation-only checkpoint selection.
 
 [Full train/test results, distributions and learning curves](docs/material_studies.md). Al remains exploratory because its MatPES test contains only one frame. Known Cu/Ti molten-transfer failures remain documented above.

@@ -20,3 +20,11 @@ SVG/PDF exports where available. Numerical source artifacts live in `reports/`.
 The images illustrate measured results; they are not generated molecular data.
 
 Follow-up: [independent material results](material_studies.md) and [fixed protocol](next_material_studies.md).
+
+## Material results navigation
+
+| Question | Page |
+| --- | --- |
+| Which systems are accurate enough, and are the weights shared? | [Suitability and coverage](material_studies.md) |
+| Where are overall and per-system train/test parity plots? | [Parity gallery](parity.md) |
+| Where are all specialist numbers and learning curves? | [Detailed metrics](material_study_metrics.md) |

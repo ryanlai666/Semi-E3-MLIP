@@ -1,0 +1,65 @@
+{
+  "thresholds": {
+    "energy_mae_eV_atom": 0.01,
+    "force_mae_eV_A": 0.1
+  },
+  "purpose": "Project screening targets; not a production-MD certification",
+  "elemental": {
+    "tm23_w": {
+      "passing_seeds": {
+        "test_cold": 3,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Promising for sampled cold structures; warm transfer misses force target; molten predictions fail severely."
+    },
+    "tm23_ta": {
+      "passing_seeds": {
+        "test_cold": 3,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Promising for sampled cold structures; warm and molten force errors remain too large."
+    },
+    "tm23_co": {
+      "passing_seeds": {
+        "test_cold": 3,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Promising for sampled cold structures; warm results vary strongly by seed and molten failures are severe."
+    },
+    "tm23_ru": {
+      "passing_seeds": {
+        "test_cold": 0,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Cold mean already misses both targets; warm and molten results do not support deployment."
+    },
+    "tm23_hf": {
+      "passing_seeds": {
+        "test_cold": 2,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Cold mean meets targets, but only two seeds pass; warm/molten errors prevent a robust suitability claim."
+    },
+    "tm23_zr": {
+      "passing_seeds": {
+        "test_cold": 1,
+        "test_warm": 0,
+        "test_melt": 0
+      },
+      "interpretation": "Cold force mean is low, but energy mean misses target; only one seed passes both. Transfer remains inadequate."
+    }
+  },
+  "oxide_subsets_shared_better_both_metrics": 10,
+  "source_sha256": {
+    "reports\\material_studies\\results.json": "eff38468e8d71358a4866ae642b206a249f81e8e02ba0da0f7fbb3830f088dd0",
+    "reports\\material_studies\\summary.json": "e1b41ddbb3751991ca53b9bde027168084421bfd3f9c295f60d511c8813a29c5",
+    "reports\\benchmark\\materials.json": "96bba8bd93846782e26a3fef2a287181fb41ca6276f1cfd5b04de7ec84cb43a3"
+  },
+  "specialists_share_weights": false,
+  "shared_baseline_covers_systems": 20
+}

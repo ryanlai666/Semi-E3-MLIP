@@ -1,100 +1,95 @@
 # Independent material studies
 
-Fixed tensor models, 60 epochs, three initialization seeds per system. All values are mean +/- seed SD.
+[Train/test parity plots](parity.md) | [Detailed metrics](material_study_metrics.md) | [Model scope](#one-potential-or-separate-potentials) | [Metal/oxide coverage](#complete-metaloxide-coverage)
 
-These follow-up studies preserve source partitions and DFT settings. Al remains exploratory because its test has one frame.
+<!-- material-assessment:start -->
+## Are these models good enough?
 
-| Study | Split | Frames | Energy MAE (meV/atom) | Force MAE (eV/A) |
-| --- | --- | ---: | ---: | ---: |
-| tm23_w | train | 900 | 0.60 +/- 0.04 | 0.0381 +/- 0.0010 |
-| tm23_w | valid | 90 | 3.07 +/- 0.43 | 0.1715 +/- 0.0059 |
-| tm23_w | test_cold | 100 | 0.76 +/- 0.02 | 0.0386 +/- 0.0008 |
-| tm23_w | test_warm | 100 | 3.20 +/- 0.23 | 0.1781 +/- 0.0051 |
-| tm23_w | test_melt | 100 | 537.87 +/- 909.29 | 170.3806 +/- 294.1692 |
-| tm23_ta | train | 900 | 0.95 +/- 0.58 | 0.0461 +/- 0.0006 |
-| tm23_ta | valid | 90 | 4.97 +/- 0.49 | 0.2204 +/- 0.0075 |
-| tm23_ta | test_cold | 100 | 0.98 +/- 0.49 | 0.0478 +/- 0.0005 |
-| tm23_ta | test_warm | 100 | 8.98 +/- 0.33 | 0.2490 +/- 0.0149 |
-| tm23_ta | test_melt | 100 | 22.29 +/- 6.80 | 0.7506 +/- 0.2257 |
-| tm23_co | train | 900 | 1.56 +/- 1.05 | 0.0529 +/- 0.0006 |
-| tm23_co | valid | 90 | 3.39 +/- 0.60 | 0.1076 +/- 0.0089 |
-| tm23_co | test_cold | 100 | 1.59 +/- 1.18 | 0.0511 +/- 0.0007 |
-| tm23_co | test_warm | 100 | 8.11 +/- 6.39 | 0.4269 +/- 0.4675 |
-| tm23_co | test_melt | 100 | 618.95 +/- 981.96 | 348.6403 +/- 593.9660 |
-| tm23_ru | train | 900 | 14.38 +/- 19.83 | 0.1578 +/- 0.0477 |
-| tm23_ru | valid | 90 | 25.04 +/- 9.69 | 0.2844 +/- 0.0075 |
-| tm23_ru | test_cold | 100 | 14.72 +/- 20.26 | 0.1595 +/- 0.0437 |
-| tm23_ru | test_warm | 100 | 25.00 +/- 14.09 | 0.2865 +/- 0.0057 |
-| tm23_ru | test_melt | 100 | 92.85 +/- 38.37 | 6.1834 +/- 5.1391 |
-| tm23_hf | train | 900 | 8.43 +/- 5.33 | 0.0809 +/- 0.0218 |
-| tm23_hf | valid | 90 | 18.78 +/- 9.64 | 0.2014 +/- 0.0124 |
-| tm23_hf | test_cold | 100 | 8.55 +/- 5.29 | 0.0823 +/- 0.0206 |
-| tm23_hf | test_warm | 100 | 16.32 +/- 9.40 | 0.2042 +/- 0.0116 |
-| tm23_hf | test_melt | 100 | 98.60 +/- 7.21 | 0.5111 +/- 0.0460 |
-| tm23_zr | train | 900 | 11.09 +/- 3.56 | 0.0677 +/- 0.0084 |
-| tm23_zr | valid | 90 | 11.67 +/- 3.94 | 0.1719 +/- 0.0019 |
-| tm23_zr | test_cold | 100 | 11.04 +/- 3.53 | 0.0677 +/- 0.0085 |
-| tm23_zr | test_warm | 100 | 11.43 +/- 4.03 | 0.1705 +/- 0.0021 |
-| tm23_zr | test_melt | 100 | 106.31 +/- 68.83 | 2.9554 +/- 4.4609 |
-| r2scan_al | train | 11 | 83.37 +/- 12.51 | 0.2488 +/- 0.0009 |
-| r2scan_al | valid | 1 | 177.98 +/- 58.89 | 0.0000 +/- 0.0000 |
-| r2scan_al | test | 1 | 123.98 +/- 56.38 | 0.0012 +/- 0.0017 |
-| r2scan_si | train | 124 | 204.23 +/- 2.51 | 0.2576 +/- 0.0098 |
-| r2scan_si | valid | 16 | 509.31 +/- 6.80 | 0.8572 +/- 0.0060 |
-| r2scan_si | test | 15 | 462.30 +/- 2.35 | 0.2572 +/- 0.0046 |
-| r2scan_al_o | train | 109 | 976.00 +/- 12.58 | 1.1446 +/- 0.0037 |
-| r2scan_al_o | valid | 22 | 1005.75 +/- 91.85 | 0.5277 +/- 0.0005 |
-| r2scan_al_o | test | 6 | 1320.46 +/- 114.07 | 0.0369 +/- 0.0010 |
-| r2scan_al_o | aloe_test | 12 | 689.68 +/- 20.33 | 1.4319 +/- 0.0032 |
-| r2scan_co_o | train | 384 | 128.86 +/- 9.28 | 0.2547 +/- 0.0094 |
-| r2scan_co_o | valid | 60 | 121.71 +/- 24.02 | 0.2763 +/- 0.0133 |
-| r2scan_co_o | test | 4 | 90.27 +/- 39.96 | 0.2716 +/- 0.0225 |
-| r2scan_co_o | aloe_test | 42 | 164.25 +/- 17.77 | 0.3866 +/- 0.0552 |
-| r2scan_cu_o | train | 326 | 156.89 +/- 5.99 | 0.2127 +/- 0.0081 |
-| r2scan_cu_o | valid | 35 | 291.88 +/- 12.47 | 0.2732 +/- 0.0152 |
-| r2scan_cu_o | test | 4 | 212.63 +/- 56.48 | 0.3266 +/- 0.0593 |
-| r2scan_cu_o | aloe_test | 33 | 232.60 +/- 12.70 | 0.2661 +/- 0.0066 |
-| r2scan_hf_o | train | 403 | 202.02 +/- 12.78 | 0.3320 +/- 0.0041 |
-| r2scan_hf_o | valid | 50 | 324.43 +/- 18.85 | 0.4558 +/- 0.0167 |
-| r2scan_hf_o | test | 5 | 249.49 +/- 14.92 | 0.5505 +/- 0.0425 |
-| r2scan_hf_o | aloe_test | 45 | 220.36 +/- 18.72 | 0.4131 +/- 0.0117 |
-| r2scan_o_ru | train | 219 | 242.86 +/- 13.59 | 0.5347 +/- 0.0174 |
-| r2scan_o_ru | valid | 23 | 553.08 +/- 7.39 | 0.6746 +/- 0.0050 |
-| r2scan_o_ru | aloe_test | 21 | 202.32 +/- 24.08 | 0.4659 +/- 0.0181 |
-| r2scan_o_si | train | 277 | 215.99 +/- 3.44 | 0.4256 +/- 0.0249 |
-| r2scan_o_si | valid | 56 | 269.22 +/- 12.52 | 0.4058 +/- 0.0387 |
-| r2scan_o_si | test | 34 | 218.28 +/- 47.66 | 0.3187 +/- 0.0497 |
-| r2scan_o_si | aloe_test | 24 | 305.01 +/- 11.96 | 0.4709 +/- 0.0039 |
-| r2scan_o_ta | train | 29 | 757.40 +/- 6.68 | 1.1485 +/- 0.0004 |
-| r2scan_o_ta | valid | 10 | 952.67 +/- 54.16 | 0.2658 +/- 0.0001 |
-| r2scan_o_ta | test | 7 | 1338.06 +/- 34.12 | 1.9834 +/- 0.0003 |
-| r2scan_o_ta | aloe_test | 3 | 391.29 +/- 20.03 | 1.1634 +/- 0.0003 |
-| r2scan_o_ti | train | 444 | 201.69 +/- 11.51 | 0.3305 +/- 0.0185 |
-| r2scan_o_ti | valid | 44 | 208.03 +/- 18.91 | 0.3652 +/- 0.0171 |
-| r2scan_o_ti | test | 12 | 502.42 +/- 61.03 | 0.3025 +/- 0.0194 |
-| r2scan_o_ti | aloe_test | 39 | 283.54 +/- 13.23 | 0.3766 +/- 0.0087 |
-| r2scan_o_w | train | 192 | 278.09 +/- 4.45 | 0.5598 +/- 0.0286 |
-| r2scan_o_w | valid | 32 | 357.81 +/- 60.34 | 0.3931 +/- 0.0087 |
-| r2scan_o_w | test | 5 | 383.61 +/- 83.15 | 0.2958 +/- 0.0280 |
-| r2scan_o_w | aloe_test | 18 | 465.69 +/- 47.93 | 0.4443 +/- 0.0136 |
-| r2scan_o_zr | train | 363 | 187.19 +/- 5.88 | 0.2945 +/- 0.0111 |
-| r2scan_o_zr | valid | 45 | 247.55 +/- 36.21 | 0.3660 +/- 0.0217 |
-| r2scan_o_zr | test | 5 | 121.38 +/- 41.21 | 0.2746 +/- 0.0405 |
-| r2scan_o_zr | aloe_test | 42 | 152.86 +/- 28.04 | 0.2769 +/- 0.0098 |
+**Not yet for general predictive MD, molten phases, or metal/oxide interfaces.** W, Ta and Co show promising accuracy only within the sampled cold TM23 regime. Most transfer tests miss the project targets, and several show severe extrapolation failures. Short energy-conservation checks establish numerical behavior of the learned potential, not agreement with DFT.
 
-![Final test errors](assets/material_studies/test_forces.png)
+The screening targets here are energy MAE <= **10 meV/atom** and force MAE <= **0.1 eV/A**, both required on a held-out partition. These are this project's working targets, not universal acceptance standards. Passing them does not validate a particular physical observable. Counts below require each seed to meet both targets; they do not hide failed seeds behind an average. Seed SD is fit variability, not a confidence interval over independent trajectories.
 
-![Validation learning curves](assets/material_studies/learning_curves.png)
+## One potential or separate potentials?
 
-![Force distributions](assets/material_studies/distributions.png)
+| Model family | Learned weights | Scope and role |
+| --- | --- | --- |
+| This page: 18 studies, 54 fits | Separate weights for every study and seed | Single-element or single metal-oxygen chemical-system specialists; three seeds are replicates, not an automatically combined ensemble |
+| Earlier Cu/Ti study: 12 fits | Separate Cu and Ti weights, two data sizes, three seeds | Additional elemental temperature-transfer experiments; [results](results.md#cuti-controlled-temperature-transfer) |
+| Shared `expanded_tensor` baseline | One checkpoint jointly trained on all 20 chemical systems | Ten elements and their ten oxygen-containing systems in one model; [shared results](results.md#multi-metal--metal-oxide-model) |
 
-## Interpretation
+**Same hyperparameters do not mean shared learned parameters.** The specialists use the same 48 scalar / 24 vector / 8 tensor channels, three blocks, 24 radial functions, 5 A cutoff, four attention heads and SwiGLU. Each trains from scratch for 60 epochs with learning rate 0.001, pseudo-Huber loss, energy/force weights 1/10, zero stress-loss weight, and seeds 42/43/44. Checkpoints minimize validation force MAE. Dataset sizes, update counts, fitted elemental energy offsets, loss scales, neighbor normalization and final learned weights differ between systems. Thus equal epochs are not equal compute or identical optimization trajectories. These are fixed-protocol baselines, not individually tuned best models.
 
-- TM23 cold/warm tests share source trajectories with development data; molten is temperature transfer.
-- r2SCAN test labels were previously reported for the broad baseline; these are fixed follow-up comparisons, not a fresh blind benchmark.
-- Al has only 11 training frames and one MatPES test frame; exploratory only.
-- Exact geometry and parent checks do not prove structural independence.
-- Three initialization seeds measure fit variability, not independent dataset replicates.
-- DFT families are trained separately; oxide chemical systems may include multiple stoichiometries.
+The shared baseline is a different experiment: 64/32/16 channels, four blocks, 32 radial functions, up to 200 epochs and a nonzero stress-loss weight. It jointly fits 3,156 r2SCAN configurations. Comparing its errors with the specialists is useful, but does not isolate parameter sharing from architecture, data volume or training budget.
 
-Protocol, hashes, full metrics, and seed summaries: [reports/material_studies](../reports/material_studies).
+**A specialist cannot represent the union of the systems.** An Al-O model has seen Al-O chemistry, not Cu-O, W-O or arbitrary mixtures. Do not switch between elemental and oxide checkpoints atom by atom or along a reaction: their independently fitted energy functions do not define a single consistent energy surface. The shared model can accept the listed elements together, but elemental/oxide coverage alone does not validate alloys, multication oxides, oxygen molecules, oxidation reactions or interfaces.
+
+## Complete metal/oxide coverage
+
+Cu and Ti were omitted from the follow-up table because their elemental models were completed in the earlier study. They were not omitted from the repository. Si is included as the semiconductor member of the paired coverage.
+
+| Element | Elemental specialist | Oxide specialist on this page | Shared model includes both? |
+| --- | --- | --- | --- |
+| Al | r2scan_al | r2scan_al_o | Yes |
+| Si | r2scan_si | r2scan_o_si | Yes |
+| Cu | Earlier Cu/Ti study | r2scan_cu_o | Yes |
+| Ti | Earlier Cu/Ti study | r2scan_o_ti | Yes |
+| W | tm23_w | r2scan_o_w | Yes |
+| Ta | tm23_ta | r2scan_o_ta | Yes |
+| Co | tm23_co | r2scan_co_o | Yes |
+| Ru | tm23_ru | r2scan_o_ru | Yes |
+| Hf | tm23_hf | r2scan_hf_o | Yes |
+| Zr | tm23_zr | r2scan_o_zr | Yes |
+
+Coverage still has gaps: the shared model has **no elemental Ru held-out test** in this benchmark. Elemental Al and Hf each have only one shared-model test frame. The elemental TM23 results use PBE while the oxide specialists use r2SCAN; they are not a matched-fidelity metal/oxide pair experiment. There are no dedicated matched r2SCAN elemental specialists for Cu, Ti, W, Ta, Co, Ru, Hf or Zr in this follow-up, although all are included in the shared model.
+
+## Elemental suitability
+
+| Metal | Cold energy / force MAE (meV/atom; eV/A) | Seeds passing cold / warm / molten | Interpretation |
+| --- | ---: | --- | --- |
+| W | 0.76 / 0.0386 | 3/3 / 0/3 / 0/3 | Promising for sampled cold structures; warm transfer misses force target; molten predictions fail severely. |
+| Ta | 0.98 / 0.0478 | 3/3 / 0/3 / 0/3 | Promising for sampled cold structures; warm and molten force errors remain too large. |
+| Co | 1.59 / 0.0511 | 3/3 / 0/3 / 0/3 | Promising for sampled cold structures; warm results vary strongly by seed and molten failures are severe. |
+| Ru | 14.72 / 0.1595 | 0/3 / 0/3 / 0/3 | Cold mean already misses both targets; warm and molten results do not support deployment. |
+| Hf | 8.55 / 0.0823 | 2/3 / 0/3 / 0/3 | Cold mean meets targets, but only two seeds pass; warm/molten errors prevent a robust suitability claim. |
+| Zr | 11.04 / 0.0677 | 1/3 / 0/3 / 0/3 | Cold force mean is low, but energy mean misses target; only one seed passes both. Transfer remains inadequate. |
+
+Cold and warm TM23 tests share source trajectories with development data, so low cold errors are evidence of interpolation within this sampling, not independent phase/defect/trajectory generalization. None of these six metals passes both targets in any seed on the warm or molten test partitions.
+
+The earlier 900-frame Cu/Ti fits have mean cold force MAEs of about 0.00564 and 0.0440 eV/A, respectively, but their molten means rise to about 3.35e4 and 3.68e27 eV/A. These are extrapolation failures, not acceptable MD errors.
+
+**Al:** its specialist has just one test frame: about 124 meV/atom energy MAE despite a small 0.0012 eV/A force MAE. That is neither adequate energetic accuracy nor enough test diversity. **Si:** its 15-frame test gives about 462 meV/atom and 0.257 eV/A; both targets are missed. Neither supports a general elemental-potential claim.
+
+## Oxide suitability and comparison with the shared model
+
+**None of the ten oxide specialists meets both targets on any available held-out source partition in any seed.** The MP-ALOE table below compares the same held-out chemistry subsets. Specialist values are three-seed means; the shared value is one frozen checkpoint. Lower shared-model errors are observed results, not a controlled proof that sharing alone caused the improvement.
+
+| System | MP-ALOE test frames | Specialist energy / force MAE | Shared energy / force MAE | Interpretation |
+| --- | ---: | ---: | ---: | --- |
+| Al-O | 12 | 689.7 / 1.432 | 88.2 / 0.322 | Large energy errors; low MatPES force error does not transfer to off-equilibrium data. |
+| O-Si | 24 | 305.0 / 0.471 | 47.3 / 0.281 | Both targets missed; not evidence for accurate silica or Si/SiO2 interfaces. |
+| Cu-O | 33 | 232.6 / 0.266 | 83.5 / 0.218 | Both targets missed; does not validate Cu/CuO interfaces or oxidation. |
+| O-Ti | 39 | 283.5 / 0.377 | 65.9 / 0.221 | Both targets missed; oxide/metal transfer and defects unvalidated. |
+| O-W | 18 | 465.7 / 0.444 | 96.6 / 0.231 | Both targets missed; no evidence for reliable oxide thermodynamics or MD. |
+| O-Ta | 3 | 391.3 / 1.163 | 82.6 / 0.396 | Especially poor forces; only three MP-ALOE test frames, so coverage is also weak. |
+| Co-O | 42 | 164.3 / 0.387 | 102.9 / 0.245 | Both force and energy targets missed; reactive or phase-transfer use unvalidated. |
+| O-Ru | 21 | 202.3 / 0.466 | 57.9 / 0.269 | Both targets missed; only MP-ALOE oxide test coverage, no MatPES oxide test. |
+| Hf-O | 45 | 220.4 / 0.413 | 72.9 / 0.208 | Both targets missed; polymorph and defect energetics remain unvalidated. |
+| O-Zr | 42 | 152.9 / 0.277 | 43.7 / 0.148 | Lower errors than several other oxides, but still fails both project targets. |
+
+Energy units: meV/atom; force units: eV/A. The shared model has lower energy and force MAE for all 10 oxide subsets here, but it still fails the joint targets for every oxide. Al-O illustrates why force alone is misleading: its specialist MatPES force MAE is 0.0369 eV/A, while energy MAE is about 1,320 meV/atom and MP-ALOE force MAE rises to 1.432 eV/A.
+
+## What is needed for one useful metal/oxide potential?
+
+Start from a jointly trained, single energy model with compatible DFT labels. Add representative elemental, oxide, metal/oxide interface, vacancy, surface, strained and high-temperature environments for the intended application; binary end-member coverage is insufficient. Keep PBE and r2SCAN separate unless a documented fidelity-aware approach is introduced.
+
+Use held-out parent structures and independent trajectories, report worst cases and force-error tails, and validate the quantities that matter: relative phase/formation energies, equations of state, elastic/stress response, defect or adsorption energies, and reaction barriers as applicable. Then compare stable MD observables with reference data over the required temperature and time range. The existing short Si AIMD comparison and 100 fs NVE checks do not validate all metals and oxides.
+
+For this repository, the immediate research priorities are to diagnose the cold-to-molten extrapolation failures, improve the shared model using representative compatible data, balance energy and force validation, and expand the weak elemental Al/Hf/Ru tests. More runs with unchanged narrow training distributions alone would not establish suitability.
+
+<!-- material-assessment:end -->
+
+## Plots and detailed results
+
+- [Train/test parity gallery: shared model overall, every system, and all specialists](parity.md).
+- [Detailed train/validation/test tables, learning curves and distributions](material_study_metrics.md).
+- [Frozen protocols, checkpoint hashes and raw metrics](../reports/material_studies).

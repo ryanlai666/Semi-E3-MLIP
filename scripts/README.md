@@ -40,3 +40,7 @@ scripts include historical planned variants; not every variant was started.
 ## Independent material continuation
 
 `material_studies.py --prepare-only` freezes the 18-study protocol; `continue_material_studies.ps1` resumes all 54 fits, protected evaluations, and figures. `finish_material_studies.ps1 -TrainingProcess PID` waits for that process and runs `publish_material_studies.py`. Publication is authorized by the owner and is gated on complete results, input/checkpoint hashes, finite metrics, report links, and passing tests. It pushes the completed experiment and `main`, then changes the repository from private to public. Any failed prerequisite leaves publication unfinished for investigation.
+
+## Suitability and parity reporting
+
+`interpret_material_studies.py` derives suitability counts and the metal/oxide coverage map from frozen results, placing detailed tables in `docs/material_study_metrics.md`. `parity_gallery.py` evaluates every frame for the shared model and all specialist seeds, checks plotted MAEs against published metrics, caches predictions locally under `runs/parity_cache/`, and writes `docs/parity.md` plus PNG/PDF figures. It does not retrain or select checkpoints. Overall parity refers to the shared checkpoint only; specialist figures explicitly pool three separate fits.

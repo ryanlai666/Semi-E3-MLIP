@@ -207,6 +207,8 @@ def report(protocol, results):
     lines += ['- '+v for v in protocol['limitations']]
     lines += ['', 'Protocol, hashes, full metrics, and seed summaries: [reports/material_studies](../reports/material_studies).']
     Path('docs/material_studies.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    from interpret_material_studies import update_report
+    update_report()
 
 def main():
     parser=argparse.ArgumentParser(); parser.add_argument('--prepare-only',action='store_true'); args=parser.parse_args()
