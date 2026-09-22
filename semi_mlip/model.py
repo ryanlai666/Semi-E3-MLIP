@@ -21,6 +21,11 @@ class ModelConfig:
     attention: bool = False
     attention_heads: int = 4
     tensor_channels: int = 0
+    equivariant_norm: bool = False
+    bounded_gates: bool = False
+    repulsive_core: bool = False
+    core_inner: float = 0.8
+    core_outer: float = 1.5
 
 
 class ScalarMLP(nn.Module):
@@ -51,11 +56,20 @@ def envelope(x):
     return torch.where(x < 1, (1-x)**3 * (1 + 3*x + 6*x**2), torch.zeros_like(x))
 
 
+def smooth_equivariant_scale(features, spatial_dims):
+    """Invariant, smooth per-atom scale; preserves vector/tensor transformation."""
+    squared = features.square().sum(dim=spatial_dims).mean(dim=-1)
+    shape = (len(features),) + (1,) * (features.ndim - 1)
+    return features / torch.sqrt(1 + squared).reshape(shape)
+
+
 class Interaction(nn.Module):
     def __init__(self, config):
         super().__init__()
         s, v = config.scalar_channels, config.vector_channels
         self.s, self.v = s, v
+        self.equivariant_norm = config.equivariant_norm
+        self.bounded_gates = config.bounded_gates
         self.t = config.tensor_channels
         t = self.t
         self.attention = config.attention
@@ -107,6 +121,8 @@ class Interaction(nn.Module):
         messages = self.vector_mix(vector)[j] * mv[:, None, :] + direction[:, :, None] * md[:, None, :]
         scalar = scalar + torch.zeros_like(scalar).index_add(0, i, ms) / self.aggregation_scale
         vector = vector + torch.zeros_like(vector).index_add(0, i, messages) / self.aggregation_scale
+        if self.equivariant_norm:
+            vector = smooth_equivariant_scale(vector, (1,))
         a, b = self.vector_a(vector), self.vector_b(vector)
         invariant = (a * b).sum(dim=1)
         invariants = [self.norm(scalar), invariant]
@@ -114,10 +130,14 @@ class Interaction(nn.Module):
             quadrupole = direction[:,:,None] * direction[:,None,:] - torch.eye(3,device=direction.device,dtype=direction.dtype)[None] / 3
             tm = self.tensor_mix(tensor)[j] * mt[:,None,None,:] + quadrupole[:,:,:,None] * mq[:,None,None,:]
             tensor = tensor + torch.zeros_like(tensor).index_add(0,i,tm) / self.aggregation_scale
+            if self.equivariant_norm:
+                tensor = smooth_equivariant_scale(tensor, (1,2))
             ta, tb = self.tensor_a(tensor), self.tensor_b(tensor)
             invariants.append((ta * tb).sum(dim=(1,2)))
         ds, gate, tgate = torch.split(self.scalar_update(torch.cat(invariants, dim=-1)),
                                      (self.s,self.v,self.t), dim=-1)
+        if self.bounded_gates:
+            gate, tgate = 2 * torch.tanh(gate / 2), 2 * torch.tanh(tgate / 2)
         if self.t:
             tensor = tensor + ta * tgate[:,None,None,:] / math.sqrt(2)
         return scalar + ds / math.sqrt(2), vector + a * gate[:, None, :] / math.sqrt(2), tensor
@@ -128,6 +148,8 @@ class Potential(nn.Module):
         super().__init__()
         self.config = config or ModelConfig()
         c = self.config
+        if c.repulsive_core and not (0 < c.core_inner < c.core_outer <= c.cutoff):
+            raise ValueError("Core switching radii must satisfy 0 < inner < outer <= graph cutoff")
         self.embedding = nn.Embedding(119, c.scalar_channels)
         if c.chemical_descriptors:
             self.register_buffer("chemical_table", descriptor_table())
@@ -169,6 +191,12 @@ class Potential(nn.Module):
             scalar, vector, tensor = interaction(scalar, vector, radial, direction, cutoff, i, j, tensor)
         atom_energy = self.readout(scalar).squeeze(-1) + self.offsets[graph["z"]]
         energy = p.new_zeros(len(cell)).index_add(0, graph["batch"], atom_energy)
+        if self.config.repulsive_core:
+            from .repulsion import switched_zbl
+            pair = switched_zbl(distance, graph["z"][i], graph["z"][j],
+                self.config.core_inner, self.config.core_outer)
+            # Directed edges contain both pair orientations and periodic images.
+            energy = energy.index_add(0, graph["edge_batch"], 0.5 * pair)
         # Keep isolated structures differentiable with exactly zero derivatives.
         energy = energy + 0 * (p.sum() + cell.sum())
         if return_auxiliary:

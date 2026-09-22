@@ -102,6 +102,33 @@ Each pair uses the same held-out geometry, camera, and force-arrow scale.
 Examples are selected by ID rather than error. These are static DFT comparisons;
 they are not presented as continuous AIMD. [Force parity and complete metrics](docs/results.md) ? [Animated metal/oxide gallery](docs/gallery.md).
 
+## Training loss and why we use it
+
+The published shared model and current width experiments minimize a **scaled pseudo-Huber energy/force/stress loss**:
+
+$$
+\mathcal{L}=L_E+10L_F+L_\sigma,\qquad
+\rho_\delta(x)=2\delta^2\left(\sqrt{1+(x/\delta)^2}-1\right),\quad\delta=1.
+$$
+
+For a batch of $B$ structures with $N_b$ atoms, the three terms are:
+
+$$
+L_E=\frac1B\sum_b\rho_1\!\left(\frac{\hat E_b-E_b}{N_b s_E}\right),\qquad
+L_F=\frac1B\sum_b\frac1{3N_b}\sum_{i,\alpha}\rho_1\!\left(\frac{\hat F_{bi\alpha}-F_{bi\alpha}}{s_F}\right),
+$$
+
+$$
+L_\sigma=\frac1B\sum_{b\,{\rm with\ stress}}\frac19\sum_{\alpha,\beta}
+\rho_1\!\left(\frac{\hat\sigma_{b\alpha\beta}-\sigma_{b\alpha\beta}}{s_\sigma}\right).
+$$
+
+The scales are fitted on **training data only**, and energies include training-fitted elemental offsets. For the published shared checkpoint, $s_E=1.08283$ eV/atom, $s_F=1.77834$ eV/Angstrom and $s_\sigma=0.127374$ eV/Angstrom$^3$. Missing stress labels contribute zero while retaining the full batch denominator. The independent material/Cu-Ti specialist studies use **energy/force/stress weights 1/10/0**. Auxiliary charge/magnetic losses are disabled in these reported fits.
+
+**Why this loss:** per-atom energies and per-structure averaging keep large cells from dominating just because they contain more atoms. Training-derived scales make the terms dimensionless; the force weight emphasizes local derivatives needed for dynamics. Pseudo-Huber is quadratic near zero and approximately linear for large residuals, reducing extreme points' influence while remaining smooth. These are modeling choices, not demonstrated optimal weights. Robust loss can also underweight difficult high-force environments, so we report raw MAE/RMSE and examine molten and high-force errors separately. Forces and stress are obtained by differentiating the same predicted energy.
+
+**Loss is not checkpoint selection.** The published baseline and width study select checkpoints by validation force MAE. This can retain a poor energy fit, so the separate physics/priority research track tests a balanced per-system energy/force validation score. It does not retroactively change the published results. [Implementation](semi_mlip/train.py) | [Frozen shared configuration](reports/aimd_comparison/selection.json)
+
 ## Quick start
 
 Tested locally on Windows, Python 3.13, and an RTX 3070 Laptop GPU (8 GB).
@@ -181,3 +208,5 @@ The frozen shared model was tested without retraining on **2,421 previously unus
 [Model size, literature and research plan](docs/model_capacity.md) | [Continuous AIMD energy/force parity](docs/aimd_parity.md)
 
 [Running 1x/2x/4x width study](docs/width_scaling.md) | [Replacement alloy references](docs/alloy_references.md)
+
+[Physics research and Ru/Ta/Ti/Ta-O recovery experiments](docs/physics_research.md)

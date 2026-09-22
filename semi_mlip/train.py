@@ -39,8 +39,15 @@ class TrainConfig:
     monitor_train_every: int = 0
     microbatch_atoms: int = 0
     microbatch_edges: int = 0
+    selection_metric: str = "force_mae"
+    selection_energy_scale: float = 0.01
+    selection_force_scale: float = 0.1
 
     def __post_init__(self):
+        if self.selection_metric not in ("force_mae", "balanced_macro"):
+            raise ValueError("Unknown validation selection metric")
+        if self.selection_energy_scale <= 0 or self.selection_force_scale <= 0:
+            raise ValueError("Validation score scales must be positive")
         if (self.microbatch_atoms or self.microbatch_edges) and self.auxiliary_weight:
             raise ValueError("Microbatching currently supports energy/force/stress losses only")
 
@@ -291,6 +298,15 @@ def evaluate(model, records, graphs, batches, device, scales, cache=None):
     return result
 
 
+def validation_score(validation, config):
+    if config.selection_metric == "force_mae":
+        return validation["overall"]["force_mae_eV_A"]
+    systems=[v for k,v in validation.items() if k != "overall" and not k.startswith("formula:")]
+    if not systems:raise ValueError("Balanced selection requires per-system metrics")
+    return sum(.5 * (v["energy_mae_eV_atom"] / config.selection_energy_scale
+                      + v["force_mae_eV_A"] / config.selection_force_scale) for v in systems) / len(systems)
+
+
 def dataset_signature(records, graphs):
     h = hashlib.sha256()
     for row, graph in zip(records, graphs):
@@ -417,7 +433,7 @@ def train(data_dir="data/processed", run_dir="runs/pilot", config=None, model_co
             optimizer.step()
             update += 1
         validation = evaluate(model, valid_rows, valid_graphs, vb, device, statistics["scales"], valid_cache)
-        score = validation["overall"]["force_mae_eV_A"]
+        score = validation_score(validation, config)
         improved = score < best
         best = min(score, best)
         if improved:
@@ -435,7 +451,7 @@ def train(data_dir="data/processed", run_dir="runs/pilot", config=None, model_co
             save_checkpoint(run_dir / "best.pt", payload)
             write_json(run_dir / "validation_best.json", validation)
         history = {"epoch": epoch + 1, "updates": update, "lr": lr, "train_loss": total_loss / structures,
-                   "valid": validation["overall"], "epoch_seconds": time.monotonic() - epoch_start,
+                   "valid": validation["overall"], "selection_score": score, "validation_by_system": {k:v for k,v in validation.items() if k != "overall" and not k.startswith("formula:")}, "epoch_seconds": time.monotonic() - epoch_start,
                    "peak_gpu_MB": torch.cuda.max_memory_allocated() / 1e6 if device.startswith("cuda") else 0}
         if config.monitor_train_every and ((epoch + 1) % config.monitor_train_every == 0 or epoch == 0):
             history["train_metrics"] = evaluate(model, train_rows, train_graphs, tb, device, statistics["scales"], train_cache)["overall"]
