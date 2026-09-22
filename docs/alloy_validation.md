@@ -38,7 +38,7 @@ Energy error is prediction minus DFT. The green band marks +/-10 meV/atom, the p
 ## Other alloy/AIMD references
 
 - [Al-Si nucleation dataset](https://doi.org/10.24435/materialscloud:3h-sc): genuine AIMD-derived elemental and alloy configurations already audited locally, but LDA labels and unresolved text-unit confirmation prevent treating it as a directly matched r2SCAN validation set. Source-path overlap also requires grouped holdouts.
-- [Al/Si interface data](https://github.com/krutarth24/Al-Si-DeePMD-NNP): PBE AIMD-derived interface snapshots; an interface is not a substitutional alloy phase diagram, and storage shards do not establish independent trajectories.
+- The Al/Si interface collection is retired as an alloy benchmark candidate. [Replacement references](alloy_references.md): downloaded UNEP alloy DFT tests and verified access to AFLOW relaxed Al-Si structures, with provenance and limitations.
 
 Next phase-stability work should use a dedicated matched-fidelity set of relaxed elemental and competing alloy structures, then compare formation energies, relative phase ordering and hull membership without fitting to those tests. First address any large errors found here.
 

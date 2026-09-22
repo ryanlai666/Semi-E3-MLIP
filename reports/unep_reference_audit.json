@@ -1,0 +1,2366 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.11533864",
+  "paper": "https://www.nature.com/articles/s41467-024-54554-x",
+  "archive_sha256": "dfe53bb28792b4c99e223b2e4a6425f22311e3281ca8411d830350d7ebb782d7",
+  "archive_md5": "md5:a0d43b1dd9d2dd95cb36a08a6968aa27",
+  "calculation_settings": "GGA      = PE       # Default is POTCAR\nENCUT    = 600      # Default is POTCAR\nKSPACING = 0.2      # Default is 0.5\nKGAMMA   = .TRUE.   # This is the default\nNELM     = 120      # Default is 60\nALGO     = Normal   # This is the default\nEDIFF    = 1E-06    # Default is 1E-4\nSIGMA    = 0.02     # Default is 0.2\nISMEAR   = 0        # Default is 1\nPREC     = Accurate # Default is Normal\nLREAL    = A        # Default is .FALSE.",
+  "frames": 4849,
+  "systems": {
+    "Cr-Pd-Pt-Ta": 4,
+    "Pd-Pt-Zr": 3,
+    "Ni-Pt-Ta-W": 1,
+    "Al-Cr-Pt": 2,
+    "Ni-Pt-Ta": 1,
+    "Mo-V-W": 34,
+    "Al-Cr-Ta-W": 2,
+    "Al-Mg-Pt-Ta": 1,
+    "Ta-W": 6,
+    "Al-Ti-Zr": 4,
+    "Al-Mg-Pd-Pt": 20,
+    "Mo-Ta": 48,
+    "Au-Mg-Pd": 9,
+    "Pb-Ti-Zr": 2,
+    "Mo-W": 171,
+    "Al-Au-Ni-Zr": 1,
+    "Ag-Al-Au": 10,
+    "Mo-Ni-Pt-W": 1,
+    "Pt-Ta": 5,
+    "Al-V": 2,
+    "Mo-Ta-W": 48,
+    "Pt-V": 3,
+    "Al-Ni-Pt-V": 9,
+    "Pt-Ta-Ti": 5,
+    "Al-Pt-V": 6,
+    "Al-Ni-Pt-Ta": 4,
+    "Ag-Al-Ti": 1,
+    "Al-Pd-Pt": 17,
+    "Mg-Pt-Ti": 2,
+    "Ni-Ta-W": 25,
+    "Al-Au-Cu-Ti": 1,
+    "Au-Mg-Pd-Ti": 1,
+    "Al-Cu-Ti-Zr": 1,
+    "Cu-Pt-V": 3,
+    "Mo-Ta-Ti": 4,
+    "Ag-Au": 3,
+    "Cr-Cu-Ni-Pt": 1,
+    "Mo-V": 48,
+    "Pd-Pt-V": 6,
+    "Al-Mg-Pt-Ti": 2,
+    "Mo-Ti-V-W": 1,
+    "Cr-Pt-V": 4,
+    "Al-Pd-Pt-V": 2,
+    "Cu-Ni-Pt-Ta": 2,
+    "Al-Ni-W": 1,
+    "Al-Cr-V": 2,
+    "Mg-Pd-Pt-Ti": 1,
+    "Al-Au-Pd": 2,
+    "Au-Pd": 1,
+    "Al-Mg-Pd": 8,
+    "Cr-Pt-Ti": 1,
+    "Ni-Pt-V": 4,
+    "Al-Mo-Ni-Pt": 4,
+    "Ag-Al": 1,
+    "Cu-Mg-Pt-Ta": 1,
+    "Ni-Pd-Zr": 2,
+    "Al-Cr-Ni-Pt": 3,
+    "Al-Au-Zr": 6,
+    "Al-Cu-Pd-Pt": 6,
+    "Al-Mo-Ti": 6,
+    "Au-Pd-Ti": 18,
+    "Cu-Ni-Ta": 4,
+    "Al-Cu-Ta": 4,
+    "Mg-Pd-V": 2,
+    "Al-Pt-V-Zr": 1,
+    "Al-Au-Pt-Zr": 1,
+    "Cr-Pt-Ta": 4,
+    "Al-Mo-Ni": 3,
+    "Pt-Ta-V": 2,
+    "Al-Cr-Ta": 4,
+    "Al-Pt-Ta": 5,
+    "Cr-Pd-Pt": 3,
+    "Au-Pd-Zr": 6,
+    "Mo-Ni-Pt": 2,
+    "Ag-Au-Pd": 6,
+    "Al-V-W": 3,
+    "Mo-V-Zr": 2,
+    "Cr-Cu-Pd": 1,
+    "Ta-Ti-W": 24,
+    "Ni-Pt-V-W": 1,
+    "Au-Cu-Ni-Ta": 1,
+    "Au-Cu-Pd-Ta": 1,
+    "Au-Pd-V": 2,
+    "Cr-Pd": 2,
+    "Mg-Pd-Zr": 2,
+    "Mg-Ni-Pt-V": 1,
+    "Mg-Pd-Ti": 1,
+    "Cu-Mg-Pd": 3,
+    "Al-Au-Cu": 3,
+    "Al-Pd-Pt-Ti": 2,
+    "Ag-Pd": 1,
+    "Pb-Pd-Zr": 2,
+    "Mo-Ti-W": 14,
+    "Ti-V-W": 7,
+    "Al-Cu-V": 1,
+    "Al-Ta-V": 2,
+    "Pd-Pt-Ta": 3,
+    "Au-V": 4,
+    "Mo-Pt-Ti": 2,
+    "Au-Pd-Ta": 3,
+    "Pd-V-W": 35,
+    "Al-Ni-V": 7,
+    "Ag-Pd-Zr": 3,
+    "Ni-V-W": 1,
+    "Ag-Au-Mg": 4,
+    "Mo-Pd-Ti": 3,
+    "V-W": 46,
+    "Al-Cu-Ni-Pt": 2,
+    "Au-Pt-Zr": 2,
+    "Mo-Pd-V": 2,
+    "Al-Pt-Ti": 6,
+    "Cr-Pd-Ti": 4,
+    "Pd-Pt": 2,
+    "Al-Ni-Pt": 6,
+    "Mo-Ti": 3,
+    "Mg-Pb-Pd": 2,
+    "Al-Cr": 1,
+    "Ag-Al-Zr": 1,
+    "Ag-Au-Pt-Ta": 1,
+    "Al-Pt-Ti-Zr": 1,
+    "Cr-Pd-V": 1,
+    "Cu-Pd-Ti": 3,
+    "Al-Cu-Pd": 10,
+    "Mg-Pd-Pt-V": 2,
+    "Al-Mo-V": 2,
+    "Au-Cu-Ni-Zr": 1,
+    "Au-Pb-Zr": 1,
+    "Cr-V": 1,
+    "Au-Ni-Zr": 1,
+    "Au-Cu-Pd": 7,
+    "Al-Pd-Ti": 4,
+    "Au-Pb": 1,
+    "Al-Au-Mg": 6,
+    "Al-Cu-Pt-Ti": 1,
+    "Au-Mg": 1,
+    "Al-Cu-Mg-Pt": 1,
+    "Al-Ni-Pt-W": 3,
+    "Mo-Pt-Ta": 3,
+    "Mg-Pd-Ta": 1,
+    "Al-Ni": 1,
+    "Ag-Cu-Zr": 4,
+    "Cr-Cu-Mg-Pt": 1,
+    "Al-Pd-Zr": 6,
+    "Cu-Pt-Ta": 3,
+    "Ni-Pt-W": 2,
+    "Au-Pd-Pt-Zr": 1,
+    "Al-Au-Ta": 2,
+    "Al-Au-Ti": 6,
+    "Pd-V": 3,
+    "Al-Cu-Ti": 5,
+    "Ti-W": 3,
+    "Ni-Pd-Pt-Ta": 49,
+    "Pd-Pt-Ti": 7,
+    "Al-Mg-Pt": 9,
+    "Au-Ta": 2,
+    "Al-Au-Pd-Zr": 1,
+    "Al-Cr-Pt-Zr": 1,
+    "Cu-Pd-Pt-Ta": 3,
+    "Cr-Pt-W": 1,
+    "Cu-Ni-Pd-Pt-Ta": 1,
+    "Al-Ta-Ti": 5,
+    "Al-Mg-Ni-Pt": 1,
+    "Mg-Mo-Pd": 1,
+    "Cu-Ni": 1,
+    "Cu-Ni-Pt-V": 1,
+    "Pd-Ta": 1,
+    "Pb-Zr": 1,
+    "Cu-Pt-Ti": 2,
+    "Mo-Pt-V": 1,
+    "Al-Cr-Ni": 4,
+    "Mg-Ni-Pt-Ta": 1,
+    "Au-Cr-Pd": 1,
+    "Mo-Ni-Pt-Ta": 3,
+    "Al-Au-V": 2,
+    "Ag-Au-Zr": 2,
+    "Au-Mg-Pt-Ti": 1,
+    "Mg-Pt-V": 1,
+    "Al-Ni-Pt-Zr": 2,
+    "Pt-Ti-V": 3,
+    "Al-Ni-Ta": 7,
+    "Al-Ti-W": 4,
+    "Al-Cr-Ti": 4,
+    "Pt-Ta-W": 2,
+    "Al-Pd-Ti-Zr": 3,
+    "Al-Pd-Ta-Zr": 1,
+    "Pd-Pt-W": 27,
+    "Mo-Ta-V": 34,
+    "Au-Pd-W": 2,
+    "Mo-Pd-Pt": 1,
+    "Al-Cu-Mg-Pd": 2,
+    "Al-Cu-Pt-Zr": 1,
+    "Al-Pd": 1,
+    "Au-Ni-Pd-Zr": 1,
+    "Al-Cu-Mo-Zr": 1,
+    "Al-Mo-Ta": 1,
+    "Al-Cu-Zr": 131,
+    "Al-Cu-Ni": 4,
+    "Au-Mg-Pd-V": 1,
+    "Al-Mg-Pd-Ti": 1,
+    "Cu-Pd-V": 1,
+    "Al-Mo-Pt-Ti": 1,
+    "Al-Mg-Pt-V": 1,
+    "Cu-Mo-Pd": 1,
+    "Al-Cu-Mg-Zr": 1,
+    "Al-Mo-Ti-Zr": 1,
+    "Al-Mg-Pt-W": 1,
+    "Al-Mo-Zr": 4,
+    "Al-Pd-Ta": 1,
+    "Au-Cu-Pd-Zr": 1,
+    "Au-Cu-Pt-Ti": 1,
+    "Al-Au-Cu-Zr": 1,
+    "Al-Cr-Pd": 1,
+    "Cu-Mo-Ti": 2,
+    "Ni-W": 1,
+    "Ag-Cu-Ti": 24,
+    "Ag-Al-Mg": 7,
+    "Ag-Au-Cu": 1,
+    "Ag-Cr-Ti": 1,
+    "Ag-Cu-Mg": 1,
+    "Ag-Cu-Pd": 2,
+    "Ag-Mg-Pd": 4,
+    "Ag-Mg-Pt": 1,
+    "Ag-Mg-Zr": 1,
+    "Ag-Mo-Ti": 2,
+    "Ag-Mo-Zr": 2,
+    "Ag-Pb-Pd": 2,
+    "Ag-Pb-Zr": 1,
+    "Al-Cr-Cu": 1,
+    "Al-Cr-Mg": 7,
+    "Al-Cr-Zr": 4,
+    "Al-Cu-Mg": 11,
+    "Al-Cu-Mo": 2,
+    "Al-Cu-Pt": 1,
+    "Al-Cu-W": 1,
+    "Al-Mg-Mo": 6,
+    "Al-Mg-Ni": 6,
+    "Al-Mg-Pb": 4,
+    "Al-Mg-Ta": 3,
+    "Al-Mg-Ti": 7,
+    "Al-Mg-V": 7,
+    "Al-Mg-W": 6,
+    "Al-Mg-Zr": 6,
+    "Al-Ni-Pd": 2,
+    "Al-Ni-Ti": 11,
+    "Al-Ni-Zr": 13,
+    "Al-Pb-Zr": 1,
+    "Al-Pt-Zr": 4,
+    "Al-Ti-V": 3,
+    "Al-V-Zr": 1,
+    "Al-W-Zr": 2,
+    "Au-Cu-Mg": 2,
+    "Au-Cu-Ni": 2,
+    "Au-Cu-Pt": 1,
+    "Au-Cu-Zr": 2,
+    "Au-Mg-Zr": 1,
+    "Au-Mo-Ti": 2,
+    "Au-Pb-Pd": 2,
+    "Au-Pd-Pt": 1,
+    "Au-Pt-Ti": 2,
+    "Au-Ti-Zr": 1,
+    "Cr-Cu-Mg": 4,
+    "Cr-Cu-Ta": 42,
+    "Cr-Cu-Zr": 2,
+    "Cr-Mg-Mo": 3,
+    "Cr-Mg-Ni": 4,
+    "Cr-Mg-Ti": 4,
+    "Cr-Mg-V": 4,
+    "Cr-Mg-W": 4,
+    "Cr-Mg-Zr": 4,
+    "Cr-Mo-Ni": 6,
+    "Cr-Mo-Ta": 3,
+    "Cr-Mo-Ti": 1,
+    "Cr-Mo-V": 3,
+    "Cr-Mo-W": 1,
+    "Cr-Mo-Zr": 1,
+    "Cr-Ni-Ta": 1,
+    "Cr-Ni-Zr": 1,
+    "Cr-Ta-W": 1,
+    "Cr-Ti-Zr": 2,
+    "Cr-V-W": 4,
+    "Cr-V-Zr": 1,
+    "Cr-W-Zr": 1,
+    "Cu-Mg-Mo": 4,
+    "Cu-Mg-Ni": 5,
+    "Cu-Mg-Pb": 1,
+    "Cu-Mg-Pt": 1,
+    "Cu-Mg-Ti": 4,
+    "Cu-Mg-V": 4,
+    "Cu-Mg-W": 4,
+    "Cu-Mg-Zr": 4,
+    "Cu-Ni-Pd": 125,
+    "Cu-Ni-Ti": 8,
+    "Cu-Ni-Zr": 1,
+    "Cu-Pb-Zr": 1,
+    "Cu-Pd-Pt": 125,
+    "Cu-Pd-Zr": 2,
+    "Cu-Pt-Zr": 2,
+    "Cu-Ta-V": 2,
+    "Cu-Ti-Zr": 127,
+    "Cu-V-Zr": 4,
+    "Mg-Mo-Ni": 4,
+    "Mg-Mo-Ti": 4,
+    "Mg-Mo-V": 4,
+    "Mg-Mo-W": 4,
+    "Mg-Mo-Zr": 4,
+    "Mg-Ni-Pd": 1,
+    "Mg-Ni-Ti": 5,
+    "Mg-Ni-V": 4,
+    "Mg-Ni-W": 4,
+    "Mg-Ni-Zr": 5,
+    "Mg-Pb-W": 1,
+    "Mg-Pd-Pt": 1,
+    "Mg-Pt-Zr": 2,
+    "Mg-Ti-V": 4,
+    "Mg-Ti-W": 4,
+    "Mg-Ti-Zr": 4,
+    "Mg-V-W": 4,
+    "Mg-V-Zr": 4,
+    "Mg-W-Zr": 4,
+    "Mo-Ni-Ta": 3,
+    "Mo-Ni-Ti": 1,
+    "Mo-Ni-Zr": 2,
+    "Mo-Pd-Zr": 1,
+    "Mo-Pt-Zr": 1,
+    "Mo-Ti-V": 4,
+    "Mo-Ti-Zr": 1,
+    "Mo-W-Zr": 2,
+    "Ni-Pd-Ti": 2,
+    "Ni-Pt-Ti": 1,
+    "Ni-Ta-Ti": 1,
+    "Ni-Ta-V": 1,
+    "Ni-Ti-V": 1,
+    "Ni-Ti-W": 1,
+    "Ni-Ti-Zr": 4,
+    "Ni-V-Zr": 28,
+    "Pb-Pt-Ti": 1,
+    "Pb-Pt-Zr": 1,
+    "Pd-Ti-Zr": 1,
+    "Pt-Ti-W": 2,
+    "Pt-Ti-Zr": 3,
+    "Ta-V-W": 32,
+    "Ti-W-Zr": 2,
+    "V-W-Zr": 23,
+    "Ag-Al-Cu-Zr": 124,
+    "Au-Cu-Ni-Pd": 124,
+    "Mo-Ta-V-W": 184,
+    "Al-Cr-Cu-Ni-V": 124,
+    "Au-Cu-Ni-Pd-Pt": 124,
+    "V": 204,
+    "Ta": 307,
+    "Mo": 204,
+    "W": 199,
+    "Ta-V": 45,
+    "Ag-Au-Cr": 48,
+    "Ag-Pd-Ti": 33,
+    "Cr-Ni-Pt": 66,
+    "Cr-Cu-V": 40,
+    "Ag-Ni-Zr": 33,
+    "Au-Cr-Ni-Pt": 5,
+    "Mo-Ni-V": 28,
+    "Mo-Ni-Ti-W": 4,
+    "Ni-Pd-Pt-W": 3,
+    "Cr-Cu-Ni-Ta-Ti": 3,
+    "Ag-Ni-Pt-Ti": 2,
+    "Cr-Cu-Pd-Zr": 42,
+    "Cu-Ni-Ta-W": 1,
+    "Mo-Pt-W": 14,
+    "Au-Mo-Pd": 12,
+    "Ag-Pt-Zr": 17,
+    "Ag-Ni-Pd-Pt-Zr": 1,
+    "Au-Cr-Mo-Pd-Pt-Ti-V": 1,
+    "Au-Cu-Ni-Pd-Zr": 1,
+    "Cu-Pd-W": 1,
+    "Au-Pt-Ta": 1,
+    "Au-Mo-Pt-V-Zr": 1,
+    "Mo-Ta-Zr": 3,
+    "Ag-Ta-W-Zr": 1,
+    "Ag-Au-Pd-W": 1,
+    "Ag-Mo-Pd-W": 1,
+    "Ag-Ta-W": 1,
+    "Au-Cu-Pt-Ta": 1,
+    "Cr-Pd-Ti-W": 1,
+    "Cu-Pt-W": 2,
+    "Pd-Ta-Zr": 2,
+    "Ag-Cu-Mo-W": 1,
+    "Ti-V-Zr": 2,
+    "Au-Cu-Ta-V": 1,
+    "Cu-Pt-Ti-V-Zr": 1,
+    "Ag-Ta-Ti-Zr": 1,
+    "Ni-Ti-V-W": 1,
+    "Ag-Cr-Cu-Pd-Ti-W": 1,
+    "Ni-Ta-Zr": 1,
+    "Mo-Pd-W": 1,
+    "Mo-Pd-Ti-Zr": 1,
+    "Cr-Ni-Pd-Ta-Ti-V": 1,
+    "Cu-Mo-Ni-W": 1,
+    "Ag-Pd-Ta": 2,
+    "Ag-Cr-Pd": 1,
+    "Ag-Ni-Pt": 1,
+    "Ag-Mo-Pd": 1,
+    "Cu-Pd-Pt-Ta-Zr": 1,
+    "Au-Ta-W": 1,
+    "Cu-Mo-W": 1,
+    "Pt-V-W": 2,
+    "Cr-Cu-Pd-Ta": 1,
+    "Au-Mo-Pd-Pt-V-Zr": 1,
+    "Ag-Pd-Pt-Zr": 1,
+    "Cr-Cu-Mo-Ni-Pd-Zr": 1,
+    "Ag-Au-Ti": 2,
+    "Pt-V-W-Zr": 1,
+    "Ag-Pd-W-Zr": 1,
+    "Mo-Pt-Ta-Zr": 1,
+    "Mo-Pd-Ta": 1,
+    "Au-Cu-V": 1,
+    "Pd-Ti-W-Zr": 1,
+    "Ag-Au-Pt": 2,
+    "Ag-Mo-Ni": 1,
+    "Cr-Cu-Pt": 1,
+    "Ag-Ta-V": 1,
+    "Cu-Ti-W": 1,
+    "Pd-Pt-Ta-V-W": 1,
+    "Au-Mo-Ta": 1,
+    "Ag-Ti-Zr": 2,
+    "Ni-W-Zr": 1,
+    "Cr-Pd-Ta-Ti": 1,
+    "Ni-Pt-Ti-Zr": 1,
+    "Ag-Au-Cu-Ta": 1,
+    "Au-Ni-Pd-Pt-Zr": 1,
+    "Cr-Ta-Ti": 2,
+    "Cr-Pd-Ta": 3,
+    "Au-Cr-Pd-W-Zr": 1,
+    "Au-Mo-Pd-Ta-Ti-V-W": 1,
+    "Ag-Au-Ta-Ti": 1,
+    "Ag-Au-Cr-Cu-Mo-Ni-Ti": 1,
+    "Cr-Cu-Ni-Pt-Zr": 1,
+    "Pd-Ta-Ti-W": 1,
+    "Cr-Pd-Ti-V-Zr": 1,
+    "Ni-Pd-Pt": 1,
+    "Au-Cu-Mo-Pt-V": 1,
+    "Ni-Pd-Ti-W": 1,
+    "Ag-Au-Pd-Ta-V": 1,
+    "Au-Pt-Ti-Zr": 1,
+    "Au-Cr-V-W": 2,
+    "Au-Cu-Mo": 1,
+    "Ag-Au-Pd-Zr": 1,
+    "Cr-Cu-Mo-Pd-Ta-Ti-W-Zr": 1,
+    "Au-Pd-Pt-W": 1,
+    "Ag-Mo-Ni-V-Zr": 1,
+    "Cr-Mo-Pd-Pt-Zr": 1,
+    "Ag-Au-Pd-Ta": 1,
+    "Au-Cr-Mo": 2,
+    "Cr-Ta-V": 1,
+    "Cr-Ni-Ti": 2,
+    "Ag-Cr-Ni-Pd-Pt-Ta-Ti": 1,
+    "Cu-Ta-Ti-W": 1,
+    "Cr-Cu-Ni-Pd": 1,
+    "Ag-Cr-Pt-Ta-W": 1,
+    "Ag-Au-Cr-Cu-Zr": 1,
+    "Au-Pt-V": 1,
+    "Ag-Cr-Ni-W": 1,
+    "Cr-Ti-V": 1,
+    "Au-Mo-Pd-V-W": 1,
+    "Au-Cr-Cu-Ta-Zr": 1,
+    "Cu-Ni-W-Zr": 2,
+    "Mo-Pd-Pt-Ta-W": 1,
+    "Ag-Cr-Pt": 1,
+    "Au-Pt-Ta-W": 1,
+    "Cr-Mo-Ni-Pd-V": 1,
+    "Ni-Pd-V": 1,
+    "Ag-Pd-V": 3,
+    "Ag-Cr-Mo-Ni": 1,
+    "Cu-Pd-Pt-Zr": 1,
+    "Ag-Pt-Ta": 1,
+    "Cr-Cu-Ni-Zr": 1,
+    "Cu-Pd-Ti-Zr": 1,
+    "Au-Mo-Pd-V-Zr": 1,
+    "Ag-Cr-V": 1,
+    "Ag-Cr-Cu-Pd-Ta-Ti-V": 1,
+    "Cr-Mo-Pt-Ti": 1,
+    "Ag-Ta-Ti": 1,
+    "Ag-Au-Mo-Ni": 1,
+    "Mo-Pt-Ta-W": 1,
+    "Cr-Ni-Ta-W": 1,
+    "Cr-Pd-V-W": 1,
+    "Ag-Cu-Mo-Pd-Pt-V": 1,
+    "Ag-Au-Mo-Zr": 1,
+    "Mo-Ni-Pd": 2,
+    "Cu-Mo-V-W": 1,
+    "Cr-Pd-Pt-V": 1,
+    "Cr-Cu-Mo": 1,
+    "Cr-Mo-Ni-Zr": 1,
+    "Ag-Mo-W": 1,
+    "Cr-Pd-Zr": 2,
+    "Ag-Cr-Cu-Ti-W": 1,
+    "Cr-Mo-Pd": 1,
+    "Ag-Mo-Pt": 1,
+    "Au-Cr-Cu-Pt-Ta": 1,
+    "Au-Cr-Cu-Mo": 1,
+    "Cr-Ni-Ti-W": 1,
+    "Cr-Mo-Pd-V": 1,
+    "Ag-Mo-V": 1,
+    "Au-Cr-Mo-Pd-Ta-Zr": 1,
+    "Cr-Ni-Pt-W": 1,
+    "Pd-Ti-V": 1,
+    "Ag-Au-Cr-Ti": 1,
+    "Ni-Pt-Zr": 1,
+    "Au-Cr-Ni": 1,
+    "Au-Ni-Ta-Ti": 1,
+    "Mo-Ni-Ta-Ti-Zr": 1,
+    "Ag-Au-W": 1,
+    "Cu-Mo-V": 1,
+    "Ag-Mo-Pt-Ta-V-W": 1,
+    "Pd-Ta-Ti": 2,
+    "Ag-Ni-Pt-W": 1,
+    "Mo-Pd-Pt-Ta-Zr": 1,
+    "Au-Cr-Ti": 1,
+    "Ag-Au-Mo-Pt": 1,
+    "Ag-Cr-Cu-Mo-Ti-W": 1,
+    "Ag-Au-Ni-Pd-Ta-V": 1,
+    "Au-Cr-Mo-Pd-Ti-W": 1,
+    "Ag-Pd-Ta-V-W": 1,
+    "Ag-Cr-Mo-Zr": 1,
+    "Ag-Au-Cr-Cu": 1,
+    "Ag-Cu-Ta-W": 1,
+    "Au-Cr-Ta": 1,
+    "Cu-Mo-Pt": 1,
+    "Ag-W-Zr": 1,
+    "Cr-Ta-Ti-V": 1,
+    "Au-Cr-Cu": 1,
+    "Ag-Cu-Mo-Pd-Ta-Zr": 1,
+    "Ag-Au-Ta": 1,
+    "Ag-Cu-Pt-Ta-Ti-V": 1,
+    "Pd-Ta-Ti-V": 1,
+    "Mo-Pd-Pt-Ti": 1,
+    "Cr-Mo-Pt-Zr": 1,
+    "Cu-Mo-Ni-Ti": 1,
+    "Ag-Pt-Ta-Ti": 1,
+    "Au-Ni-Pd": 1,
+    "Ag-Mo-Ni-Ti": 1,
+    "Au-Cr-Cu-Mo-Pt-V": 1,
+    "Cu-W-Zr": 1,
+    "Ag-Cr-Mo": 1,
+    "Mo-Ta-W-Zr": 1,
+    "Mo-Ta-Ti-V": 1,
+    "Ag-Cr-Ni": 1,
+    "Ag-Cu-Mo-Pt-Ta": 1,
+    "Ag-Cu-V-W": 1,
+    "Au-Cu-Pd-W": 1,
+    "Ag-Mo-Ta-Zr": 1,
+    "Ag-Cu-Ni-Pt": 1,
+    "Ag-Ni-Ta": 1,
+    "Au-Cu-Ni-Ti-V": 1,
+    "Ag-Cr-Pd-Ta": 1,
+    "Au-Mo-Pt-W": 1,
+    "Ag-Au-Cr-V-Zr": 1,
+    "Cr-Mo-Ti-Zr": 1,
+    "Au-Ni-Pt-V-Zr": 1,
+    "Cr-Ni-Pd": 1,
+    "Pd-Ta-W": 1,
+    "Au-Cu-Ni-Ti": 1,
+    "Ag-Au-Ti-W": 1,
+    "Cr-Cu-Mo-Ta-Ti": 1,
+    "Ag-Ni-Ta-Ti": 1,
+    "Cr-Mo-Ti-W": 1,
+    "Ag-Pd-V-W": 1,
+    "Cu-Ta-Ti": 1,
+    "Pd-Ta-V": 1,
+    "Au-Cu-Mo-Ta": 1,
+    "Al": 103,
+    "Ti": 103,
+    "Al-Cu": 124,
+    "Ti-Zr": 124
+  },
+  "supported_systems": {
+    "Ta-W": 6,
+    "Al-Ti-Zr": 4,
+    "Al-Cu-Ti-Zr": 1,
+    "Al-Cu-Ta": 4,
+    "Ta-Ti-W": 24,
+    "Al-Cu-Ti": 5,
+    "Ti-W": 3,
+    "Al-Ta-Ti": 5,
+    "Al-Ti-W": 4,
+    "Al-Cu-Zr": 131,
+    "Al-Cu-W": 1,
+    "Al-W-Zr": 2,
+    "Cu-Ti-Zr": 127,
+    "Ti-W-Zr": 2,
+    "Ta": 307,
+    "W": 199,
+    "Cu-Ti-W": 1,
+    "Cu-Ta-Ti-W": 1,
+    "Cu-W-Zr": 1,
+    "Cu-Ta-Ti": 1,
+    "Al": 103,
+    "Ti": 103,
+    "Al-Cu": 124,
+    "Ti-Zr": 124
+  },
+  "files": {
+    "testset/Fig-2-GNoME.xyz": {
+      "frames": 444,
+      "systems": {
+        "Cr-Pd-Pt-Ta": 4,
+        "Pd-Pt-Zr": 1,
+        "Ni-Pt-Ta-W": 1,
+        "Al-Cr-Pt": 2,
+        "Ni-Pt-Ta": 1,
+        "Mo-V-W": 2,
+        "Al-Cr-Ta-W": 2,
+        "Al-Mg-Pt-Ta": 1,
+        "Ta-W": 6,
+        "Al-Ti-Zr": 2,
+        "Al-Mg-Pd-Pt": 20,
+        "Mo-Ta": 3,
+        "Au-Mg-Pd": 5,
+        "Pb-Ti-Zr": 1,
+        "Mo-W": 2,
+        "Al-Au-Ni-Zr": 1,
+        "Ag-Al-Au": 9,
+        "Mo-Ni-Pt-W": 1,
+        "Pt-Ta": 5,
+        "Al-V": 2,
+        "Mo-Ta-W": 12,
+        "Pt-V": 3,
+        "Al-Ni-Pt-V": 9,
+        "Pt-Ta-Ti": 4,
+        "Al-Pt-V": 5,
+        "Al-Ni-Pt-Ta": 4,
+        "Ag-Al-Ti": 1,
+        "Al-Pd-Pt": 16,
+        "Mg-Pt-Ti": 2,
+        "Ni-Ta-W": 1,
+        "Al-Au-Cu-Ti": 1,
+        "Au-Mg-Pd-Ti": 1,
+        "Al-Cu-Ti-Zr": 1,
+        "Cu-Pt-V": 2,
+        "Mo-Ta-Ti": 1,
+        "Ag-Au": 3,
+        "Cr-Cu-Ni-Pt": 1,
+        "Mo-V": 3,
+        "Pd-Pt-V": 6,
+        "Al-Mg-Pt-Ti": 2,
+        "Mo-Ti-V-W": 1,
+        "Cr-Pt-V": 3,
+        "Al-Pd-Pt-V": 2,
+        "Cu-Ni-Pt-Ta": 2,
+        "Al-Ni-W": 1,
+        "Al-Cr-V": 2,
+        "Mg-Pd-Pt-Ti": 1,
+        "Al-Au-Pd": 2,
+        "Au-Pd": 1,
+        "Al-Mg-Pd": 4,
+        "Cr-Pt-Ti": 1,
+        "Ni-Pt-V": 4,
+        "Al-Mo-Ni-Pt": 4,
+        "Ag-Al": 1,
+        "Cu-Mg-Pt-Ta": 1,
+        "Ni-Pd-Zr": 1,
+        "Al-Cr-Ni-Pt": 3,
+        "Al-Au-Zr": 3,
+        "Al-Cu-Pd-Pt": 6,
+        "Al-Mo-Ti": 4,
+        "Au-Pd-Ti": 3,
+        "Cu-Ni-Ta": 1,
+        "Al-Cu-Ta": 2,
+        "Mg-Pd-V": 2,
+        "Al-Pt-V-Zr": 1,
+        "Al-Au-Pt-Zr": 1,
+        "Cr-Pt-Ta": 2,
+        "Al-Mo-Ni": 2,
+        "Pt-Ta-V": 1,
+        "Al-Cr-Ta": 3,
+        "Al-Pt-Ta": 4,
+        "Cr-Pd-Pt": 2,
+        "Au-Pd-Zr": 4,
+        "Mo-Ni-Pt": 2,
+        "Ag-Au-Pd": 2,
+        "Al-V-W": 1,
+        "Mo-V-Zr": 1,
+        "Cr-Cu-Pd": 1,
+        "Ta-Ti-W": 2,
+        "Ni-Pt-V-W": 1,
+        "Au-Cu-Ni-Ta": 1,
+        "Au-Cu-Pd-Ta": 1,
+        "Au-Pd-V": 2,
+        "Cr-Pd": 2,
+        "Mg-Pd-Zr": 1,
+        "Mg-Ni-Pt-V": 1,
+        "Mg-Pd-Ti": 1,
+        "Cu-Mg-Pd": 1,
+        "Al-Au-Cu": 2,
+        "Al-Pd-Pt-Ti": 2,
+        "Ag-Pd": 1,
+        "Pb-Pd-Zr": 2,
+        "Mo-Ti-W": 9,
+        "Ti-V-W": 3,
+        "Al-Cu-V": 1,
+        "Al-Ta-V": 2,
+        "Pd-Pt-Ta": 3,
+        "Au-V": 4,
+        "Mo-Pt-Ti": 1,
+        "Au-Pd-Ta": 1,
+        "Pd-V-W": 1,
+        "Al-Ni-V": 2,
+        "Ag-Pd-Zr": 2,
+        "Ni-V-W": 1,
+        "Ag-Au-Mg": 1,
+        "Mo-Pd-Ti": 1,
+        "V-W": 2,
+        "Al-Cu-Ni-Pt": 2,
+        "Au-Pt-Zr": 1,
+        "Mo-Pd-V": 2,
+        "Al-Pt-Ti": 4,
+        "Cr-Pd-Ti": 2,
+        "Pd-Pt": 2,
+        "Al-Ni-Pt": 2,
+        "Mo-Ti": 3,
+        "Mg-Pb-Pd": 1,
+        "Al-Cr": 1,
+        "Ag-Al-Zr": 1,
+        "Ag-Au-Pt-Ta": 1,
+        "Al-Pt-Ti-Zr": 1,
+        "Cr-Pd-V": 1,
+        "Cu-Pd-Ti": 1,
+        "Al-Cu-Pd": 5,
+        "Mg-Pd-Pt-V": 2,
+        "Al-Mo-V": 2,
+        "Au-Cu-Ni-Zr": 1,
+        "Au-Pb-Zr": 1,
+        "Cr-V": 1,
+        "Au-Ni-Zr": 1,
+        "Au-Cu-Pd": 3,
+        "Al-Pd-Ti": 1,
+        "Au-Pb": 1,
+        "Al-Au-Mg": 1,
+        "Al-Cu-Pt-Ti": 1,
+        "Au-Mg": 1,
+        "Al-Cu-Mg-Pt": 1,
+        "Al-Ni-Pt-W": 3,
+        "Mo-Pt-Ta": 1,
+        "Mg-Pd-Ta": 1,
+        "Al-Ni": 1,
+        "Ag-Cu-Zr": 1,
+        "Cr-Cu-Mg-Pt": 1,
+        "Al-Pd-Zr": 3,
+        "Cu-Pt-Ta": 2,
+        "Ni-Pt-W": 2,
+        "Au-Pd-Pt-Zr": 1,
+        "Al-Au-Ta": 2,
+        "Al-Au-Ti": 3,
+        "Pd-V": 3,
+        "Al-Cu-Ti": 1,
+        "Ti-W": 3,
+        "Ni-Pd-Pt-Ta": 1,
+        "Pd-Pt-Ti": 6,
+        "Al-Mg-Pt": 5,
+        "Au-Ta": 2,
+        "Al-Au-Pd-Zr": 1,
+        "Al-Cr-Pt-Zr": 1,
+        "Cu-Pd-Pt-Ta": 3,
+        "Cr-Pt-W": 1,
+        "Cu-Ni-Pd-Pt-Ta": 1,
+        "Al-Ta-Ti": 3,
+        "Al-Mg-Ni-Pt": 1,
+        "Mg-Mo-Pd": 1,
+        "Cu-Ni": 1,
+        "Cu-Ni-Pt-V": 1,
+        "Pd-Ta": 1,
+        "Pb-Zr": 1,
+        "Cu-Pt-Ti": 1,
+        "Mo-Pt-V": 1,
+        "Al-Cr-Ni": 1,
+        "Mg-Ni-Pt-Ta": 1,
+        "Au-Cr-Pd": 1,
+        "Mo-Ni-Pt-Ta": 1,
+        "Al-Au-V": 1,
+        "Ag-Au-Zr": 1,
+        "Au-Mg-Pt-Ti": 1,
+        "Mg-Pt-V": 1,
+        "Al-Ni-Pt-Zr": 2,
+        "Pt-Ti-V": 1,
+        "Al-Ni-Ta": 2,
+        "Al-Ti-W": 2,
+        "Al-Cr-Ti": 1,
+        "Pt-Ta-W": 1,
+        "Al-Pd-Ti-Zr": 3,
+        "Al-Pd-Ta-Zr": 1,
+        "Pd-Pt-W": 1,
+        "Mo-Ta-V": 1,
+        "Au-Pd-W": 1,
+        "Mo-Pd-Pt": 1,
+        "Al-Cu-Mg-Pd": 2,
+        "Al-Cu-Pt-Zr": 1,
+        "Al-Pd": 1,
+        "Au-Ni-Pd-Zr": 1,
+        "Al-Cu-Mo-Zr": 1,
+        "Al-Mo-Ta": 1,
+        "Al-Cu-Zr": 1,
+        "Al-Cu-Ni": 1,
+        "Au-Mg-Pd-V": 1,
+        "Al-Mg-Pd-Ti": 1,
+        "Cu-Pd-V": 1,
+        "Al-Mo-Pt-Ti": 1,
+        "Al-Mg-Pt-V": 1,
+        "Cu-Mo-Pd": 1,
+        "Al-Cu-Mg-Zr": 1,
+        "Al-Mo-Ti-Zr": 1,
+        "Al-Mg-Pt-W": 1,
+        "Al-Mo-Zr": 1,
+        "Al-Pd-Ta": 1,
+        "Au-Cu-Pd-Zr": 1,
+        "Au-Cu-Pt-Ti": 1,
+        "Al-Au-Cu-Zr": 1,
+        "Al-Cr-Pd": 1,
+        "Cu-Mo-Ti": 1,
+        "Ni-W": 1,
+        "Ag-Cu-Ti": 1
+      },
+      "supported_frames": 23,
+      "atom_counts": {
+        "8": 117,
+        "6": 17,
+        "24": 21,
+        "9": 10,
+        "16": 140,
+        "12": 65,
+        "7": 6,
+        "11": 3,
+        "20": 23,
+        "10": 9,
+        "28": 4,
+        "3": 1,
+        "30": 17,
+        "5": 6,
+        "26": 1,
+        "37": 2,
+        "33": 1,
+        "15": 1
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "config_type",
+        "energy",
+        "pbc",
+        "virial",
+        "volume"
+      ]
+    },
+    "testset/Fig-2-MP-ternary.xyz": {
+      "frames": 482,
+      "systems": {
+        "Ag-Al-Au": 1,
+        "Ag-Al-Mg": 7,
+        "Ag-Au-Cu": 1,
+        "Ag-Au-Mg": 3,
+        "Ag-Au-Pd": 4,
+        "Ag-Au-Zr": 1,
+        "Ag-Cr-Ti": 1,
+        "Ag-Cu-Mg": 1,
+        "Ag-Cu-Pd": 1,
+        "Ag-Cu-Ti": 1,
+        "Ag-Cu-Zr": 2,
+        "Ag-Mg-Pd": 4,
+        "Ag-Mg-Pt": 1,
+        "Ag-Mg-Zr": 1,
+        "Ag-Mo-Ti": 1,
+        "Ag-Mo-Zr": 1,
+        "Ag-Pb-Pd": 2,
+        "Ag-Pb-Zr": 1,
+        "Ag-Pd-Zr": 1,
+        "Al-Au-Cu": 1,
+        "Al-Au-Mg": 5,
+        "Al-Au-Ti": 3,
+        "Al-Au-V": 1,
+        "Al-Au-Zr": 3,
+        "Al-Cr-Cu": 1,
+        "Al-Cr-Mg": 7,
+        "Al-Cr-Ni": 3,
+        "Al-Cr-Ta": 1,
+        "Al-Cr-Ti": 3,
+        "Al-Cr-Zr": 4,
+        "Al-Cu-Mg": 11,
+        "Al-Cu-Mo": 2,
+        "Al-Cu-Ni": 3,
+        "Al-Cu-Pd": 5,
+        "Al-Cu-Pt": 1,
+        "Al-Cu-Ta": 2,
+        "Al-Cu-Ti": 4,
+        "Al-Cu-W": 1,
+        "Al-Cu-Zr": 6,
+        "Al-Mg-Mo": 6,
+        "Al-Mg-Ni": 6,
+        "Al-Mg-Pb": 4,
+        "Al-Mg-Pd": 4,
+        "Al-Mg-Pt": 4,
+        "Al-Mg-Ta": 3,
+        "Al-Mg-Ti": 7,
+        "Al-Mg-V": 7,
+        "Al-Mg-W": 6,
+        "Al-Mg-Zr": 6,
+        "Al-Mo-Ni": 1,
+        "Al-Mo-Ti": 2,
+        "Al-Mo-Zr": 3,
+        "Al-Ni-Pd": 2,
+        "Al-Ni-Pt": 4,
+        "Al-Ni-Ta": 5,
+        "Al-Ni-Ti": 11,
+        "Al-Ni-V": 5,
+        "Al-Ni-Zr": 13,
+        "Al-Pb-Zr": 1,
+        "Al-Pd-Pt": 1,
+        "Al-Pd-Ti": 3,
+        "Al-Pd-Zr": 3,
+        "Al-Pt-Ta": 1,
+        "Al-Pt-Ti": 2,
+        "Al-Pt-V": 1,
+        "Al-Pt-Zr": 4,
+        "Al-Ta-Ti": 2,
+        "Al-Ti-V": 3,
+        "Al-Ti-W": 2,
+        "Al-Ti-Zr": 2,
+        "Al-V-W": 2,
+        "Al-V-Zr": 1,
+        "Al-W-Zr": 2,
+        "Au-Cu-Mg": 2,
+        "Au-Cu-Ni": 1,
+        "Au-Cu-Pd": 3,
+        "Au-Cu-Pt": 1,
+        "Au-Cu-Zr": 1,
+        "Au-Mg-Pd": 4,
+        "Au-Mg-Zr": 1,
+        "Au-Mo-Ti": 1,
+        "Au-Pb-Pd": 2,
+        "Au-Pd-Pt": 1,
+        "Au-Pd-Zr": 2,
+        "Au-Pt-Ti": 1,
+        "Au-Pt-Zr": 1,
+        "Au-Ti-Zr": 1,
+        "Cr-Cu-Mg": 4,
+        "Cr-Cu-Ta": 1,
+        "Cr-Cu-Zr": 1,
+        "Cr-Mg-Mo": 3,
+        "Cr-Mg-Ni": 4,
+        "Cr-Mg-Ti": 4,
+        "Cr-Mg-V": 4,
+        "Cr-Mg-W": 4,
+        "Cr-Mg-Zr": 4,
+        "Cr-Mo-Ni": 6,
+        "Cr-Mo-Ta": 1,
+        "Cr-Mo-Ti": 1,
+        "Cr-Mo-V": 3,
+        "Cr-Mo-W": 1,
+        "Cr-Mo-Zr": 1,
+        "Cr-Ni-Ta": 1,
+        "Cr-Ni-Zr": 1,
+        "Cr-Ta-W": 1,
+        "Cr-Ti-Zr": 2,
+        "Cr-V-W": 2,
+        "Cr-V-Zr": 1,
+        "Cr-W-Zr": 1,
+        "Cu-Mg-Mo": 4,
+        "Cu-Mg-Ni": 5,
+        "Cu-Mg-Pb": 1,
+        "Cu-Mg-Pd": 2,
+        "Cu-Mg-Pt": 1,
+        "Cu-Mg-Ti": 4,
+        "Cu-Mg-V": 4,
+        "Cu-Mg-W": 4,
+        "Cu-Mg-Zr": 4,
+        "Cu-Ni-Pd": 1,
+        "Cu-Ni-Ta": 1,
+        "Cu-Ni-Ti": 7,
+        "Cu-Ni-Zr": 1,
+        "Cu-Pb-Zr": 1,
+        "Cu-Pd-Pt": 1,
+        "Cu-Pd-Zr": 1,
+        "Cu-Pt-Zr": 1,
+        "Cu-Ta-V": 2,
+        "Cu-Ti-Zr": 2,
+        "Cu-V-Zr": 1,
+        "Mg-Mo-Ni": 4,
+        "Mg-Mo-Ti": 4,
+        "Mg-Mo-V": 4,
+        "Mg-Mo-W": 4,
+        "Mg-Mo-Zr": 4,
+        "Mg-Ni-Pd": 1,
+        "Mg-Ni-Ti": 5,
+        "Mg-Ni-V": 4,
+        "Mg-Ni-W": 4,
+        "Mg-Ni-Zr": 5,
+        "Mg-Pb-Pd": 1,
+        "Mg-Pb-W": 1,
+        "Mg-Pd-Pt": 1,
+        "Mg-Pd-Zr": 1,
+        "Mg-Pt-Zr": 2,
+        "Mg-Ti-V": 4,
+        "Mg-Ti-W": 4,
+        "Mg-Ti-Zr": 4,
+        "Mg-V-W": 4,
+        "Mg-V-Zr": 4,
+        "Mg-W-Zr": 4,
+        "Mo-Ni-Ta": 2,
+        "Mo-Ni-Ti": 1,
+        "Mo-Ni-Zr": 2,
+        "Mo-Pd-Ti": 2,
+        "Mo-Pd-Zr": 1,
+        "Mo-Pt-Ta": 1,
+        "Mo-Pt-Ti": 1,
+        "Mo-Pt-Zr": 1,
+        "Mo-Ta-Ti": 2,
+        "Mo-Ta-V": 2,
+        "Mo-Ta-W": 5,
+        "Mo-Ti-V": 3,
+        "Mo-Ti-W": 4,
+        "Mo-Ti-Zr": 1,
+        "Mo-V-W": 2,
+        "Mo-V-Zr": 1,
+        "Mo-W-Zr": 1,
+        "Ni-Pd-Ti": 1,
+        "Ni-Pt-Ti": 1,
+        "Ni-Ta-Ti": 1,
+        "Ni-Ta-V": 1,
+        "Ni-Ti-V": 1,
+        "Ni-Ti-W": 1,
+        "Ni-Ti-Zr": 4,
+        "Ni-V-Zr": 3,
+        "Pb-Pt-Ti": 1,
+        "Pb-Pt-Zr": 1,
+        "Pb-Ti-Zr": 1,
+        "Pd-Pt-Zr": 1,
+        "Pd-Ti-Zr": 1,
+        "Pt-Ti-W": 1,
+        "Pt-Ti-Zr": 1,
+        "Ta-Ti-W": 3,
+        "Ta-V-W": 1,
+        "Ti-V-W": 3,
+        "Ti-W-Zr": 1,
+        "V-W-Zr": 1
+      },
+      "supported_frames": 27,
+      "atom_counts": {
+        "4": 147,
+        "81": 1,
+        "146": 1,
+        "29": 37,
+        "12": 33,
+        "3": 18,
+        "6": 27,
+        "66": 1,
+        "18": 10,
+        "24": 4,
+        "46": 6,
+        "16": 147,
+        "20": 7,
+        "10": 3,
+        "116": 1,
+        "39": 2,
+        "8": 21,
+        "13": 1,
+        "5": 1,
+        "28": 3,
+        "9": 2,
+        "120": 1,
+        "60": 2,
+        "75": 2,
+        "90": 1,
+        "36": 1,
+        "48": 2
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "config_type",
+        "energy",
+        "pbc",
+        "virial",
+        "volume"
+      ]
+    },
+    "testset/Fig-S1-PdCuNi.xyz": {
+      "frames": 123,
+      "systems": {
+        "Cu-Ni-Pd": 123
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "105": 12,
+        "107": 12,
+        "104": 12,
+        "72": 26,
+        "106": 12,
+        "103": 12,
+        "108": 36,
+        "3": 1
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "config_type",
+        "energy",
+        "pbc",
+        "virial",
+        "volume"
+      ]
+    },
+    "testset/Fig-S10-Cu47.5Zr45.1Al7.4/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cu-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S10-Cu47.5Zr45.1Al7.4/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cu-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S10-Cu47.5Zr45.1Al7.4/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Al-Cu-Zr": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "144": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S10-Cu47.5Zr45.1Al7.4/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Al-Cu-Zr": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "144": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S11-Cu60Zr20Ti20/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Cu-Ti-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S11-Cu60Zr20Ti20/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Cu-Ti-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S11-Cu60Zr20Ti20/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Cu-Ti-Zr": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "144": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S11-Cu60Zr20Ti20/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Cu-Ti-Zr": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "144": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S12-PdPtCu/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Cu-Pd-Pt": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S12-PdPtCu/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Cu-Pd-Pt": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "108": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S12-PdPtCu/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Cu-Pd-Pt": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "108": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S12-PdPtCu/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Cu-Pd-Pt": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S13-Cu43Zr43Al7Ag7/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ag-Al-Cu-Zr": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S13-Cu43Zr43Al7Ag7/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ag-Al-Cu-Zr": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S13-Cu43Zr43Al7Ag7/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Ag-Al-Cu-Zr": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S13-Cu43Zr43Al7Ag7/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Ag-Al-Cu-Zr": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S14-AuPdCuNi/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Au-Cu-Ni-Pd": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S14-AuPdCuNi/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Au-Cu-Ni-Pd": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S14-AuPdCuNi/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Au-Cu-Ni-Pd": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S14-AuPdCuNi/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Au-Cu-Ni-Pd": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "144": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S15-MoWVTa/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Mo-Ta-V-W": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S15-MoWVTa/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Mo-Ta-V-W": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S15-MoWVTa/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Mo-Ta-V-W": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S15-MoWVTa/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Mo-Ta-V-W": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "128": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S16-AlCrCuNiV/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cr-Cu-Ni-V": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "256": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S16-AlCrCuNiV/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cr-Cu-Ni-V": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "256": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S16-AlCrCuNiV/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Al-Cr-Cu-Ni-V": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "256": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S16-AlCrCuNiV/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Al-Cr-Cu-Ni-V": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "256": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S17-AuCuNiPdPt/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Au-Cu-Ni-Pd-Pt": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "250": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S17-AuCuNiPdPt/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Au-Cu-Ni-Pd-Pt": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "250": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S17-AuCuNiPdPt/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Au-Cu-Ni-Pd-Pt": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "250": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S17-AuCuNiPdPt/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Au-Cu-Ni-Pd-Pt": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "250": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S2-MoTaVW.xyz": {
+      "frames": 1215,
+      "systems": {
+        "Mo-V-W": 30,
+        "Mo-Ta-W": 30,
+        "Ta-V-W": 30,
+        "V-W": 44,
+        "V": 204,
+        "Ta": 204,
+        "Mo-W": 45,
+        "Mo-Ta-V": 30,
+        "Mo": 204,
+        "Mo-V": 45,
+        "Mo-Ta-V-W": 60,
+        "W": 199,
+        "Ta-V": 45,
+        "Mo-Ta": 45
+      },
+      "supported_frames": 403,
+      "atom_counts": {
+        "54": 345,
+        "128": 90,
+        "12": 79,
+        "16": 54,
+        "252": 10,
+        "117": 19,
+        "144": 18,
+        "122": 30,
+        "2": 200,
+        "118": 18,
+        "121": 40,
+        "1": 280,
+        "53": 32
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "config_type",
+        "energy",
+        "pbc",
+        "virial",
+        "volume"
+      ]
+    },
+    "testset/Fig-S3-AgAuCrCuMoNiPdPtTaTiVWZr.xyz": {
+      "frames": 912,
+      "systems": {
+        "Ta-Ti-W": 19,
+        "Ag-Au-Cr": 48,
+        "Ag-Pd-Ti": 33,
+        "Cr-Ni-Pt": 66,
+        "Au-Pd-Ti": 15,
+        "Cr-Cu-Ta": 41,
+        "Pd-Pt-W": 26,
+        "Cr-Cu-V": 40,
+        "V-W-Zr": 22,
+        "Ag-Ni-Zr": 33,
+        "Ni-V-Zr": 25,
+        "Ag-Cu-Ti": 22,
+        "Ni-Ta-W": 24,
+        "Au-Cr-Ni-Pt": 5,
+        "Ni-Pd-Pt-Ta": 48,
+        "Mo-Ni-V": 28,
+        "Mo-Ni-Ti-W": 4,
+        "Ni-Pd-Pt-W": 3,
+        "Cr-Cu-Ni-Ta-Ti": 3,
+        "Cu-V-Zr": 3,
+        "Pd-V-W": 34,
+        "Ag-Ni-Pt-Ti": 2,
+        "Cr-Cu-Pd-Zr": 42,
+        "Cu-Ni-Ta-W": 1,
+        "Mo-Pt-W": 14,
+        "Au-Mo-Pd": 12,
+        "Ag-Pt-Zr": 17,
+        "Cu-Ni-Ti": 1,
+        "Ag-Ni-Pd-Pt-Zr": 1,
+        "Au-Cr-Mo-Pd-Pt-Ti-V": 1,
+        "Au-Cu-Ni-Pd-Zr": 1,
+        "Cu-Pd-W": 1,
+        "Au-Pt-Ta": 1,
+        "Au-Mo-Pt-V-Zr": 1,
+        "Mo-Ta-Zr": 3,
+        "Ag-Ta-W-Zr": 1,
+        "Au-Mo-Ti": 1,
+        "Ag-Au-Pd-W": 1,
+        "Cr-Pt-Ta": 2,
+        "Ag-Mo-Pd-W": 1,
+        "Ag-Ta-W": 1,
+        "Ni-Pd-Ti": 1,
+        "Au-Cu-Pt-Ta": 1,
+        "Cr-Pd-Ti-W": 1,
+        "Cu-Pt-W": 2,
+        "Pd-Ta-Zr": 2,
+        "Ag-Cu-Mo-W": 1,
+        "Ti-V-Zr": 2,
+        "Au-Cu-Ta-V": 1,
+        "Cu-Pt-Ti-V-Zr": 1,
+        "Ag-Ta-Ti-Zr": 1,
+        "Cr-Pd-Pt": 1,
+        "Ni-Ti-V-W": 1,
+        "Ag-Cr-Cu-Pd-Ti-W": 1,
+        "Ni-Ta-Zr": 1,
+        "Mo-Pd-W": 1,
+        "Mo-Pd-Ti-Zr": 1,
+        "Cr-Ni-Pd-Ta-Ti-V": 1,
+        "Cu-Mo-Ni-W": 1,
+        "Ag-Pd-Ta": 2,
+        "Ag-Cr-Pd": 1,
+        "Ag-Ni-Pt": 1,
+        "Ag-Mo-Pd": 1,
+        "Cu-Pd-Pt-Ta-Zr": 1,
+        "Au-Ta-W": 1,
+        "Cu-Mo-W": 1,
+        "Pt-V-W": 2,
+        "Au-Pd-W": 1,
+        "Cu-Pt-V": 1,
+        "Cr-Cu-Pd-Ta": 1,
+        "Au-Mo-Pd-Pt-V-Zr": 1,
+        "Ag-Pd-Pt-Zr": 1,
+        "Cr-Cu-Mo-Ni-Pd-Zr": 1,
+        "Cr-Pd-Ti": 2,
+        "Ag-Au-Ti": 2,
+        "Pt-V-W-Zr": 1,
+        "Ag-Pd-W-Zr": 1,
+        "Cu-Pt-Zr": 1,
+        "Mo-Pt-Ta-Zr": 1,
+        "Mo-Pd-Ta": 1,
+        "Au-Cu-V": 1,
+        "Mo-Ta-W": 1,
+        "Mo-Ta-V": 1,
+        "Cu-Pd-Zr": 1,
+        "Cu-Ni-Ta": 2,
+        "Pd-Ti-W-Zr": 1,
+        "Cr-V-W": 2,
+        "Ag-Au-Pt": 2,
+        "Mo-W-Zr": 1,
+        "Ag-Mo-Ni": 1,
+        "Cr-Cu-Pt": 1,
+        "Ag-Ta-V": 1,
+        "Cu-Ti-W": 1,
+        "Pd-Pt-Ta-V-W": 1,
+        "Au-Mo-Ta": 1,
+        "Ag-Ti-Zr": 2,
+        "Cr-Cu-Zr": 1,
+        "Ni-W-Zr": 1,
+        "Cr-Pd-Ta-Ti": 1,
+        "Cr-Mo-Ta": 2,
+        "Pt-Ta-V": 1,
+        "Cu-Ti-Zr": 1,
+        "Ag-Cu-Pd": 1,
+        "Ni-Pt-Ti-Zr": 1,
+        "Ag-Au-Cu-Ta": 1,
+        "Au-Ni-Pd-Pt-Zr": 1,
+        "Cr-Ta-Ti": 2,
+        "Cr-Pd-Ta": 3,
+        "Au-Cr-Pd-W-Zr": 1,
+        "Au-Mo-Pd-Ta-Ti-V-W": 1,
+        "Ag-Au-Ta-Ti": 1,
+        "Ag-Au-Cr-Cu-Mo-Ni-Ti": 1,
+        "Au-Cu-Pd": 1,
+        "Cr-Cu-Ni-Pt-Zr": 1,
+        "Pd-Ta-Ti-W": 1,
+        "Cr-Pd-Ti-V-Zr": 1,
+        "Ni-Pd-Pt": 1,
+        "Au-Cu-Mo-Pt-V": 1,
+        "Ni-Pd-Ti-W": 1,
+        "Ag-Au-Pd-Ta-V": 1,
+        "Au-Pt-Ti-Zr": 1,
+        "Mo-Ni-Pt-Ta": 2,
+        "Au-Cr-V-W": 2,
+        "Pt-Ti-V": 2,
+        "Au-Cu-Mo": 1,
+        "Ag-Au-Pd-Zr": 1,
+        "Cr-Cu-Mo-Pd-Ta-Ti-W-Zr": 1,
+        "Au-Pd-Pt-W": 1,
+        "Ag-Mo-Ni-V-Zr": 1,
+        "Cr-Mo-Pd-Pt-Zr": 1,
+        "Ag-Au-Pd-Ta": 1,
+        "Au-Cr-Mo": 2,
+        "Cr-Ta-V": 1,
+        "Cr-Ni-Ti": 2,
+        "Ag-Cr-Ni-Pd-Pt-Ta-Ti": 1,
+        "Cu-Ta-Ti-W": 1,
+        "Cr-Cu-Ni-Pd": 1,
+        "Ag-Cr-Pt-Ta-W": 1,
+        "Ag-Au-Cr-Cu-Zr": 1,
+        "Pd-Pt-Ti": 1,
+        "Au-Pt-V": 1,
+        "Ag-Cr-Ni-W": 1,
+        "Cr-Ti-V": 1,
+        "Au-Mo-Pd-V-W": 1,
+        "Au-Cr-Cu-Ta-Zr": 1,
+        "Cu-Ni-W-Zr": 2,
+        "Mo-Pd-Pt-Ta-W": 1,
+        "Ag-Cr-Pt": 1,
+        "Ag-Cu-Zr": 1,
+        "Au-Pt-Ta-W": 1,
+        "Cr-Mo-Ni-Pd-V": 1,
+        "Ni-Pd-V": 1,
+        "Ag-Pd-V": 3,
+        "Ag-Cr-Mo-Ni": 1,
+        "Cu-Mo-Ti": 1,
+        "Cu-Pd-Pt-Zr": 1,
+        "Ag-Pt-Ta": 1,
+        "Cr-Cu-Ni-Zr": 1,
+        "Cu-Pd-Ti-Zr": 1,
+        "Au-Mo-Pd-V-Zr": 1,
+        "Pt-Ti-Zr": 2,
+        "Ag-Cr-V": 1,
+        "Ag-Cr-Cu-Pd-Ta-Ti-V": 1,
+        "Cr-Mo-Pt-Ti": 1,
+        "Ag-Ta-Ti": 1,
+        "Ag-Au-Mo-Ni": 1,
+        "Mo-Pt-Ta-W": 1,
+        "Cr-Ni-Ta-W": 1,
+        "Cr-Pd-V-W": 1,
+        "Ag-Cu-Mo-Pd-Pt-V": 1,
+        "Ag-Au-Mo-Zr": 1,
+        "Mo-Ni-Pd": 2,
+        "Cu-Mo-V-W": 1,
+        "Pd-Pt-Zr": 1,
+        "Cr-Pd-Pt-V": 1,
+        "Cr-Cu-Mo": 1,
+        "Mo-Ta-Ti": 1,
+        "Au-Pd-Ta": 2,
+        "Cr-Mo-Ni-Zr": 1,
+        "Ag-Mo-W": 1,
+        "Cr-Pd-Zr": 2,
+        "Cu-Pt-Ti": 1,
+        "Ag-Cr-Cu-Ti-W": 1,
+        "Cr-Mo-Pd": 1,
+        "Ag-Mo-Pt": 1,
+        "Au-Cr-Cu-Pt-Ta": 1,
+        "Au-Cr-Cu-Mo": 1,
+        "Cu-Ni-Pd": 1,
+        "Cr-Ni-Ti-W": 1,
+        "Cr-Mo-Pd-V": 1,
+        "Ag-Mo-V": 1,
+        "Au-Cr-Mo-Pd-Ta-Zr": 1,
+        "Cr-Ni-Pt-W": 1,
+        "Pd-Ti-V": 1,
+        "Ag-Au-Cr-Ti": 1,
+        "Ni-Pt-Zr": 1,
+        "Pt-Ti-W": 1,
+        "Au-Cr-Ni": 1,
+        "Au-Ni-Ta-Ti": 1,
+        "Mo-Ni-Ta-Ti-Zr": 1,
+        "Cu-Pd-Ti": 2,
+        "Cr-Pt-V": 1,
+        "Ag-Au-W": 1,
+        "Cu-Mo-V": 1,
+        "Ag-Mo-Pt-Ta-V-W": 1,
+        "Pd-Ta-Ti": 2,
+        "Ag-Ni-Pt-W": 1,
+        "Mo-Ti-W": 1,
+        "Mo-Pd-Pt-Ta-Zr": 1,
+        "Au-Cr-Ti": 1,
+        "Ag-Au-Mo-Pt": 1,
+        "Ag-Cr-Cu-Mo-Ti-W": 1,
+        "Au-Pt-Ti": 1,
+        "Ag-Au-Ni-Pd-Ta-V": 1,
+        "Au-Cr-Mo-Pd-Ti-W": 1,
+        "Ag-Pd-Ta-V-W": 1,
+        "Ag-Cr-Mo-Zr": 1,
+        "Ag-Au-Cr-Cu": 1,
+        "Ag-Cu-Ta-W": 1,
+        "Au-Cr-Ta": 1,
+        "Cu-Pt-Ta": 1,
+        "Pt-Ta-Ti": 1,
+        "Ni-Pd-Zr": 1,
+        "Cu-Mo-Pt": 1,
+        "Ag-W-Zr": 1,
+        "Cr-Ta-Ti-V": 1,
+        "Mo-Ti-V": 1,
+        "Ag-Mo-Ti": 1,
+        "Au-Cr-Cu": 1,
+        "Ag-Cu-Mo-Pd-Ta-Zr": 1,
+        "Ag-Au-Ta": 1,
+        "Ag-Cu-Pt-Ta-Ti-V": 1,
+        "Pd-Ta-Ti-V": 1,
+        "Pt-Ta-W": 1,
+        "Mo-Pd-Pt-Ti": 1,
+        "Cr-Mo-Pt-Zr": 1,
+        "Cu-Mo-Ni-Ti": 1,
+        "Ag-Pt-Ta-Ti": 1,
+        "Ti-W-Zr": 1,
+        "Au-Ni-Pd": 1,
+        "Ag-Mo-Ni-Ti": 1,
+        "Au-Cr-Cu-Mo-Pt-V": 1,
+        "Cu-W-Zr": 1,
+        "Ag-Cr-Mo": 1,
+        "Mo-Ta-W-Zr": 1,
+        "Mo-Ta-Ti-V": 1,
+        "Ag-Cr-Ni": 1,
+        "Ag-Cu-Mo-Pt-Ta": 1,
+        "Ag-Cu-V-W": 1,
+        "Au-Cu-Pd-W": 1,
+        "Ag-Mo-Ta-Zr": 1,
+        "Ag-Cu-Ni-Pt": 1,
+        "Ag-Ni-Ta": 1,
+        "Au-Cu-Ni-Ti-V": 1,
+        "Ag-Cr-Pd-Ta": 1,
+        "Au-Mo-Pt-W": 1,
+        "Ag-Au-Cr-V-Zr": 1,
+        "Ag-Mo-Zr": 1,
+        "Cr-Mo-Ti-Zr": 1,
+        "Au-Ni-Pt-V-Zr": 1,
+        "Cr-Ni-Pd": 1,
+        "Pd-Ta-W": 1,
+        "Au-Cu-Zr": 1,
+        "Au-Cu-Ni-Ti": 1,
+        "Ag-Au-Ti-W": 1,
+        "Mo-Ni-Ta": 1,
+        "Cr-Cu-Mo-Ta-Ti": 1,
+        "Ag-Ni-Ta-Ti": 1,
+        "Ti-V-W": 1,
+        "Cr-Mo-Ti-W": 1,
+        "Mo-Pt-Ta": 1,
+        "Ag-Pd-V-W": 1,
+        "Ta-V-W": 1,
+        "Cu-Ta-Ti": 1,
+        "Au-Cu-Ni": 1,
+        "Pd-Ta-V": 1,
+        "Au-Cu-Mo-Ta": 1
+      },
+      "supported_frames": 25,
+      "atom_counts": {
+        "36": 397,
+        "48": 229,
+        "45": 286
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "config_type",
+        "energy",
+        "pbc",
+        "virial",
+        "volume"
+      ]
+    },
+    "testset/Fig-S4-Al/compress.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "96": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S4-Al/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Al": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "96": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S4-Al/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Al": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "96": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S5-Ti/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ti": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "96": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S5-Ti/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Ti": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "96": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S5-Ti/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Ti": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "96": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S6-Ta/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ta": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "84": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S6-Ta/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Ta": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "84": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S6-Ta/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Ta": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "84": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S7-AlCu/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cu": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "80": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S7-AlCu/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Al-Cu": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "80": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S7-AlCu/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Al-Cu": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "80": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S7-AlCu/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Al-Cu": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "80": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S8-MoW/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Mo-W": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "90": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S8-MoW/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Mo-W": 21
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "90": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S8-MoW/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Mo-W": 51
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "90": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S8-MoW/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Mo-W": 31
+      },
+      "supported_frames": 0,
+      "atom_counts": {
+        "90": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S9-TiZr/compressing.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ti-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "96": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S9-TiZr/eos.xyz": {
+      "frames": 21,
+      "systems": {
+        "Ti-Zr": 21
+      },
+      "supported_frames": 21,
+      "atom_counts": {
+        "96": 21
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S9-TiZr/heating.xyz": {
+      "frames": 51,
+      "systems": {
+        "Ti-Zr": 51
+      },
+      "supported_frames": 51,
+      "atom_counts": {
+        "96": 51
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    },
+    "testset/Fig-S9-TiZr/stretching.xyz": {
+      "frames": 31,
+      "systems": {
+        "Ti-Zr": 31
+      },
+      "supported_frames": 31,
+      "atom_counts": {
+        "96": 31
+      },
+      "metadata_fields": [
+        "Lattice",
+        "Properties",
+        "energy",
+        "pbc",
+        "virial"
+      ]
+    }
+  },
+  "status": "Downloaded and schema-audited; not trained on or evaluated by Semi-E3-MLIP.",
+  "limitations": [
+    "PBE versus current r2SCAN checkpoint: external transfer only.",
+    "Heating/deformation snapshots do not certify a continuous AIMD trajectory.",
+    "Before evaluation freeze a supported-chemistry protocol and verify provenance, overlap, units and energy references.",
+    "No pretrained NEP weights used."
+  ]
+}

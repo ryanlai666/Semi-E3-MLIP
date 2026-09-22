@@ -51,12 +51,13 @@ def tiny_rows():
     return rows
 
 
-def test_exact_cpu_resume(tmp_path):
+@pytest.mark.parametrize("microbatch_atoms", [0, 2])
+def test_exact_cpu_resume(tmp_path, microbatch_atoms):
     data = tmp_path / "data"
     data.mkdir()
     for split in ("train", "valid"):
         (data / f"{split}.jsonl").write_text("\n".join(json.dumps(r) for r in tiny_rows()))
-    cfg = TrainConfig(epochs=3, max_train=0, atom_budget=4, edge_budget=100, accumulation=2, device="cpu")
+    cfg = TrainConfig(epochs=3, max_train=0, atom_budget=4, edge_budget=100, accumulation=2, device="cpu", microbatch_atoms=microbatch_atoms)
     mc = ModelConfig(8,4,1,6,3.,"swiglu")
     train(data, tmp_path / "full", cfg, mc)
     train(data, tmp_path / "resume", cfg, mc, stop_after_epochs=1)

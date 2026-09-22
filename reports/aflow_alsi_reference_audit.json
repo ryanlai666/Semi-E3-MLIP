@@ -1,0 +1,62 @@
+{
+  "source": "https://aflowlib.duke.edu/AFLOWDATA/LIB2_RAW/AlSi/",
+  "scope": "Reference access audit only; not a phase diagram or model evaluation.",
+  "records": [
+    {
+      "entry": "281",
+      "url": "https://aflowlib.duke.edu/AFLOWDATA/LIB2_RAW/AlSi/281/",
+      "auid": "aflow:1168eccc85d322ea",
+      "compound": "Al4Si8",
+      "dft_type": [
+        "PAW_PBE"
+      ],
+      "energy_atom": -4.38215,
+      "enthalpy_formation_atom": 0.481518,
+      "species_pp": [
+        "Al",
+        "Si"
+      ],
+      "species_pp_version": [
+        "Al:PAW_PBE:04Jan2001",
+        "Si:PAW_PBE:05Jan2001"
+      ],
+      "pressure_residual": -0.43,
+      "delta_electronic_energy_convergence": 7.08115e-07,
+      "sha256": {
+        "aflowlib.json": "0c6a6abae780277b69f56102e943e2db86d7b2d21038e6144a1a2a2c80b122e5",
+        "CONTCAR.relax": "34ee902db7fb6b43be0ca8b85f040ea43ebabaea6988d5b97dc799265d77f961"
+      }
+    },
+    {
+      "entry": "282",
+      "url": "https://aflowlib.duke.edu/AFLOWDATA/LIB2_RAW/AlSi/282/",
+      "auid": "aflow:1c915ed4d2d7f6e7",
+      "compound": "Al8Si4",
+      "dft_type": [
+        "PAW_PBE"
+      ],
+      "energy_atom": -4.05685,
+      "enthalpy_formation_atom": 0.246769,
+      "species_pp": [
+        "Al",
+        "Si"
+      ],
+      "species_pp_version": [
+        "Al:PAW_PBE:04Jan2001",
+        "Si:PAW_PBE:05Jan2001"
+      ],
+      "pressure_residual": 0.18,
+      "delta_electronic_energy_convergence": 1.24338e-05,
+      "sha256": {
+        "aflowlib.json": "e4f3596bfb8b9e08feefc64bfc8eaf5b48ecab9a3f176dc22f69658e5ce2a0c5",
+        "CONTCAR.relax": "8e6c89d1c441cca0b9ab75bc3ff31f0968b805d008149df912bb8c7ce77bcdcd"
+      }
+    }
+  ],
+  "requirements": [
+    "Inventory all relevant competing structures and matched elemental endpoints.",
+    "Verify relaxation/convergence and energy-reference consistency.",
+    "PBE is not directly matched to the r2SCAN model.",
+    "Keep source data separate from repository code licensing."
+  ]
+}

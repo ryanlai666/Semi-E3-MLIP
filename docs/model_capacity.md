@@ -51,3 +51,5 @@ The existing expanded-attention to expanded-tensor comparison improves validatio
 [New continuous-reference AIMD parity](aimd_parity.md) covers all stored Si frames and distinguishes force agreement from relative-energy agreement across PBE/r2SCAN. [TM23 parity](parity.md#independent-specialists) already covers cold/warm/molten reference snapshots.
 
 The current recommendation is to test **coverage and numerical behavior alongside a moderate width increase**, rather than assume that a larger model will extrapolate correctly. No proposed architecture change or new training result is reported as completed here.
+
+[Running 1x/2x/4x width study](width_scaling.md) | [Replacement alloy references](alloy_references.md)

@@ -37,6 +37,12 @@ class TrainConfig:
     patience: int = 0
     minimum_epochs: int = 50
     monitor_train_every: int = 0
+    microbatch_atoms: int = 0
+    microbatch_edges: int = 0
+
+    def __post_init__(self):
+        if (self.microbatch_atoms or self.microbatch_edges) and self.auxiliary_weight:
+            raise ValueError("Microbatching currently supports energy/force/stress losses only")
 
 
 def resolve_device(device):
@@ -135,6 +141,21 @@ def make_batches(records, graphs, atom_budget, edge_budget):
     if batch:
         batches.append(batch)
     return batches
+
+
+def split_optimizer_batches(records, graphs, batches, atom_budget=0, edge_budget=0):
+    """Partition within fixed optimizer batches; retain even oversized single records.
+
+    Budgets limit packing, not dataset admission. The caller weights each microbatch
+    by its structure count over the original optimizer-update structure count.
+    """
+    microbatches, groups = [], []
+    for indices in batches:
+        local = make_batches([records[i] for i in indices], [graphs[i] for i in indices],
+            atom_budget or float("inf"), edge_budget or float("inf"))
+        groups.append(list(range(len(microbatches), len(microbatches) + len(local))))
+        microbatches.extend([[indices[j] for j in group] for group in local])
+    return microbatches, groups
 
 
 class BatchCache:
@@ -317,7 +338,12 @@ def train(data_dir="data/processed", run_dir="runs/pilot", config=None, model_co
         raise ValueError("Validation contains elements absent from training")
     tb = make_batches(train_rows, train_graphs, config.atom_budget, config.edge_budget)
     vb = make_batches(valid_rows, valid_graphs, config.atom_budget, config.edge_budget)
+    if config.microbatch_atoms < 0 or config.microbatch_edges < 0:
+        raise ValueError("Microbatch budgets must be nonnegative")
+    microbatches, microgroups = split_optimizer_batches(train_rows, train_graphs, tb,
+        config.microbatch_atoms, config.microbatch_edges)
     train_cache = BatchCache(train_rows,train_graphs,tb,device)
+    micro_cache = BatchCache(train_rows,train_graphs,microbatches,device)
     valid_cache = BatchCache(valid_rows,valid_graphs,vb,device)
     statistics = training_statistics(train_rows)
     if config.auxiliary_weight > 0 and not model_config.auxiliary_heads:
@@ -373,18 +399,20 @@ def train(data_dir="data/processed", run_dir="runs/pilot", config=None, model_co
             for group in optimizer.param_groups:
                 group["lr"] = lr
             for b in chunk:
-                indices = tb[b]
-                batch = train_cache.get(int(b))
-                prediction = model(batch, create_graph=True, compute_stress=config.stress_weight != 0)
-                e, f, s = loss_terms(prediction, batch, statistics["scales"], config.loss, config.huber_delta)
-                loss = config.energy_weight * e + config.force_weight * f + config.stress_weight * s
-                if config.auxiliary_weight:
-                    loss = loss + config.auxiliary_weight * auxiliary_loss(prediction, batch, statistics)
-                if not torch.isfinite(loss):
-                    raise FloatingPointError(f"Nonfinite loss at epoch={epoch} update={update}")
-                (loss * len(indices) / denominator).backward()
-                total_loss += float(loss.detach()) * len(indices)
-                structures += len(indices)
+                for mb in microgroups[int(b)]:
+                    indices = microbatches[mb]
+                    batch = micro_cache.get(mb)
+                    prediction = model(batch, create_graph=True, compute_stress=config.stress_weight != 0)
+                    e, f, s = loss_terms(prediction, batch, statistics["scales"], config.loss, config.huber_delta)
+                    loss = config.energy_weight * e + config.force_weight * f + config.stress_weight * s
+                    if config.auxiliary_weight:
+                        loss = loss + config.auxiliary_weight * auxiliary_loss(prediction, batch, statistics)
+                    if not torch.isfinite(loss):
+                        raise FloatingPointError(f"Nonfinite loss at epoch={epoch} update={update}")
+                    (loss * len(indices) / denominator).backward()
+                    total_loss += float(loss.detach()) * len(indices)
+                    structures += len(indices)
+                    del prediction, loss, e, f, s
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)
             optimizer.step()
             update += 1

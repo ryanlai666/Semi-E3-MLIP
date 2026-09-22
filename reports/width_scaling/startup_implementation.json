@@ -1,0 +1,4 @@
+{
+  "note": "Startup and currently active w2_s42 process used the implementation before adding an unused-auxiliary-loss guard. Study uses auxiliary_weight=0.",
+  "startup_train_sha256": "fa63ddff632c5328c7be76990830a857485be91a45372aeff09683a30ceece46"
+}

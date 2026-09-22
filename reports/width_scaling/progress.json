@@ -1,0 +1,99 @@
+{
+  "complete": false,
+  "test_used": false,
+  "trials": [
+    {
+      "name": "w2_s42",
+      "width": 2,
+      "seed": 42,
+      "parameters": 1356513,
+      "epochs": 20,
+      "seconds": 251.5899592001224,
+      "peak_gpu_MB": 3454.030336,
+      "validation": {
+        "frames": 145,
+        "atoms": 1332,
+        "energy_mae_eV_atom": 1.0625836455102624,
+        "energy_rmse_eV_atom": 1.247042812720717,
+        "force_mae_eV_A": 0.2847290383533936,
+        "force_rmse_eV_A": 0.9314713737931247,
+        "stress_mae_eV_A3": 0.020976826573751682,
+        "offset_baseline_mae_eV_atom": 1.050076875007003,
+        "zero_force_baseline_mae_eV_A": 0.28445278267767754,
+        "high_force_mae_eV_A": 1.2321162705724373
+      },
+      "complete": false
+    },
+    {
+      "name": "w4_s42",
+      "width": 4,
+      "seed": 42,
+      "parameters": 5288873,
+      "epochs": 1,
+      "seconds": 13.674864499946125,
+      "peak_gpu_MB": 4801.050624,
+      "validation": {
+        "frames": 145,
+        "atoms": 1332,
+        "energy_mae_eV_atom": 1.0363176264543215,
+        "energy_rmse_eV_atom": 1.2511420200918824,
+        "force_mae_eV_A": 0.2845929093127549,
+        "force_rmse_eV_A": 0.9310515604489206,
+        "stress_mae_eV_A3": 0.021002605094916145,
+        "offset_baseline_mae_eV_atom": 1.050076875007003,
+        "zero_force_baseline_mae_eV_A": 0.28445278267767754,
+        "high_force_mae_eV_A": 1.2318123560869825
+      },
+      "complete": false
+    },
+    {
+      "name": "w1_s42",
+      "width": 1,
+      "seed": 42,
+      "parameters": 354545,
+      "complete": false
+    },
+    {
+      "name": "w2_s43",
+      "width": 2,
+      "seed": 43,
+      "parameters": 1356513,
+      "complete": false
+    },
+    {
+      "name": "w4_s43",
+      "width": 4,
+      "seed": 43,
+      "parameters": 5288873,
+      "complete": false
+    },
+    {
+      "name": "w1_s43",
+      "width": 1,
+      "seed": 43,
+      "parameters": 354545,
+      "complete": false
+    },
+    {
+      "name": "w2_s44",
+      "width": 2,
+      "seed": 44,
+      "parameters": 1356513,
+      "complete": false
+    },
+    {
+      "name": "w4_s44",
+      "width": 4,
+      "seed": 44,
+      "parameters": 5288873,
+      "complete": false
+    },
+    {
+      "name": "w1_s44",
+      "width": 1,
+      "seed": 44,
+      "parameters": 354545,
+      "complete": false
+    }
+  ]
+}
